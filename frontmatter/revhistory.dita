@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="revhistory">
+ <title>Revision history</title>
+ <conbody>
+  <p>
+   <table frame="all" rowsep="1" colsep="1" id="Revision_History_New">
+    <tgroup cols="3">
+     <colspec colname="c1" colnum="1" colwidth="1*"/>
+     <colspec colname="c2" colnum="2" colwidth="1.5*"/>
+     <colspec colname="c3" colnum="3" colwidth="5.5*"/>
+     <thead>
+      <row>
+       <entry>Revision</entry>
+       <entry>Date</entry>
+       <entry>Comments</entry>
+      </row>
+     </thead>
+     <tbody>
+      <row otherprops="dot2">
+       <entry>1.0</entry>
+       <entry>December 2023</entry>
+       <entry>Initial release.</entry>
+      </row>
+      <row otherprops="dot3">
+       <entry>1.0</entry>
+       <entry>June 2024</entry>
+       <entry>Initial release.</entry>
+      </row>
+      <row otherprops="dot6">
+       <entry>1.0</entry>
+       <entry>August 2024</entry>
+       <entry>Initial release.</entry>
+      </row>
+     </tbody>
+    </tgroup>
+   </table>
+  </p>
+ </conbody>
+</concept>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Toc164238146">
+      <title>Layout
+Summary Report comparison (optional)</title>
+      <body>
+        <p>In this section, the Layout Summary Report is generated with the
+layers statistics to compare the layouts.</p>
+        <ol>
+          <li>From the <i>Layout</i> menu, select <b>File &gt;
+Summary</b>.</li>
+        </ol>
+        <ol>
+          <li>The Design Summary window displays; select only the
+<b>Basic Summary</b> option, and then click
+<b>OK</b>.</li>
+        </ol>
+        <p>
+          <i id="Toc164238230">Figure 69:
+Design Summary window</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image75.png">
+                        <alt>A screenshot of a computer Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+
+        <p>The Summary window for the design displays and shows the Layout
+Objects Statistics (<xref href="#Toc164238146/Ref168498252">Figure 69</xref>), which
+shows the total shapes present in the layout.</p>
+        <p>
+          <i id="Ref168498252">Figure 70: Design Summary</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image76.png">
+                        <alt>A screenshot of a computer Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+        <ol>
+          <li>To save the Summary file, select <b>File &gt; Save
+As</b>, and then give the name
+<b>layout_extract.summary</b>.</li>
+        </ol>
+        <p>Next, you stream a GDS file into a Layout view and compare the
+layout with the previously available Summary report.</p>
+        <ol>
+          <li>From the Cadence Virtuoso* CIW, select <b>File &gt; Import
+&gt; Stream…</b> The <i>XStream In</i> form displays
+(Figure 70).</li>
+          <li>Select the Stream file:
+./autoLib/&lt;cell_name&gt;/SPEF/&lt;cell_name&gt;.gds</li>
+        </ol>
+        <ol>
+          <li>Specify names in the <i>Library</i>, <i>Top Cell</i>, and
+<i>View</i> regions for the GDS file stream-in.</li>
+        </ol>
+        <p>
+          <i id="Ref154047519">Figure 71: XStream In form</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image77.png">
+                        <alt>A screenshot of a computer Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+        <ol>
+          <li>Click <b>Translate</b>.</li>
+          <li>When the stream-in completes, the following message displays
+(Figure 71):</li>
+        </ol>
+        <p>
+          <i id="Ref154047568">Figure 72: Stream in translation complete
+notification</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image78.png">
+                        <alt>A screenshot of a computer Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+        <ol>
+          <li>Click <b>No</b>, and then click
+<b>Cancel</b> in the XStream In form.</li>
+        </ol>
+        <p>In the Library Manager, verify the newly generated layout view
+is available.</p>
+        <ol>
+          <li>Open the Lib/Cell/View: ldk_demo_lib / i0mbfn000aa1d48x5 /
+layout_streamin</li>
+        </ol>
+        <ol>
+          <li>From the <i>Layout</i> menu, select <b>File &gt;
+Summary</b>.</li>
+          <li>
+            <p>In the Design Summary window, select only <b>Basic
+Summary</b>. The Summary window displays</p>
+            <p>
+(<xref href="#Toc164238146/Ref153986827">Figure 72</xref>).</p>
+          </li>
+        </ol>
+        <p>
+          <i id="Ref153986827">Figure 73: Summary window</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image79.png">
+                        <alt>A screenshot of a computer Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+        <ol>
+          <li>Click <b>File &gt; Save As</b> to save the Summary
+file. Name the file: <b>layout_streamin.summary</b>.</li>
+        </ol>
+        <p>In the layout_streamin summary report, 1177 shapes are present;
+in the layout_extract summary report, 1221 shares are present.</p>
+        <p>In the layout_extract, ndealign (22 dot shapes) and pdealign (22
+dot shapes) are present only for id purposes. These are ignored in
+the layermap file and have (0 0) data type value for GDS.</p>
+      </body>
+    </topic>

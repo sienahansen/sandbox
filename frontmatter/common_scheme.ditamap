@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "map.dtd">
+<subjectScheme>
+  
+  <!-- AUDIENCE --> <subjectdef keys="audience">
+    
+    <subjectdef keys="ANSYS"/>
+    <subjectdef keys="ANSS_only"/>
+    
+    <subjectdef keys="Cadence"/>
+    <subjectdef keys="CDNS_only"/>
+
+    <subjectdef keys="KEYS"/>
+    
+    <subjectdef keys="Mentor"/>
+    <subjectdef keys="MENT_only"/>
+    <subjectdef keys="MENT_ENCRALL"/>
+    
+    <subjectdef keys="Synopsys"/>
+    <subjectdef keys="SNPS_only"/>
+    
+    <subjectdef keys="Customer_only"/>
+    <subjectdef keys="External_only"/>
+    <subjectdef keys="modular"/>
+    <subjectdef keys="ANDOR"/>
+    <subjectdef keys="confidential"/>
+    <subjectdef keys="top-secret"/>
+    <subjectdef keys="PDF"/>
+    <subjectdef keys="web"/>
+    <subjectdef keys="Kalamos"/> <!--This is a customer specifically for P1278.3.  Included here to exclude in all other documentation.-->
+    <subjectdef keys="Mykonos"/> <!--This is a customer specifically for P1222.4.  Included here to exclude in all other documentation.-->
+    <subjectdef keys="Standard"/>
+    <subjectdef keys="EOS"/>
+    <subjectdef keys="KEYS_only"/>
+    
+    <subjectdef keys="External"/>
+    <subjectdef keys="Internal"/>
+    <subjectdef keys="Hidden"/>
+  </subjectdef>
+  
+  <!-- PRODUCT --> <subjectdef keys="product">
+    
+    <subjectdef keys="ANSS_RedHawk"/>
+    
+    <subjectdef keys="CDNS_PVS"/>
+    <subjectdef keys="CDNS_Spectre"/>
+    <subjectdef keys="CDNS_Voltus"/>
+    <subjectdef keys="CDNS_Voltus-Fi"/>
+    
+    <subjectdef keys="MENT_subset"/>
+    <subjectdef keys="MENT_Calibre"/>
+    <subjectdef keys="MENT_ENCRALL"/> 
+    
+    <subjectdef keys="SNPS_CSRA"/>
+    <subjectdef keys="SNPS_EERC"/>
+    <subjectdef keys="SNPS_GCR"/>
+    <subjectdef keys="SNPS_HSPICE"/>
+    <subjectdef keys="SNPS_ICV"/>
+    
+    <subjectdef keys="Standard"/>
+    <subjectdef keys="EOS"/>
+    
+    <subjectdef keys="External"/>
+    <subjectdef keys="Internal"/>
+    <subjectdef keys="Hidden"/>
+  </subjectdef>
+  
+  <!-- PLATFORM --> <subjectdef keys="platform">
+    
+    <subjectdef keys="1222"/>
+    <subjectdef keys="1225"/>
+    <subjectdef keys="1226"/>
+    <subjectdef keys="1227"/>
+    <subjectdef keys="1231"/>
+    <subjectdef keys="1271"/>
+    <subjectdef keys="1272"/>
+    <subjectdef keys="1273"/>
+    <subjectdef keys="1274"/>
+    <subjectdef keys="1275"/>
+    <subjectdef keys="1276"/>
+    <subjectdef keys="1277"/>
+    <subjectdef keys="1278"/>
+    <subjectdef keys="1279"/>
+    <subjectdef keys="1280"/>
+    
+    <subjectdef keys="External"/>
+    <subjectdef keys="Internal"/>
+    <subjectdef keys="Hidden"/>
+  </subjectdef>
+  
+  <!-- OTHERPROPS (dot-processes) --> <subjectdef keys="otherprops">  
+    
+    <subjectdef keys="dot0"/>
+    <subjectdef keys="dot1"/>
+    <subjectdef keys="dot2"/>
+    <subjectdef keys="dot3"/>
+    <subjectdef keys="dot4"/>
+    <subjectdef keys="dot5"/>
+    <subjectdef keys="dot6"/>
+    <subjectdef keys="dot7"/>
+    <subjectdef keys="dot8"/>
+    <subjectdef keys="dot9"/>
+    
+    <subjectdef keys="dot10"/>
+    <subjectdef keys="dot11"/>
+    <subjectdef keys="dot12"/>
+    <subjectdef keys="dot13"/>
+    <subjectdef keys="dot14"/>
+    <subjectdef keys="dot15"/>
+    <subjectdef keys="dot16"/>
+    <subjectdef keys="dot17"/>
+    <subjectdef keys="dot18"/>
+    <subjectdef keys="dot19"/>
+    
+    <subjectdef keys="dot20"/>
+    <subjectdef keys="dot21"/>
+    <subjectdef keys="dot22"/>
+    <subjectdef keys="dot23"/>
+    <subjectdef keys="dot24"/>
+    <subjectdef keys="dot25"/>
+    <subjectdef keys="dot26"/>
+    <subjectdef keys="dot27"/>
+    <subjectdef keys="dot28"/>
+    <subjectdef keys="dot29"/>
+    
+    <subjectdef keys="dot30"/>
+    <subjectdef keys="dot31"/>
+    <subjectdef keys="dot32"/>
+    <subjectdef keys="dot33"/>
+    <subjectdef keys="dot34"/>
+    <subjectdef keys="dot35"/>
+    <subjectdef keys="dot36"/>
+    <subjectdef keys="dot37"/>
+    <subjectdef keys="dot38"/>
+    <subjectdef keys="dot39"/>
+    
+    <subjectdef keys="dot40"/>
+    <subjectdef keys="dot41"/>
+    <subjectdef keys="dot42"/>
+    <subjectdef keys="dot43"/>
+    <subjectdef keys="dot44"/>
+    <subjectdef keys="dot45"/>
+    <subjectdef keys="dot46"/>
+    <subjectdef keys="dot47"/>
+    <subjectdef keys="dot48"/>
+    <subjectdef keys="dot49"/>
+    
+    <subjectdef keys="dot50"/>
+    <subjectdef keys="dot51"/>
+    <subjectdef keys="dot52"/>
+    <subjectdef keys="dot53"/>
+    <subjectdef keys="dot54"/>
+    <subjectdef keys="dot55"/>
+    <subjectdef keys="dot56"/>
+    <subjectdef keys="dot57"/>
+    <subjectdef keys="dot58"/>
+    <subjectdef keys="dot59"/>
+    
+    <subjectdef keys="dot60"/>
+    <subjectdef keys="dot61"/>
+    <subjectdef keys="dot62"/>
+    <subjectdef keys="dot63"/>
+    <subjectdef keys="dot64"/>
+    <subjectdef keys="dot65"/>
+    <subjectdef keys="dot66"/>
+    <subjectdef keys="dot67"/>
+    <subjectdef keys="dot68"/>
+    <subjectdef keys="dot69"/>
+    
+    <subjectdef keys="dot70"/>
+    <subjectdef keys="dot71"/>
+    <subjectdef keys="dot72"/>
+    <subjectdef keys="dot73"/>
+    <subjectdef keys="dot74"/>
+    <subjectdef keys="dot75"/>
+    <subjectdef keys="dot76"/>
+    <subjectdef keys="dot77"/>
+    <subjectdef keys="dot78"/>
+    <subjectdef keys="dot79"/>
+    
+    <subjectdef keys="dot80"/>
+    <subjectdef keys="dot81"/>
+    <subjectdef keys="dot82"/>
+    <subjectdef keys="dot83"/>
+    <subjectdef keys="dot84"/>
+    <subjectdef keys="dot85"/>
+    <subjectdef keys="dot86"/>
+    <subjectdef keys="dot87"/>
+    <subjectdef keys="dot88"/>
+    <subjectdef keys="dot89"/>
+    
+    <subjectdef keys="dot90"/>
+    <subjectdef keys="dot91"/>
+    <subjectdef keys="dot92"/>
+    <subjectdef keys="dot93"/>
+    <subjectdef keys="dot94"/>
+    <subjectdef keys="dot95"/>
+    <subjectdef keys="dot96"/>
+    <subjectdef keys="dot97"/>
+    <subjectdef keys="dot98"/>
+    <subjectdef keys="dot99"/>
+  </subjectdef>
+</subjectScheme>

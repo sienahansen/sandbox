@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Toc164238149">
+        <title>User
+actions</title>
+        <body>
+          <ol>
+            <li>Open the .simrc file using the text editor, and then comment
+out the first two lines using the ";" character:</li>
+          </ol>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <tbody>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>;cdlNetlistType=’fnl</li>
+                      <li>;auCdlFnlRetainPathInInstAndNets = t</li>
+                    </ol>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+          <ol>
+            <li>Launch Cadence Virtuoso* using the following command:</li>
+          </ol>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <tbody>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>virtuoso &amp;</li>
+                    </ol>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+          <p>The Cadence Virtuoso* session should not be launched before
+changing the .simrc file so that the updates done to the .simrc
+file are in effect for the current session.</p>
+          <ol>
+            <li>In the Library Manager, open the following view for
+reading:</li>
+          </ol>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <tbody>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>
+                        <p>Library: ldk_demo_lib</p>
+                        <p>
+Cell: i0mbfn000aa1d48x5</p>
+                        <p>
+View: schematic</p>
+                      </li>
+                    </ol>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+          <ol>
+            <li>In the Schematic window, select <b>Pegasus</b>
+              <b>&gt;</b>
+              <b>Run SVS…</b> (<xref href="#Toc164238149/Ref153986971">Figure 73</xref>).</li>
+          </ol>
+          <p>
+            <i id="Ref153986971">Figure 74: Run Pegasus SVS</i>
+          </p>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <thead>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>
+                        <image href="media/image80.png">
+                          <alt>A screenshot of a computer Description automatically generated</alt>
+                        </image>
+                      </li>
+                    </ol>
+                  </entry>
+                </row>
+              </thead>
+              <tbody/>
+            </tgroup>
+          </table>
+          <ol>
+
+            <li>In the Cadence Pegasus SVS* window, click <b>Run
+Data</b>, and then type <b>./SVS</b> in the <i>Run
+Directory</i> field (<xref href="#Toc164238149/Ref153986990">Figure 74</xref>).</li>
+          </ol>
+          <p>
+            <i id="Ref153986990">Figure 75: Cadence Pegasus SVS* - Run Data
+section</i>
+          </p>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <thead>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>
+                        <image href="media/image81.png">
+                          <alt>A screenshot of a computer Description automatically generated</alt>
+                        </image>
+                      </li>
+                    </ol>
+                  </entry>
+                </row>
+              </thead>
+              <tbody/>
+            </tgroup>
+          </table>
+          <ol>
+            <li>In the <i>Rules</i> tab, in the text box next to <i>Rules
+File(s)</i>, type:</li>
+          </ol>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <tbody>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>$INTEL_PDK/runsets/pegasus/pvl/lvs.pvl</li>
+                    </ol>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+          <ol>
+            <li>Click <b>Add</b>.</li>
+          </ol>
+          <p>
+            <i id="Toc164238237">Figure 76:
+Adding LVS Rules file</i>
+          </p>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <thead>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>
+                        <image href="media/image82.png"/>
+                      </li>
+                    </ol>
+                  </entry>
+                </row>
+              </thead>
+              <tbody/>
+            </tgroup>
+          </table>
+          <ol>
+            <li>Select the <i>Input</i> tab; in the <i>Schematic Side</i>
+section, change the radio button to <b>Netlist</b>, and
+then click <b>Add</b>.</li>
+            <li>Navigate to ./autoLib/i0mbfn000aa1d48x5, and then click
+<b>i0mbfn000aa1d48x5.cdl</b>.</li>
+          </ol>
+          <p>
+
+            <b>Note:</b> You might have to navigate to the correct
+directory if you used anything other than the default autoLib
+directory when generating CDL files in Section <xref href="netlists_and_physical_views.dita#Ref153178968">2</xref>.</p>
+          <ol>
+            <li>Click <b>Open</b>.</li>
+          </ol>
+          <p>
+            <i id="Toc164238238">Figure 77:
+Selecting CDL Netlist</i>
+          </p>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <thead>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>
+                        <image href="media/image83.png">
+                          <alt>A screenshot of a computer Description automatically generated</alt>
+                        </image>
+                      </li>
+                    </ol>
+                  </entry>
+                </row>
+              </thead>
+              <tbody/>
+            </tgroup>
+          </table>
+
+          <p>Notice that the schematic side has the cdl file that was
+generated in Section <xref href="netlists_and_physical_views.dita#Ref153178968">2</xref> using the
+<i>Auto Lib View Generation</i> utility, and the layout side has
+the DFII schematic view. Cadence Pegasus* SVS compares these
+two.</p>
+          <p>Even though the view is called <i>Layout Side</i>, it is the
+view that is netlisted by Cadence Pegasus*. Because the view that
+is being specified is a schematic view, the schematic view is used
+to create a CDL file for the comparison.</p>
+          <p>
+            <i id="Toc164238239">Figure 78:
+Cadence Pegasus SVS* - Input section</i>
+          </p>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <thead>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>
+                        <image href="media/image84.png">
+                          <alt>A screenshot of a computer Description automatically generated</alt>
+                        </image>
+                      </li>
+                    </ol>
+                  </entry>
+                </row>
+              </thead>
+              <tbody/>
+            </tgroup>
+          </table>
+          <ol>
+            <li>Click <b>Submit</b>. Cadence Pegasus SVS* starts the
+comparison, and then returns a report showing that the schematic
+and CDL netlist match (Figure 78).</li>
+          </ol>
+          <p>
+            <i id="Ref153987246">Figure 79: SVS Match dialog box</i>
+          </p>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <thead>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>
+                        <image href="media/image85.png">
+                          <alt>A screenshot of a computer Description automatically generated</alt>
+                        </image>
+                      </li>
+                    </ol>
+                  </entry>
+                </row>
+              </thead>
+              <tbody/>
+            </tgroup>
+          </table>
+        </body>
+      </topic>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="en-US" id="Terms_and_Conditions">
+  <title/>
+  <body>
+    <p><b>Terms and Conditions</b></p>
+    <p>Intel Foundry (“Intel”) provides the information in this document in connection with the
+      evaluation, provision, or sale of Intel services and products.</p>
+    <p>No license, express or implied, by estoppel or otherwise, to any intellectual property rights
+      is granted by this document. Except as provided in service contracts for Intel services or in
+      Intel’s Terms and Conditions of sale or use for Intel products, Intel assumes no liability
+      whatsoever in connection with its provision of this document. Intel disclaims any express or
+      implied warranty, relating to sale and/or use of Intel services and products, including
+      liability or warranties relating to fitness for a particular purpose, merchantability, or
+      infringement of any patent, copyright, or other intellectual property right.</p>
+    <p>Except as otherwise explicitly and contractually provided, products manufactured, packaged,
+      or otherwise processed by Intel Foundry are not intended for use in medical, lifesaving, or
+      life sustaining applications.</p>
+    <p>Intel may make changes to its process and/or product specifications or descriptions at any
+      time, without notice.</p>
+    <p>The information contained in this document may not apply to the Intel service or product that
+      you are evaluating, including for reasons of future purchase or interoperability, or have
+      purchased or intend to purchase from Intel. Further, multiple versions of this document may
+      exist, including newer versions that may or may not be applicable to the Intel service or
+      product of relevance to you. It is your responsibility to identify the Intel document and
+      document version that will meet your needs. Intel assumes no liability whatsoever in
+      connection with your use of or reliance on information herein arising by mistake, including
+      mistakes in document identification.</p>
+    <p>You may not rely on the absence or characteristics of any features or instructions marked
+      "reserved," "undefined," “evaluation,” or otherwise identified for inclusion or modification
+      in a future version or release. Intel reserves such markings for potential future definition
+      and is not responsible or liable for conflicts or incompatibilities arising from inappropriate
+      reliance.</p>
+    <p>Intel services or products may contain modifications, revisions, addendums, change summaries,
+      known issue identifications, defects or errors known as errata that may cause the service or
+      product to deviate from previously published specifications. All such changes or errata are
+      available on request.</p>
+    <p>Contact your local Intel representative, sales office, or distributor to obtain the latest
+      applicable specifications before placing any order for Intel services or products.</p>
+    <p>Copyright © Intel Corporation</p>
+    <p>Intel, Intel Foundry, and related Intel logos are trademarks of Intel Corporation in the U.S.
+      and other countries.</p>
+    <p>* Other names and brands may be claimed as the property of others.</p>
+    <p> </p>
+  </body>
+</topic>

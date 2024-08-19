@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Toc164238108">
+      <title>Timing
+(Liberty)</title>
+      <body>
+        <p>The Liberty timing view is a high-level representation of the
+timing of the standard cell. It also contains a model of the
+cell’s power consumption. The Liberty model is used by STA
+(Static Path Timing Analysis) tools, such as Cadence Innovus* and
+Cadence Tempus* for chip-level timing analysis. It is also used by
+Power Analysis tools such as Cadence Voltus* for chip-level power
+analysis.</p>
+        <p>Cadence Liberate* is the Cadence* library characterization tool
+that creates the Liberty timing view (.lib file) for standard
+cells. In this demonstration, Cadence Liberate* is used to
+characterize several cells from an existing Intel i0m standard cell
+library.</p>
+        <p>The standard cell characterization is a two-step process:</p>
+        <ol>
+          <li>Generate template, user data, and other characterization setup
+files.</li>
+        </ol>
+        <ul>
+          <li>
+            <ul>
+              <li>The template file defines the information needed for the
+cell’s characterization.</li>
+              <li>Basic cell information, such as pin name, pin direction, pin
+type (if it is a clock pin, asynchronous reset or set), supply
+pins, and so on</li>
+              <li>Arc’s table size and index values</li>
+              <li>Optionally, you can manually specify the cell arcs (delay,
+constraint, power, and so on). For a typical standard cell, Cadence
+Liberate* automatically determines the cell’s function and
+necessary characterization arcs. Manual arc definition is only done
+for special cells that Cadence Liberate* does not recognize.</li>
+              <li>The user data file contains information in .lib file that
+cannot be determined through characterization data, such as cell or
+pin attributes. One example would be cell area. The user data file
+is used when Cadence Liberate* generates the final .lib files.</li>
+            </ul>
+          </li>
+        </ul>
+        <ol>
+          <li>Run characterization. In the small cell list, 5 of the 7 cells
+are in library base_ulvt. The other two cells (a latch and a
+flip-flop) are in library seq_ulvt. Thus, the demonstration directs
+you to perform two characterization runs (one for each
+library).</li>
+        </ol>
+      </body>
+    </topic>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE val PUBLIC "-//OASIS//DTD DITA DITAVAL//EN" "ditaval.dtd">
+<val>
+  
+  <prop action="flag" att="audience" val="ANSYS"             backcolor="#FAEFBD" color="#804030"/>
+  <prop action="flag" att="audience" val="ANSS_only"         backcolor="#e8e8e0" color="#804030"/>
+  <prop action="flag" att="product"  val="ANSS_RedHawk"      backcolor="#FFD890" color="#804030"/>
+  
+  <prop action="flag" att="audience" val="Cadence"           backcolor="#fce8eb" color="#e31837"/>
+  <prop action="flag" att="audience" val="CDNS_only"         backcolor="#dddddd" color="#e31837"/>
+  <prop action="flag" att="product"  val="CDNS_PVS"          backcolor="#E2CACA" color="#e31837"/>
+  <prop action="flag" att="product"  val="CDNS_Spectre"      backcolor="#ffc8c0" color="#e31837"/>
+  <prop action="flag" att="product"  val="CDNS_Voltus"       backcolor="#FFF4EE" color="#e31837"/>
+  <prop action="flag" att="product"  val="CDNS_Voltus-Fi"    backcolor="#F9DFCF" color="#e31837"/>
+  
+  <prop action="flag" att="audience" val="KEYS"              backcolor="#f9f9f9" color="#660000"/>
+  
+  <prop action="flag" att="audience" val="Mentor"            backcolor="#e6f7f7" color="#00aaad"/>
+  <prop action="flag" att="audience" val="MENT_only"         backcolor="#dddddd" color="#00aaad"/>
+  <prop action="flag" att="product"  val="MENT_subset"       backcolor="#eeeeee" color="#00aaad"/>
+  <prop action="flag" att="product"  val="MENT_ENCRALL"      backcolor="#e0ffff" color="#00aaad"/>
+  <prop action="flag" att="product"  val="MENT_Calibre"      backcolor="#f0ffff" color="#00aaad"/>
+  
+  <prop action="flag" att="audience" val="Synopsys"          backcolor="#efeaf3" color="#5b2b82"/>
+  <prop action="flag" att="audience" val="SNPS_only"         backcolor="#dddddd" color="#5b2b82"/>
+  <prop action="flag" att="product"  val="SNPS_CSRA"         backcolor="#e6fcfa" color="#5b2b82"/>
+  <prop action="flag" att="product"  val="SNPS_EERC"         backcolor="#ECECFF" color="#5b2b82"/>
+  <prop action="flag" att="product"  val="SNPS_GCR"          backcolor="#f0ecff" color="#5b2b82"/>
+  <prop action="flag" att="product"  val="SNPS_HSPICE"       backcolor="#dfefff" color="#5b2b82"/>
+  <prop action="flag" att="product"  val="SNPS_ICV"          backcolor="#FDEBFF" color="#5b2b82"/>
+  
+  <prop action="flag" att="audience" val="Customer_only"     backcolor="#cfff8f" color="black"/>
+  <prop action="flag" att="audience" val="External_only"     backcolor="#beeabe" color="black"/>
+  <prop action="flag" att="audience" val="modular"           backcolor="#94E8FF" color="black"/>
+  <prop action="flag" att="audience" val="ANDOR"             backcolor="#aaaa88" color="black"/>
+  <prop action="flag" att="audience" val="confidential"      backcolor="#77dc66" color="black"/>
+  <prop action="flag" att="audience" val="top-secret"        backcolor="#f37766" color="black"/>
+  <prop action="flag" att="audience" val="PDF"               backcolor="#f6ff64" color="black"/>
+  <prop action="flag" att="audience" val="web"               backcolor="#d0eeff" color="black"/>
+  
+  <prop action="flag" att="audience" val="External"          backcolor="#6fdfff"/>
+  <prop action="flag" att="platform" val="External"          backcolor="#6fdfff"/>
+  <prop action="flag" att="product"  val="External"          backcolor="#6fdfff"/>
+  
+  <prop action="flag" att="audience" val="Internal"          backcolor="#FFCF6F"/>
+  <prop action="flag" att="platform" val="Internal"          backcolor="#FFCF6F"/>
+  <prop action="flag" att="product"  val="Internal"          backcolor="#FFCF6F"/>
+  
+  <prop action="flag" att="audience" val="Hidden"            backcolor="#9f9f9f"/>
+  <prop action="flag" att="platform" val="Hidden"            backcolor="#9f9f9f"/>
+  <prop action="flag" att="product"  val="Hidden"            backcolor="#9f9f9f"/>
+  
+  <!--platforms-->
+  
+  <prop action="flag" att="platform" val="1222"              backcolor="#F7F3C5"/>
+  <prop action="flag" att="platform" val="1227"              backcolor="#D9FFC7"/>
+  <prop action="flag" att="platform" val="1231"              backcolor="#efffff"/>
+  <prop action="flag" att="platform" val="1271"              backcolor="#eaf2d9"/>
+  <prop action="flag" att="platform" val="1272"              backcolor="#cab8b6"/>
+  <prop action="flag" att="platform" val="1273"              backcolor="#ffe5ff"/>
+  <prop action="flag" att="platform" val="1274"              backcolor="#F2D9CF"/>
+  <prop action="flag" att="platform" val="1275"              backcolor="#cfedfc"/>
+  <prop action="flag" att="platform" val="1276"              backcolor="#C0FFEE"/>
+  <prop action="flag" att="platform" val="1277"              backcolor="#E4E8ED"/>
+  <prop action="flag" att="platform" val="1278"              backcolor="#FFE8D8"/>
+  <prop action="flag" att="platform" val="1279"              backcolor="#b4e8fc"/>
+  <prop action="flag" att="platform" val="1280"              backcolor="#decade"/>
+  
+  <!--otherprops-->
+  
+  <prop action="flag" att="otherprops" val="dot0"            backcolor="#cffccf"/>
+  <prop action="flag" att="otherprops" val="dot1"            backcolor="#f9e586"/>
+  <prop action="flag" att="otherprops" val="dot2"            backcolor="#cceffc"/>
+  <prop action="flag" att="otherprops" val="dot3"            backcolor="#CAFACA"/>
+  <prop action="flag" att="otherprops" val="dot4"            backcolor="#ffd199"/>
+  <prop action="flag" att="otherprops" val="dot5"            backcolor="#c2d2db"/>
+  <prop action="flag" att="otherprops" val="dot6"            backcolor="#DFFFBF"/>
+  <prop action="flag" att="otherprops" val="dot7"            backcolor="#E8FF9E"/>
+  <prop action="flag" att="otherprops" val="dot8"            backcolor="#e5cdc8"/>
+  <prop action="flag" att="otherprops" val="dot9"            backcolor="#FDD0AA"/>
+  
+  <prop action="flag" att="otherprops" val="dot10"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot11"           backcolor="#e6f7f7"/>
+  <prop action="flag" att="otherprops" val="dot12"           backcolor="#ffffcc"/>
+  <prop action="flag" att="otherprops" val="dot13"           backcolor="#deddc9"/>
+  <prop action="flag" att="otherprops" val="dot14"           backcolor="#DDDEED"/>
+  <prop action="flag" att="otherprops" val="dot15"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot16"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot17"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot18"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot19"           backcolor="#FFDDC6"/>
+  
+  <prop action="flag" att="otherprops" val="dot20"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot21"           backcolor="#d0ccff"/>
+  <prop action="flag" att="otherprops" val="dot22"           backcolor="#cceef0"/>
+  <prop action="flag" att="otherprops" val="dot23"           backcolor="#ffbbff"/>
+  <prop action="flag" att="otherprops" val="dot24"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot25"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot26"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot27"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot28"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot29"           backcolor="#edcdcd"/>
+  
+  <prop action="flag" att="otherprops" val="dot30"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot31"           backcolor="#FBDBEB"/>
+  <prop action="flag" att="otherprops" val="dot32"           backcolor="#FFFCCC"/>
+  <prop action="flag" att="otherprops" val="dot33"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot34"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot35"           backcolor="#c4def5"/>
+  <prop action="flag" att="otherprops" val="dot36"           backcolor="#ECEFD7"/>
+  <prop action="flag" att="otherprops" val="dot37"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot38"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot39"           backcolor="#222200"/>
+  
+  <prop action="flag" att="otherprops" val="dot40"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot41"           backcolor="#ecffb2"/>
+  <prop action="flag" att="otherprops" val="dot42"           backcolor="#c8f8d8"/>
+  <prop action="flag" att="otherprops" val="dot43"           backcolor="#F6E7E4"/>
+  <prop action="flag" att="otherprops" val="dot44"           backcolor="#E0D0E0"/>
+  <prop action="flag" att="otherprops" val="dot45"           backcolor="#DFF4FF"/>
+  <prop action="flag" att="otherprops" val="dot46"           backcolor="#ddddcd"/>
+  <prop action="flag" att="otherprops" val="dot47"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot48"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot49"           backcolor="#222200"/>
+  
+  <prop action="flag" att="otherprops" val="dot50"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot51"           backcolor="#E0E0A3"/>
+  <prop action="flag" att="otherprops" val="dot52"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot53"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot54"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot55"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot56"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot57"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot58"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot59"           backcolor="#222200"/>
+  
+  <prop action="flag" att="otherprops" val="dot60"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot61"           backcolor="#ccff99"/>
+  <prop action="flag" att="otherprops" val="dot62"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot63"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot64"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot65"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot66"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot67"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot68"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot69"           backcolor="#222200"/>
+  
+  <prop action="flag" att="otherprops" val="dot70"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot71"           backcolor="#7fddff"/>
+  <prop action="flag" att="otherprops" val="dot72"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot73"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot74"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot75"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot76"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot77"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot78"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot79"           backcolor="#222200"/>
+  
+  <prop action="flag" att="otherprops" val="dot80"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot81"           backcolor="#f0b694"/>
+  <prop action="flag" att="otherprops" val="dot82"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot83"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot84"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot85"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot86"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot87"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot88"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot89"           backcolor="#222200"/>
+  
+  <prop action="flag" att="otherprops" val="dot90"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot91"           backcolor="#eeeeaa"/>
+  <prop action="flag" att="otherprops" val="dot92"           backcolor="#aaeeee"/>
+  <prop action="flag" att="otherprops" val="dot93"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot94"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot95"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot96"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot97"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot98"           backcolor="#222200"/>
+  <prop action="flag" att="otherprops" val="dot99"           backcolor="#222200"/>
+  
+  <!--LTD-->
+  
+  <prop action="flag" att="audience" val="custom"            backcolor="#f3de80" color="black"/>
+  <prop action="flag" att="audience" val="icv"               backcolor="#f8c8ff" color="black"/>
+  <prop action="flag" att="audience" val="libana"            backcolor="#f0c070" color="black"/>
+  <prop action="flag" att="audience" val="sram"              backcolor="#d9f69d" color="black"/>
+  <prop action="flag" att="audience" val="tic"               backcolor="#a4acff" color="black"/>
+  
+  <prop action="flag" att="product"  val="cdl"               backcolor="#b8ffff" color="black"/>
+  <prop action="flag" att="product"  val="celldb"            backcolor="#e6dd88" color="black"/>
+  <prop action="flag" att="product"  val="doc"               backcolor="#dfefff" color="#0071c5"/>
+  <prop action="flag" att="product"  val="hspice"            backcolor="#78f488" color="black"/>
+  <prop action="flag" att="product"  val="lidb"              backcolor="#f8ffd8" color="black"/>
+  <prop action="flag" att="product"  val="lnf"               backcolor="#b0ffe8" color="black"/>
+  <prop action="flag" att="product"  val="oalibs"            backcolor="#98c6e6" color="black"/>
+  <prop action="flag" att="product"  val="oasis"             backcolor="#fccf9c" color="black"/>
+  <prop action="flag" att="product"  val="pcell"             backcolor="#f8f810" color="black"/>
+  <prop action="flag" att="product"  val="pycell"            backcolor="#d5bede" color="black"/>
+  <prop action="flag" att="product"  val="spectre"           backcolor="#f8cdd0" color="black"/>
+</val>

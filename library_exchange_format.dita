@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Toc164238117">
+      <title>Library
+Exchange Format</title>
+      <body>
+        <p>LEF (Library Exchange Format) defines the elements of IC process
+technology and the associated library of cell models. DEF (Design
+Exchange Format) defines the elements of an IC design relevant to
+the physical layout, including the netlist and design constraints.
+The LEF and DEF files allow the exchange of placement and routing
+information with various databases using the LEF/DEF translators.
+For more information on LEF and DEF, see the LEF/DEF Language
+Reference.</p>
+        <p>The placement and routing tools on the OpenAccess database read
+and write LEF and DEF files using the core OpenAccess LEF/DEF
+translator. The CIC customized OpenAccess LEF/DEF translator is
+written as a Cadence Virtuoso* Studio design environment-specific
+application for these translators.</p>
+        <p>Once the layout abstracts have been created with AG, the LEF
+translator creates the standard cell LEF files.</p>
+      </body>
+    </topic>

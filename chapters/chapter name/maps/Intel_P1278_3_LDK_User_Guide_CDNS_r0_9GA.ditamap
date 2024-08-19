@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd" []>
+<bookmap id="Intel_P1278_02_PDK_User_Guide">
+  <booktitle>
+    <mainbooktitle>P12<keyword keyref="process"/>.<keyword keyref="dotprocess"/>
+      <keyword keyref="brand"/> PDK <keyword keyref="releasenum"/> Library Development Kit<ph
+        audience="CDNS_only"> for Cadence Tools</ph><ph audience="Internal">
+      — INTERNAL ONLY</ph></mainbooktitle>
+  </booktitle>
+  <bookmeta>
+    <author>Intel Corporation</author>
+    <critdates>
+      <revised modified="August 2024"/>
+    </critdates>
+
+    <othermeta name="Document Category" content="User Guide"/>
+    <othermeta name="Legal Classification" audience="confidential" content="Intel Confidential"/>
+    <othermeta name="Legal Classification" audience="top-secret" content="Intel Top Secret"/>
+    <bookchangehistory>
+      <approved>
+        <revisionid>1.0</revisionid>
+      </approved>
+    </bookchangehistory>
+  </bookmeta>
+
+  <frontmatter>
+    <keydef keys="process">
+      <topicmeta>
+        <keywords>
+          <keyword>78</keyword>
+        </keywords>
+      </topicmeta>
+    </keydef>
+    <keydef keys="dotprocess">
+      <topicmeta>
+        <keywords>
+          <keyword>3</keyword>
+        </keywords>
+      </topicmeta>
+    </keydef>
+    <keydef keys="dotNumber">
+      <topicmeta>
+        <keywords>
+          <keyword>Three</keyword>
+        </keywords>
+      </topicmeta>
+    </keydef>
+    <keydef keys="releasenum">
+      <topicmeta>
+        <keywords>
+          <keyword>0.9GA</keyword>
+        </keywords>
+      </topicmeta>
+    </keydef>
+    <keydef keys="kitname">
+      <topicmeta>
+        <keywords>
+          <keyword>pdk783_r0.9GA</keyword>
+        </keywords>
+      </topicmeta>
+    </keydef>
+    <keydef keys="brand">
+      <topicmeta>
+        <keywords>
+          <keyword>(Intel 18A)</keyword>
+        </keywords>
+      </topicmeta>
+    </keydef>
+    <keydef keys="SurveyLink" href="https://intel.az1.qualtrics.com/jfe/form/SV_397NeIs86Tj9RwG"
+      format="html" scope="external"/>
+    <topicref href="../../../frontmatter/terms-and-conditions.dita"/>
+    <topicref href="../../../frontmatter/revhistory.dita"/>
+    <booklists>
+      <toc/>
+      <tablelist/>
+      <figurelist/>
+    </booklists>
+    <topicref href="../../../frontmatter/common_scheme.ditamap" format="ditamap"/>
+  </frontmatter>
+
+  <chapter>
+    <topicref href="../../../user_actions.dita"/>
+    <topicref href="../../../user_actions1.dita"/>
+    <topicref href="../../../user_actions2.dita"/>
+    <topicref href="../../../user_actions3.dita"/>
+    <topicref href="../../../view_check_command_reference.dita"/>
+    <topicref href="../../../warning_explanations.dita"/>
+    <topicref href="../../../abstract_step.dita"/>
+    <topicref href="../../../auto_lib_view_generation_form.dita"/>
+    <topicref href="../../../cad_tools.dita"/>
+    <topicref href="../../../cadence_pegasus_fastxor.dita"/>
+    <topicref href="../../../characterization_unified,_mpvt.dita"/>
+    <topicref href="../../../circuit_description_language.dita"/>
+    <topicref href="../../../compute_resources.dita"/>
+    <topicref href="../../../container_cell_generation.dita"/>
+    <topicref href="../../../creating_the_demonstration_library.dita"/>
+    <topicref href="../../../cross_view_check.dita"/>
+    <topicref href="../../../customization_of_the_abstract_generation_flow.dita"/>
+    <topicref href="../../../demonstration.dita"/>
+    <topicref href="../../../demonstration1.dita"/>
+    <topicref href="../../../demonstration2.dita"/>
+    <topicref href="../../../demonstration3.dita"/>
+    <topicref href="../../../distributed_processing_setup_netbatch_distribution.dita"/>
+    <topicref href="../../../environment_pre-setup_for_administrator.dita"/>
+    <topicref href="../../../environment_setup_for_lab_user.dita"/>
+    <topicref href="../../../environment_variables_for_ldk_setup.dita"/>
+    <topicref href="../../../exporting_lef.dita"/>
+    <topicref href="../../../extract_step.dita"/>
+    <topicref href="../../../flow_testing_standard_cells.dita"/>
+    <topicref href="../../../generate_template.dita"/>
+    <topicref href="../../../generate_verilog_model_library_base_ulvt.dita"/>
+    <topicref href="../../../generate_verilog_model_library_seq_ulvt.dita"/>
+    <topicref href="../../../getting_started.dita"/>
+    <topicref href="../../../intel_p1278_3_ldk_user_guide_cdns_r0_9ga.dita"/>
+    <topicref href="../../../introduction.dita"/>
+    <topicref href="../../../layout_abstracts.dita"/>
+    <topicref href="../../../layout_abstracts_and_lef_files.dita"/>
+    <topicref href="../../../layout_summary_report_comparison_optional.dita"/>
+    <topicref href="../../../layout_versus_schematic_gds_versus_cdl.dita"/>
+    <topicref href="../../../ldk_directory_structure.dita"/>
+    <topicref href="../../../liberate_shell_environment_variable_setup.dita"/>
+    <topicref href="../../../library_characterization_kit_lck.dita"/>
+    <topicref href="../../../library_exchange_format.dita"/>
+    <topicref href="../../../lvs.dita"/>
+    <topicref href="../../../mode_gdscdl_generation.dita"/>
+    <topicref href="../../../mode_spef_generation.dita"/>
+    <topicref href="../../../monte_carlo_flow.dita"/>
+    <topicref href="../../../netlists_and_physical_views.dita"/>
+    <topicref href="../../../oasis_design_file_oasis.dita"/>
+    <topicref href="../../../options_file.dita"/>
+    <topicref href="../../../overview.dita"/>
+    <topicref href="../../../overview1.dita"/>
+    <topicref href="../../../overview2.dita"/>
+    <topicref href="../../../overview3.dita"/>
+    <topicref href="../../../overview4.dita"/>
+    <topicref href="../../../parasitic_extraction_and_spef_generation.dita"/>
+    <topicref href="../../../pins_step.dita"/>
+    <topicref href="../../../power_grid_library.dita"/>
+    <topicref href="../../../power_grid_views_qa.dita"/>
+    <topicref href="../../../pre-requisite.dita"/>
+    <topicref href="../../../qa_liberty.dita"/>
+    <topicref href="../../../quality_assurance_qa.dita"/>
+    <topicref href="../../../required_collateral.dita"/>
+    <topicref href="../../../reset_ldk_work_area_procedure.dita"/>
+    <topicref href="../../../run_characterization_library_base_ulvt.dita"/>
+    <topicref href="../../../run_characterization_library_seq_ulvt.dita"/>
+    <topicref href="../../../schematic_versus_cdl.dita"/>
+    <topicref href="../../../setting_up_the_library_development_kit.dita"/>
+    <topicref href="../../../setting_up_the_pdk.dita"/>
+    <topicref href="../../../setup_environment_and_run_directory.dita"/>
+    <topicref href="../../../setup_environment_and_run_directory1.dita"/>
+    <topicref href="../../../setup_environment_and_run_directory2.dita"/>
+    <topicref href="../../../stream_file_gdsii.dita"/>
+    <topicref href="../../../template_creation_gentemp.dita"/>
+    <topicref href="../../../terminology.dita"/>
+    <topicref href="../../../timing_liberty.dita"/>
+    <topicref href="../../../timing_liberty_and_verilog.dita"/>
+    <topicref href="../../../timing_liberty_qa.dita"/>
+    <topicref href="../../../types_of_power_grid_views.dita"/>
+  </chapter>
+</bookmap>
