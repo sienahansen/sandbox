@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Ref153182110">
+      <title>Warning explanations</title>
+      <body>
+        <table colsep="1" frame="all" id="Toc164238172" rowsep="1">
+          <title>Table
+20: Warning explanations</title>
+          <tgroup cols="2">
+            <colspec colname="col1" colnum="1" colwidth="0.5*"/>
+            <colspec colname="col2" colnum="2" colwidth="1.5*"/>
+            <thead>
+              <row>
+                <entry>Warning</entry>
+                <entry>Description</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry>
+                  <ol>
+                    <li>**WARN: (IMPLF-200/201)</li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>Related to the antenna rules. This is a known issue and will be
+addressed in a future release.</li>
+                  </ol>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <ol>
+                    <li>**WARN: (VOLTUS_LGEN-3087)</li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>Can be ignored because we use the following option:</li>
+                    <li>-design_qrc_layer_map
+${pdk_release_path}/extraction/qrc/asic/${metal_stack}/asic.qrc.map</li>
+                    <li>This covers all the routing layers in the tech node. Other
+items not covered are ignored as they not extracted for ASIC flow
+anyway.</li>
+                  </ol>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <ol>
+                    <li>** WARN: (VOLTUS_LSIM-5004)</li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>X2.mM22:b bulk node is not connected to a voltage source.</li>
+                    <li>These warnings can happen due to the following scenarios:</li>
+                  </ol>
+                  <ul>
+                    <li>A bulk node is connected to a pin that is not present at the
+hierarchy level that we are using</li>
+                    <li>A bulk node is actually floating</li>
+                  </ul>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <p>To verify if these warnings are legitimate, view the SPEF file
+manually and check whether the bulk is floating. In this case, they
+are not floating and these warnings can be ignored. Usually, if a
+cell is LVS-clean, these warnings are ignorable. There are cases
+where they are floating and LVS cannot catch it, so it is
+recommended to always check.</p>
+      </body>
+    </topic>

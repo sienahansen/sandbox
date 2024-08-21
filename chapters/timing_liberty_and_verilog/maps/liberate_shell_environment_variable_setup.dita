@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Toc169527015">
+        <title>Liberate shell environment variable
+setup</title>
+        <body>
+          <p>Use the following variables Liberate shell environment variables
+to set up the Liberate environment:</p>
+          <p>
+            <b>ALTOSHOME:</b> Liberate install path:</p>
+          <p>setenv ALTOSHOME &lt;Liberate install path&gt;</p>
+          <p>
+            <b>PATH:</b> Add Liberate executable path to shell
+search path:</p>
+          <p>setenv PATH $ALTOSHOME.bin:$PATH</p>
+          <p>
+            <b>CDS_AUTO_64BI</b>T: Use 64bit executable for both
+Liberate and Spectre:</p>
+          <p>setenv CDS_AUTO_64BIT ALL</p>
+          <p>
+            <b>CDS_LIC_FI</b>LE: Specify license server; syntax =
+port@hostname:</p>
+          <p>setenv CDS_LIC_FILE 5280@linws21</p>
+          <p>
+            <b>ALTOS_QUEUE:</b> Enable license queuing:</p>
+          <p>setenv ALTOS_QUEUE 1</p>
+        </body>
+      </topic>

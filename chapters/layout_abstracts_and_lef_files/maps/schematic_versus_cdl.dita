@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Toc164238147">
+      <title>Schematic
+versus CDL</title>
+      <body>
+        <p>Schematic versus CDL is run using the Cadence Pegasus SVS*
+utility to ensure the exactness of the generated CDL file. This
+section provides instructions to run schematic versus CDL using
+Cadence Pegasus* on one cell in the ldk_demo_lib library.</p>
+      </body>
+      
+      
+    </topic>

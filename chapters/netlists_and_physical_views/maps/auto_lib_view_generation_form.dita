@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Ref153185857">
+        <title>Auto Lib View
+Generation form</title>
+        <body>
+          <p>
+            <xref href="#Ref153185857/Ref152950521">Figure 6</xref> is the default view for
+the Auto Lib View Generation form. For this LDK module, there are
+several defaults to assist in the autoLib generation in the P1278
+Technology already present in the form.</p>
+          <p>
+            <i id="Ref152950521">Figure 7: Default view for the Auto Lib View
+Generation form</i>
+          </p>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <thead>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>
+                        <image href="media/image8.png">
+                          <alt>A screenshot of a computer Description automatically generated</alt>
+                        </image>
+                      </li>
+                    </ol>
+                  </entry>
+                </row>
+              </thead>
+              <tbody/>
+            </tgroup>
+          </table>
+          <p>
+            <b>Mode:</b>
+          </p>
+          <ul>
+            <li>
+              <ul>
+                <li>There are four Modes for output generation (<xref href="#Ref153185857/Ref153272519">Figure 7</xref>):</li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <ul>
+                <li>GDS for the entire library</li>
+                <li>OASIS for the entire library</li>
+                <li>CDL for the entire library</li>
+                <li>SPEF or Cell.spf for each cell in the library</li>
+              </ul>
+            </li>
+          </ul>
+          <p>
+            <i id="Ref153272519">Figure 8: Mode options for output
+generation</i>
+          </p>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <thead>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>
+                        <image href="media/image9.png">
+                          <alt>A screenshot of a computer Description automatically generated</alt>
+                        </image>
+                      </li>
+                    </ol>
+                  </entry>
+                </row>
+              </thead>
+              <tbody/>
+            </tgroup>
+          </table>
+          <p>Each output mode can be run independently or there are two
+options for combined modes. The SPEF mode generates a container
+cell from library layout and calls in layout_extract. Cadence
+Pegasus* LVS is run on this container cell to generate needed
+information for Cadence Quantus* extraction and .spf
+generation.</p>
+          <ul>
+            <li>
+              <b>Run Type:</b>
+            </li>
+          </ul>
+
+          <p>There are two options for Run Type to specify a cell list for
+the autoLib to work with (<xref href="#Ref153185857/Ref153535180">Figure
+8</xref>).</p>
+          <ul>
+            <li>
+              <ul>
+                <li>
+                  <b>All cells in lib:</b> The entire set of cells from
+the library specified in the <i>Lib</i> field are run for the
+specified modes.</li>
+                <li>
+                  <b>Input file:</b> Selected operations are only
+performed on the lib/cell pairs listed in the file.</li>
+              </ul>
+            </li>
+          </ul>
+          <p>
+            <i id="Ref153535180">Figure 9: Run Type options</i>
+          </p>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <thead>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>
+                        <image href="media/image10.png">
+                          <alt>A screenshot of a computer Description automatically generated</alt>
+                        </image>
+                      </li>
+                    </ol>
+                  </entry>
+                </row>
+              </thead>
+              <tbody/>
+            </tgroup>
+          </table>
+
+          <p>The Input file should contain only two columns of lib and cell
+names. <xref href="#Ref153185857/Ref153272627">Figure 9</xref> shows the libCellFile
+provided in the current working directory:</p>
+          <p>
+            <i id="Ref153272627">Figure 10: Input file example file
+structure</i>
+          </p>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <thead>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>
+                        <image href="media/image11.png">
+                          <alt>A black background with white letters Description automatically generated</alt>
+                        </image>
+                      </li>
+                    </ol>
+                  </entry>
+                </row>
+              </thead>
+              <tbody/>
+            </tgroup>
+          </table>
+        </body>
+        
+        
+      </topic>

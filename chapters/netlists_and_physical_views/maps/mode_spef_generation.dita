@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Ref153186225">
+          <title>Mode SPEF
+generation</title>
+          <body>
+            <p>SPEF (.spf) file generation is only run on one set of PVT
+corners at a time. The file is of dspf format but referred to as
+SPEF in this LDK. To enable automation for each cell in a library
+or Input file, a qrc_cmd.template file is used by the autoLib
+utility to customize the command file for each cell when running
+Cadence Quantus*.</p>
+            <ol>
+
+              <li>Using your preferred editor, open the ./qrc_cmd.template file.
+This file requires very little editing and only when switching
+between the two covered PVT corners in the delivery directory. View
+the area for process_technology (<xref href="#Ref153186225/Ref152950861">Figure
+14</xref>). Close the file when done viewing.</li>
+            </ol>
+            <p>
+              <i id="Ref152950861">Figure 15: Technology section of
+qrc_cmd.template file</i>
+            </p>
+            <table colsep="1" frame="all" rowsep="1">
+              <tgroup cols="1">
+                <colspec colname="col1" colnum="1" colwidth="1*"/>
+                <thead>
+                  <row>
+                    <entry>
+                      <ol>
+                        <li>
+                          <image href="media/image17.png">
+                            <alt>A black background with white text Description automatically generated</alt>
+                          </image>
+                        </li>
+                      </ol>
+                    </entry>
+                  </row>
+                </thead>
+                <tbody/>
+              </tgroup>
+            </table>
+            <p>
+
+              <b>Note:</b> You can use other corners in the SPEF
+generation operation, however, the other corners are not available
+in the delivery directory. Ensure the <i>Copy to delivery dir</i>
+option is deselected if corners other than those listed in the
+delivery directory are used. Other corners are written in the
+specified Run dir (<xref href="#Ref153186225/Ref153269863">Figure 15</xref>).</p>
+            <p>
+              <i id="Ref153269863">Figure 16: Delivery directory structure</i>
+            </p>
+            <table colsep="1" frame="all" rowsep="1">
+              <tgroup cols="1">
+                <colspec colname="col1" colnum="1" colwidth="1*"/>
+                <thead>
+                  <row>
+                    <entry>
+                      <ol>
+                        <li>
+                          <image href="media/image18.png">
+                            <alt>A black background with white text Description automatically generated</alt>
+                          </image>
+                        </li>
+                      </ol>
+                    </entry>
+                  </row>
+                </thead>
+                <tbody/>
+              </tgroup>
+            </table>
+            <ol>
+              <li>SPEF generation requires Cadence Pegasus* LVS to be run before
+Cadence Quantus* extraction. The autoLib utility needs the full
+path to the lvs.pvl.</li>
+            </ol>
+            <p>In the UNIX window enter the following:</p>
+            <table colsep="1" frame="all" rowsep="1">
+              <tgroup cols="1">
+                <colspec colname="col1" colnum="1" colwidth="1*"/>
+                <tbody>
+                  <row>
+                    <entry>
+                      <ol>
+                        <li>echo $INTEL_PDK/runsets/pegasus/pvl/lvs.pvl</li>
+                      </ol>
+                    </entry>
+                  </row>
+                </tbody>
+              </tgroup>
+            </table>
+            <p>The output in the UNIX terminal is the
+&lt;full_path_to_lvs.pvl&gt; for the loaded PDK.</p>
+            <p>Copy/paste the full path into the <i>LVS rules file</i> field
+of the <i>Auto Lib View Generation</i> UI.</p>
+            <ol>
+              <li>If the Auto Lib View Generation form was closed, select
+<b>Bindkey</b> &lt;F10&gt;.</li>
+            </ol>
+            <p>If running subsequent operations, it is recommended to use
+<b>Apply</b> instead of <b>OK</b> on the form
+to retain entry field values.</p>
+            <ol>
+              <li>See <xref href="#Ref153186225/Ref152950927">Figure 16</xref> for the values for
+the Auto Lib View Generation form. The <i>Run type</i> is now
+<b>All cells in lib</b>. Choose
+<b>ldk_demo_lib</b> from the <i>Lib</i> menu. Select
+<b>SPEF</b> from the <i>Mode</i> menu and ensure
+<b>Copy to delivery dir</b> is selected. Set <i>QTS gnd
+net</i> to <b>vssx</b>.</li>
+            </ol>
+            <p>
+              <i id="Ref152950927">Figure 17: Auto Lib View Generation form in
+SPEF mode</i>
+            </p>
+            <table colsep="1" frame="all" rowsep="1">
+              <tgroup cols="1">
+                <colspec colname="col1" colnum="1" colwidth="1*"/>
+                <thead>
+                  <row>
+                    <entry>
+                      <image href="media/image19.png">
+                        <alt>A screenshot of a computer Description automatically generated</alt>
+                      </image>
+                    </entry>
+                  </row>
+                </thead>
+                <tbody/>
+              </tgroup>
+            </table>
+            <ol>
+
+              <li>C lick <b>Apply</b>. Several messages display in the
+CIW. The first operation is to create a container cell. A GDS is
+output for &lt;cell&gt;/layout_extract. A CDL file is written for
+the &lt;cell&gt;. LVS file and is then run. This can take several
+minutes for each cell (<xref href="#Ref153186225/Ref153269937">Figure
+17</xref>).</li>
+            </ol>
+            <p>
+              <b>Note:</b> The VALE messages can be ignored and will
+be removed in a future release.</p>
+            <p>
+              <i id="Ref153269937">Figure 18: CIW Output messages during SPEF
+generation</i>
+            </p>
+            <table colsep="1" frame="all" rowsep="1">
+              <tgroup cols="1">
+                <colspec colname="col1" colnum="1" colwidth="1*"/>
+                <thead>
+                  <row>
+                    <entry>
+                      <ol>
+                        <li>
+                          <image href="media/image20.png">
+                            <alt>A screenshot of a computer program Description automatically generated</alt>
+                          </image>
+                        </li>
+                      </ol>
+                    </entry>
+                  </row>
+                </thead>
+                <tbody/>
+              </tgroup>
+            </table>
+
+            <p>The Keyword messages are displayed while the qrc_cmd.template
+file is customized for the cell under operation. When the operation
+is complete after the last cell, a message is displayed to indicate
+copying of output files to the delivery directory when the
+<b>Copy to delivery dir</b> option is set. When the final
+message "Total time taken" displays, the entire operation is
+complete (<xref href="#Ref153186225/Ref153269956">Figure 18</xref>).</p>
+            <p>
+              <i id="Ref153269956">Figure 19: CIW Output message after SPEF
+generation</i>
+            </p>
+            <table colsep="1" frame="all" rowsep="1">
+              <tgroup cols="1">
+                <colspec colname="col1" colnum="1" colwidth="1*"/>
+                <thead>
+                  <row>
+                    <entry>
+                      <ol>
+                        <li>
+                          <image href="media/image21.png">
+                            <alt>A screen shot of a computer Description automatically generated</alt>
+                          </image>
+                        </li>
+                      </ol>
+                    </entry>
+                  </row>
+                </thead>
+                <tbody/>
+              </tgroup>
+            </table>
+
+            <p>The delivery directory now contains the &lt;cell&gt;.spf files
+for the specific corner (<xref href="#Ref153186225/Ref153269983">Figure
+19</xref>).</p>
+            <p>
+              <i id="Ref153269983">Figure 20: Delivery directory - spf first
+corner</i>
+            </p>
+            <table colsep="1" frame="all" rowsep="1">
+              <tgroup cols="1">
+                <colspec colname="col1" colnum="1" colwidth="1*"/>
+                <thead>
+                  <row>
+                    <entry>
+                      <ol>
+                        <li>
+                          <image href="media/image22.png">
+                            <alt>A screen shot of a computer Description automatically generated</alt>
+                          </image>
+                        </li>
+                      </ol>
+                    </entry>
+                  </row>
+                </thead>
+                <tbody/>
+              </tgroup>
+            </table>
+            <ol>
+
+              <li>Using your preferred editor, open the ./qrc_cmd.template file
+for editing (<xref href="#Ref153186225/Ref153270080">Figure 20</xref>).
+<ol>
+                  <li>Comment out the original technology_corner “tttt”
+and uncomment the technology_corner “pcss”.</li>
+                  <li>Comment out the original temperature “85.0”.</li>
+                  <li>Uncomment the temperature line for “-40.0”.</li>
+                  <li>Save and close the file.</li>
+                </ol>
+              </li>
+            </ol>
+            <p>
+              <i id="Ref153270080">Figure 21: qrc_cmd.template edits for spf
+alternate corner</i>
+            </p>
+            <table colsep="1" frame="all" rowsep="1">
+              <tgroup cols="1">
+                <colspec colname="col1" colnum="1" colwidth="1*"/>
+                <tbody>
+                  <row>
+                    <entry>
+                      <image href="media/image25.png"/>
+                      <p>Before Edits</p>
+                      <image href="media/image26.png"/>
+                      <p>After Edits</p>
+                    </entry>
+                  </row>
+                </tbody>
+              </tgroup>
+            </table>
+            <ol>
+
+              <li>Complete the Auto Lib View Generation form as
+shown in <xref href="#Ref153186225/Ref153267847">Figure 21</xref>, and then click
+<b>Apply</b>.</li>
+            </ol>
+            <p>All three modes (GDS/CDL/SPEF) will be run.</p>
+            <p>
+              <i id="Ref153267847">Figure 22: Auto Lib View Generation form
+GDS/CDL/SPEF mode</i>
+            </p>
+            <table colsep="1" frame="all" rowsep="1">
+              <tgroup cols="1">
+                <colspec colname="col1" colnum="1" colwidth="1*"/>
+                <thead>
+                  <row>
+                    <entry>
+                      <ol>
+                        <li>
+                          <image href="media/image19(1).png">
+                            <alt>A screenshot of a computer Description automatically generated</alt>
+                          </image>
+                        </li>
+                      </ol>
+                    </entry>
+                  </row>
+                </thead>
+                <tbody/>
+              </tgroup>
+            </table>
+
+            <p>When the operation is done, &lt;library&gt;.gds and
+&lt;library&gt;.cdl are also created; all outputs are copied to the
+delivery directory (<xref href="#Ref153186225/Ref153267925">Figure 22</xref> and <xref href="#Ref153186225/Ref153267946">Figure 23</xref>).</p>
+            <p>
+              <i id="Ref153267925">Figure 23: CIW Output messages - All files
+moved to delivery directory</i>
+            </p>
+            <table colsep="1" frame="all" rowsep="1">
+              <tgroup cols="1">
+                <colspec colname="col1" colnum="1" colwidth="1*"/>
+                <thead>
+                  <row>
+                    <entry>
+                      <ol>
+                        <li>
+                          <image href="media/image27.png">
+                            <alt>A screenshot of a computer Description automatically generated</alt>
+                          </image>
+                        </li>
+                      </ol>
+                    </entry>
+                  </row>
+                </thead>
+                <tbody/>
+              </tgroup>
+            </table>
+            <p>
+              <i id="Ref153267946">Figure 24: Final step delivery directory
+output files</i>
+            </p>
+            <table colsep="1" frame="all" rowsep="1">
+              <tgroup cols="1">
+                <colspec colname="col1" colnum="1" colwidth="1*"/>
+                <thead>
+                  <row>
+                    <entry>
+                      <ol>
+                        <li>
+                          <image href="media/image28.png">
+                            <alt>A screenshot of a computer screen Description automatically generated</alt>
+                          </image>
+                        </li>
+                      </ol>
+                    </entry>
+                  </row>
+                </thead>
+                <tbody/>
+              </tgroup>
+            </table>
+          </body>
+        </topic>

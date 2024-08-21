@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Toc164238119">
+      <title>Options
+File</title>
+      <body>
+        <p>AG starts with a set of default options for each bin. As options
+are changed, they are saved in the options file
+.abstract/&lt;library name&gt;/.abstract.options. When AG is
+opened, and a library is loaded, the options file is read,
+restoring the options from the previous run. An options file is
+provided in the LDK with the recommended settings for this
+technology. The file is portable, and you can copy the entire
+.abstract directory into your working area (from which Cadence
+Virtuoso* is launched) before launching AG when creating your own
+standard cells.</p>
+      </body>
+    </topic>

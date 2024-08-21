@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Toc164238090">
+      <title>LDK directory structure</title>
+      <body>
+        <p>
+          <xref href="#Toc164238090/Ref390942378">Figure 1</xref> shows the LDK (Library
+Development Kit) directory structure.</p>
+        <p>
+          <i id="Ref390942378">Figure 1: LDK
+directory structure</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image3.png">
+                        <alt>A computer screen shot of a program Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+        <p>
+          <xref href="#Toc164238090/Ref152161951">Table 5</xref> provides a description of
+the directory structure.</p>
+        <table colsep="1" frame="all" id="Ref152161951" rowsep="1">
+          <title>Table 5: LDK directory details</title>
+          <tgroup cols="2">
+            <colspec colname="col1" colnum="1" colwidth="0.7*"/>
+            <colspec colname="col2" colnum="2" colwidth="1.3*"/>
+            <thead>
+              <row>
+                <entry id="Hlk156413928">Directory/File</entry>
+                <entry>Description</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <i>P1278.3 (Intel 18A) PDK 0.9GA Process Design Kit User
+Guide</i>
+                    </li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>High-level overview of the P1278.3 (Intel 18A) LDK flow and
+topics covered in the detailed step-by-step LDK training labs user
+guide.</li>
+                  </ol>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <i>P1278.3 (Intel 18A) PDK 0.9GA Library Development Kit User
+Guide</i>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>(This document) User guide with setup information and
+step-by-step instructions for each LDK training lab.</li>
+                  </ol>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <ol>
+                    <li>training/setup/cadence/ldk/cds.lib</li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>File that contains paths to various libraries used in the
+reference flow.</li>
+                  </ol>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <ol>
+                    <li>training/setup/cadence/ldk/.cadence</li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>Directory containing session-specific and tool-specific
+information stored by Cadence Virtuoso*</li>
+                  </ol>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <ol>
+                    <li>training/setup/cadence/ldk/.cdsinit</li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ul>
+                    <li>File used for tool initialization in Cadence Virtuoso*</li>
+                    <li>Loaded automatically at tool startup</li>
+                    <li>Contains settings for simulation and settings required for the
+LDK training labs</li>
+                  </ul>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <ol>
+                    <li>training/setup/cadence/ldk/files</li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>Directory of additional files used to load specific settings
+for the LDK training labs.</li>
+                  </ol>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <ol>
+                    <li>training/setup/cadence/ldk/sourceme</li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>File that contains SHELL environment variable definitions to
+set environment variables required for the reference flows.</li>
+                    <li>
+                      <b>Note:</b> Tool paths, such as the Cadence
+Virtuoso* installation directory, are already configured as part of
+the user environment.</li>
+                  </ol>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </body>
+    </topic>

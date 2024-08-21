@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Toc164238148">
+        <title>Setup
+environment and run directory</title>
+        <body>
+          <ol>
+            <li>Change the directory to the LDK work area
+./ldk_r0.9_cdns/training/setup/cadence/ldk.</li>
+            <li>If this is the first time launching Cadence* tools, source the
+sourceme file from the UNIX terminal.</li>
+          </ol>
+        </body>
+      </topic>

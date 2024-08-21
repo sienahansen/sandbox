@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Toc164238111">
+      <title>Run
+characterization – library base_ulvt</title>
+      <body>
+        <ol>
+          <li>Return to your characterization work directory:</li>
+        </ol>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <tbody>
+              <row>
+                <entry>
+                  <ol>
+                    <li>cd ..</li>
+                  </ol>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <ol>
+          <li>Run the setup script to create the library characterization run
+directory, then cd to this directory:</li>
+        </ol>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <tbody>
+              <row>
+                <entry>
+                  <ol>
+                    <li>$INTEL_LDK/training/libraries/char/setup/CreateSetup.csh i0m
+base ulvt</li>
+                    <li>cd i0m_base_ulvt</li>
+                  </ol>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <ol>
+          <li>If desired, edit init.tcl, and then:
+<ol>
+              <li>Change number of the client jobs:</li>
+            </ol>
+          </li>
+        </ol>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <tbody>
+              <row>
+                <entry>
+                  <ol>
+                    <li>set client &lt;#jobs&gt;</li>
+                  </ol>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <p>The run time for 20 jobs is about 12 minutes.</p>
+        <ul>
+          <li>
+            <ol>
+
+              <li>To use the extracted netlists generated in Section <xref href="netlists_and_physical_views.dita#Ref153178968">2</xref> for characterization, uncomment the
+following lines:</li>
+            </ol>
+          </li>
+        </ul>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <tbody>
+              <row>
+                <entry>
+                  <ol>
+                    <li>set netlist_dir 
+$env(LDK_WORKAREA)/training/setup/cadence/ldk/stdcells_1278.ldk_demo_lib/spf/</li>
+                    <li>set netlist_area
+ldk_demo_lib_${spf_temp}c_${stat_skew}_c${default_grp_modeling}</li>
+                  </ol>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <ol>
+          <li>Execute the script run.csh to run characterization:</li>
+        </ol>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <tbody>
+              <row>
+                <entry>
+                  <ol>
+                    <li>./run.csh</li>
+                  </ol>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+
+        <p>The run characterizes cells specified in the file cell_list and
+PVT specified in the file active_pvt.pvts in a single run. Two .lib
+files (per PVT) are generated (<xref href="#Toc164238111/Ref153265267">Table
+13</xref>).</p>
+        <table colsep="1" frame="all" id="Ref153265267" rowsep="1">
+          <title>Table 13: Lib files generated</title>
+          <tgroup cols="2">
+            <colspec colname="col1" colnum="1" colwidth="0.4*"/>
+            <colspec colname="col2" colnum="2" colwidth="1.6*"/>
+            <thead>
+              <row>
+                <entry>.lib File</entry>
+                <entry>Models</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry>
+                  <ol>
+                    <li>*_nldm.lib</li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>Basic NLDM / NLPM table model.</li>
+                  </ol>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <ol>
+                    <li>*_ccslnt.lib</li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>NLDM / NLPM, CCS, CCSN, Variation.</li>
+                  </ol>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <ol>
+
+          <li>Review the resulting .lib files in the directory
+./out_dir_probe_fix_index/PV/allcells/ and then copy the .lib files
+to the golden database area (<xref href="#Toc164238111/Ref153265267">Table
+13</xref>).</li>
+        </ol>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <tbody>
+              <row>
+                <entry>
+                  <ol>
+                    <li>mkdir -p
+$LDK_WORKAREA/training/setup/cadence/ldk/stdcells_1278.ldk_demo_lib/lib/base_ulvt</li>
+                    <li>cp out_dir_probe_fix_index/PV/allcells/*.lib
+$LDK_WORKAREA/training/setup/cadence/ldk/stdcells_1278.ldk_demo_lib/lib/base_ulvt/</li>
+                  </ol>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <p>
+          <xref href="#Toc164238111/Ref153265495">Table 14</xref> lists some
+characterization files to note:</p>
+        <table colsep="1" frame="all" id="Ref153265495" rowsep="1">
+          <title>Table 14: Characterization files</title>
+          <tgroup cols="2">
+            <colspec colname="col1" colnum="1" colwidth="0.5*"/>
+            <colspec colname="col2" colnum="2" colwidth="1.5*"/>
+            <thead>
+              <row>
+                <entry>Characterization file</entry>
+                <entry>Description</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry>
+                  <ol>
+                    <li>cell_list</li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>List of cells to be characterized.</li>
+                  </ol>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <ol>
+                    <li>cell_list.*_ldk</li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>Reference cell list of LDK cells.</li>
+                  </ol>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <ol>
+                    <li>cell_list.*_ldk_startup</li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>Reference cell list of LDK startup cells.</li>
+                  </ol>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <ol>
+                    <li>pvt.tcl</li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>Defines all PVTs (large list with seven PVTs).</li>
+                  </ol>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <ol>
+                    <li>active_pvts.list</li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>List of PVT to characterize (subset of PVT defined in file
+pvt.tcl).</li>
+                  </ol>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <ol>
+                    <li>char.tcl</li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>Characterization run script.</li>
+                  </ol>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <ol>
+                    <li>init.tcl</li>
+                  </ol>
+                </entry>
+                <entry>
+                  <ol>
+                    <li>Sourced by char.tcl; used for initial user variable
+setting.</li>
+                  </ol>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </body>
+    </topic>
