@@ -172,8 +172,6 @@
     </topicref>
     <topicref href="../chapters/quality_assurance/topics/quality_assurance_qa.dita">
       <topicref href="../chapters/quality_assurance/topics/timing_liberty_qa.dita">
-        <topicref
-          href="../chapters/timing_liberty_and_verilog/topics/setup_environment_and_run_directory2.dita"/>
         <topicref href="../chapters/quality_assurance/topics/setup_environment_and_run_directory1.dita"/>
         <topicref href="../chapters/quality_assurance/topics/pre-requisite.dita"/>
         <topicref href="../chapters/quality_assurance/topics/qa_liberty.dita"/>
@@ -183,12 +181,14 @@
       <topicref href="../chapters/quality_assurance/topics/cadence_pegasus_fastxor.dita"/>
       <topicref href="../chapters/quality_assurance/topics/layout_summary_report_comparison_optional.dita"/>
       <topicref href="../chapters/quality_assurance/topics/schematic_versus_cdl.dita"/>
+      <topicref
+        href="../chapters/timing_liberty_and_verilog/topics/setup_environment_and_run_directory2.dita"/>
+      <topicref href="../chapters/netlists_and_physical_views/topics/user_actions3.dita"/>
       <topicref href="../chapters/quality_assurance/topics/flow_testing_standard_cells.dita"/>
       <topicref href="../chapters/quality_assurance/topics/cross_view_check.dita">
         <topicref href="../chapters/quality_assurance/topics/view_check_command_reference.dita"/>
       </topicref>
     </topicref>
-    <topicref href="../chapters/netlists_and_physical_views/topics/user_actions3.dita"/>
-    <topicref href="../chapters/layout_abstracts_and_lef_files/topics/overview1.dita"/>
+    <topicref href="../chapters/quality_assurance/topics/appendix_a.dita"/>
   </chapter>
 </bookmap>

@@ -6,55 +6,19 @@
 Liberty</title>
         <body>
           <ol>
-            <li>Run the setup script to create the QA run directory, and then
-cd to the directory:</li>
+            <li>Run the setup script to create the QA run directory, and then cd to the
+        directory:<codeblock id="codeblock_g5c_1zd_mcc">$INTEL_LDK/training/libraries/char/setup/CreateSetup.csh qa
+ cd qa</codeblock></li>
+      <li>Run QA on ccslnt lib:<codeblock id="codeblock_rjd_bzd_mcc">./run_QA.csh 
+$LDK_WORKAREA/training/setup/cadence/ldk/stdcells_1278.ldk_demo_lib/lib/base_
+ulvt/lib783_i0m_180h_50pp_base_ulvt_tttt_0p700v_85c_tttt_ctyp_ccslnt.lib</codeblock><p>Run
+          time is less than five minutes.</p><p>The log files are written to the directory
+          ./logs/.</p><p>The output reports are written to the directory
+          ./reports/&lt;lib_name&gt;/. For example:</p><p>
+          ./reports/lib783_i0m_180h_50pp_base_ulvt_tttt_0p700v_85c_tttt_ctyp_ccslnt/</p><p>If the
+          specified lib file is an NLDM lib file, only Data Range and Monotonicity checks are run.
+          The other checks apply to data such as CCS, CCSN, and LVF that does not exist in the NLDM
+          lib file.</p></li>
           </ol>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <tbody>
-                <row>
-                  <entry>
-                    <ol>
-                      <li>
-                        <p>$INTEL_LDK/training/libraries/char/setup/CreateSetup.csh
-qa</p>
-                        <p>
-cd qa</p>
-                      </li>
-                    </ol>
-                  </entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
-          <ol>
-            <li>Run QA on ccslnt lib:</li>
-          </ol>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <tbody>
-                <row>
-                  <entry>
-                    <ol>
-                      <li>./run_QA.csh
-$LDK_WORKAREA/training/setup/cadence/ldk/stdcells_1278.ldk_demo_lib/lib/base_ulvt/lib783_i0m_180h_50pp_base_ulvt_tttt_0p700v_85c_tttt_ctyp_ccslnt.lib</li>
-                    </ol>
-                  </entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
-          <p>Run time is less than five minutes.</p>
-          <p>The log files are written to the directory ./logs/.</p>
-          <p>The output reports are written to the directory
-./reports/&lt;lib_name&gt;/. For example:</p>
-          <p>
-./reports/lib783_i0m_180h_50pp_base_ulvt_tttt_0p700v_85c_tttt_ctyp_ccslnt/</p>
-          <p>If the specified lib file is an NLDM lib file, only Data Range
-and Monotonicity checks are run. The other checks apply to data
-such as CCS, CCSN, and LVF that does not exist in the NLDM lib
-file.</p>
         </body>
       </topic>

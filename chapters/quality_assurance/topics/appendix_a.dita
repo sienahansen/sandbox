@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="appendix_a">
+    <title>Appendix A. Document References </title>
+    <body>
+        <p><xref href="#view_check_command_reference/Ref421204078">Table 22</xref> lists other
+            documents referenced in this document. Contact your Intel Representative to obtain these
+            documents.</p>
+        <table colsep="1" frame="all" id="Ref421204078" rowsep="1">
+            <title>References</title>
+            <tgroup cols="2">
+                <colspec colname="col1" colnum="1" colwidth="1.7*"/>
+                <colspec colname="col2" colnum="2" colwidth="0.3*"/>
+                <thead>
+                    <row>
+                        <entry>Document title</entry>
+                        <entry>Type</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry><i>P1278.3 (Intel 18A) PDK 0.9GA Process Design Kit User Guide</i>
+                        </entry>
+                        <entry>Kit</entry>
+                    </row>
+                    <row>
+                        <entry><i>P1278.3 (Intel 18A) PDK 0.9GA Library Development Kit Overview for
+                                Cadence Tools, Release 0.9GA_c</i>
+                        </entry>
+                        <entry/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </body>
+</topic>

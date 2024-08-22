@@ -5,117 +5,24 @@
       <title>Power Grid
 views QA</title>
       <body>
-        <p>The PGV view generation section (Section <xref href="power_grid_library.dita#power_grid_library">5</xref>) has its own QA section which is
-covered by the check_pg_library option (steps 15 and 16). These
-steps cover the basic QA checks, such as parameter checks and LEF
-consistency checks. These are detailed in Section <xref href="power_grid_library.dita#power_grid_library">5</xref>; there are no lab steps in this
-section.</p>
-        <table colsep="1" frame="all" rowsep="1">
-          <tgroup cols="1">
-            <colspec colname="col1" colnum="1" colwidth="1*"/>
-            <tbody>
-              <row>
-                <entry>
-                  <ol>
-                    <li>check_pg_library</li>
-                  </ol>
-                </entry>
-              </row>
-              <row>
-                <entry>
-                  <ol>
-                    <li>-list { ../stdcells_1278.ldk_demo_lib/pgv/stdcells.cl } \</li>
-                  </ol>
-                </entry>
-              </row>
-              <row>
-                <entry>
-                  <ol>
-                    <li>-check_parameters \</li>
-                  </ol>
-                </entry>
-              </row>
-              <row>
-                <entry>
-                  <ol>
-                    <li>-lef_consistency \</li>
-                  </ol>
-                </entry>
-              </row>
-              <row>
-                <entry>
-                  <ol>
-                    <li>-rule_file validate_rule.txt \</li>
-                  </ol>
-                </entry>
-              </row>
-              <row>
-                <entry>
-                  <ol>
-                    <li>-output Validate_PGV \</li>
-                  </ol>
-                </entry>
-              </row>
-              <row>
-                <entry>
-                  <ol>
-                    <li>-summary</li>
-                  </ol>
-                </entry>
-              </row>
-            </tbody>
-          </tgroup>
-        </table>
-        <p>
-          <i id="Toc164238221">Figure 60:
-LEF Consistency Check results</i>
-        </p>
-        <table colsep="1" frame="all" rowsep="1">
-          <tgroup cols="1">
-            <colspec colname="col1" colnum="1" colwidth="1*"/>
-            <thead>
-              <row>
-                <entry>
-                  <ol>
-                    <li>
-                      <image href="media/image67(1).png">
-                        <alt>A black background with white text Description automatically generated</alt>
-                      </image>
-                    </li>
-                  </ol>
-                </entry>
-              </row>
-            </thead>
-            <tbody/>
-          </tgroup>
-        </table>
-        <p>The output of that step can be found at
-$LDK_WORKAREA/pgv/Validate_PGV.</p>
-        <p>
-          <i id="Toc164238222">Figure 61:
-Summary file contents</i>
-        </p>
-        <table colsep="1" frame="all" rowsep="1">
-          <tgroup cols="1">
-            <colspec colname="col1" colnum="1" colwidth="1*"/>
-            <thead>
-              <row>
-                <entry>
-                  <ol>
-                    <li>
-                      <image href="media/image65(1).png">
-                        <alt>A screenshot of a computer Description automatically generated</alt>
-                      </image>
-                    </li>
-                  </ol>
-                </entry>
-              </row>
-            </thead>
-            <tbody/>
-          </tgroup>
-        </table>
-        <p>This directory has a summary file which can be reviewed to check
-for data discrepancies, such as large capacitances across rails,
-and so on.</p>
+        <p>The PGV view generation section (Section <xref
+        href="power_grid_library.dita#power_grid_library">5</xref>) has its own QA section which is
+      covered by the check_pg_library option (steps 15 and 16). These steps cover the basic QA
+      checks, such as parameter checks and LEF consistency checks. These are detailed in Section
+        <xref href="power_grid_library.dita#power_grid_library">5</xref>; there are no lab steps in
+      this section.<codeblock id="codeblock_vx2_fzd_mcc">check_pg_library
+      -list { ../stdcells_1278.ldk_demo_lib/pgv/stdcells.cl } \
+      -check_parameters \
+      -lef_consistency \
+      -rule_file validate_rule.txt \
+      -output Validate_PGV \
+      -summary</codeblock></p>
+    <p>
+      <fig id="fig_yg1_3zd_mcc"><title>LEF Consistency Check results</title><image href="media/image67(1).png"/></fig>
+    </p>
+    <p>The output of that step can be found at $LDK_WORKAREA/pgv/Validate_PGV.<fig
+      id="fig_q3v_pzd_mcc"><title>Summary file contents</title><image href="media/image65(1).png"/></fig></p>
+    <p>This directory has a summary file which can be reviewed to check for data discrepancies, such
+      as large capacitances across rails, and so on.</p>
       </body>
     </topic>

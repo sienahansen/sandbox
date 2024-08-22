@@ -21,7 +21,7 @@ unnecessary work. The suggested methodology is to use Liberty view
 as the reference and compare all other view types against it. <xref href="#cross_view_check/Ref164150899">Table 21</xref> describes each view type
 comparison, and the type of data that is compared.</p>
         <table colsep="1" frame="all" id="Ref164150899" rowsep="1">
-          <title>Table 21: View type comparison</title>
+          <title>View type comparison</title>
           <tgroup cols="5">
             <colspec colname="col1" colnum="1" colwidth="0.9*"/>
             <colspec colname="col2" colnum="2" colwidth="0.9*"/>
@@ -70,21 +70,8 @@ $INTEL_LDK/training/libraries/scripts/view_check_functions.tcle</p>
 $INTEL_LDK/training/libraries/scripts/xview_check_all.tcl</p>
         <p>Copy xview_check_all.tcl to your local working directory, and
 then update the view file paths in the script.</p>
-        <p>To run the cross view check:</p>
-        <table colsep="1" frame="all" rowsep="1">
-          <tgroup cols="1">
-            <colspec colname="col1" colnum="1" colwidth="1*"/>
-            <tbody>
-              <row>
-                <entry>
-                  <ol>
-                    <li>liberate xview_check_all.tcl</li>
-                  </ol>
-                </entry>
-              </row>
-            </tbody>
-          </tgroup>
-        </table>
+        <p>To run the cross view
+      check:<codeblock id="codeblock_jfn_l22_mcc">liberate xview_check_all.tcl</codeblock></p>
         <p>Review generated reports: ./xview_check_*.rpt</p>
       </body>
       
