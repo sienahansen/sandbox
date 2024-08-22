@@ -42,21 +42,21 @@ coordinates, it results in an even distribution of the tap current
 across the entire device.</p>
       <p>Library Generation outputs the following files:</p>
       <ul>
-        <li>A cell library database that contains the following:
-<ul>
-            <li>LEF technology information, which includes the following:</li>
-            <li>Layer information for each layer: its name, relationship to
-other layers, routing width, and direction</li>
-            <li>Via information for each via: its name, the layers that it
-connects, and a set of geometries accessible as polygons</li>
-            <li>Cell information, which includes the following:</li>
-            <li>Geometric views of the cell</li>
-            <li>Port information</li>
-            <li>Power grid views</li>
-            <li>Process technology data</li>
-            <li>A bounding box for each cell</li>
-          </ul>
-        </li>
+        <li>A cell library database that contains the following: <ul>
+          <li>LEF technology information, which includes the following:<ul id="ul_ufc_ztd_mcc">
+              <li>Layer information for each layer: its name, relationship to other layers, routing
+                width, and direction</li>
+              <li>Via information for each via: its name, the layers that it connects, and a set of
+                geometries accessible as polygons</li>
+            </ul></li>
+          <li>Cell information, which includes the following:<ul id="ul_rtt_ztd_mcc">
+              <li>Geometric views of the cell</li>
+              <li>Port information</li>
+              <li>Power grid views</li>
+              <li>Process technology data</li>
+            </ul></li>
+          <li>A bounding box for each cell</li>
+        </ul></li>
         <li>Text report and summary files having detailed information about
 the power grid library</li>
       </ul>

@@ -21,76 +21,32 @@ to generate PGV views:</p>
             </thead>
             <tbody>
               <row>
-                <entry>
-                  <ol>
-                    <li>PDK Technology LEF file</li>
-                  </ol>
-                </entry>
-                <entry>
-                  <ol>
-                    <li>Provided by the foundry.</li>
-                  </ol>
-                </entry>
+                <entry>PDK Technology LEF file</entry>
+                <entry>Provided by the foundry.</entry>
               </row>
               <row>
-                <entry>
-                  <ol>
-                    <li>Spice Model files</li>
-                  </ol>
-                </entry>
-                <entry>
-                  <ol>
-                    <li>Provided by the foundry.</li>
-                  </ol>
-                </entry>
+                <entry>Spice Model files</entry>
+                <entry>Provided by the foundry.</entry>
               </row>
               <row>
-                <entry>
-                  <ol>
-                    <li>Cadence Quantus* Technology file</li>
-                  </ol>
-                </entry>
-                <entry>
-                  <ol>
-                    <li>Provided by the foundry.</li>
-                  </ol>
-                </entry>
+                <entry>Cadence Quantus* Technology file</entry>
+                <entry>Provided by the foundry.</entry>
               </row>
               <row>
-                <entry>
-                  <ol>
-                    <li>Cadence Quantus* Layermap file</li>
-                  </ol>
-                </entry>
-                <entry>
-                  <ol>
-                    <li>Provided by the foundry.</li>
-                  </ol>
-                </entry>
+                <entry>Cadence Quantus* Layermap file</entry>
+                <entry>Provided by the foundry.</entry>
               </row>
               <row>
-                <entry>
-                  <ol>
-                    <li>STD Cell Transistor Level xDSPF files</li>
-                  </ol>
-                </entry>
-                <entry>
-                  <ol>
-                    <li>Must be generated beforehand (See Section <xref href="netlists_and_physical_views.dita#netlists_and_physical_views">2</xref>, Netlists and Physical Views)</li>
-                  </ol>
-                </entry>
+                <entry>STD Cell Transistor Level xDSPF files</entry>
+                <entry>Must be generated beforehand (See Section <xref
+                href="netlists_and_physical_views.dita#netlists_and_physical_views">2</xref>,
+              Netlists and Physical Views)</entry>
               </row>
               <row>
-                <entry>
-                  <ol>
-                    <li>STD Cell LEF file</li>
-                  </ol>
-                </entry>
-                <entry>
-                  <ol>
-                    <li>Must be generated beforehand (See Section <xref href="layout_abstracts_and_lef_files.dita#layout_abstracts_and_lef_files">4</xref>, Layout Abstracts and LEF Files)</li>
-                  </ol>
-                </entry>
+                <entry>STD Cell LEF file</entry>
+                <entry>Must be generated beforehand (See Section <xref
+                href="layout_abstracts_and_lef_files.dita#layout_abstracts_and_lef_files">4</xref>,
+              Layout Abstracts and LEF Files)</entry>
               </row>
             </tbody>
           </tgroup>
@@ -99,9 +55,9 @@ to generate PGV views:</p>
 pins, as well as a cells list file containing the list of cells to
 process is also needed.</p>
         <p>
-          <b>Note:</b> The powergate cells require special
-handling for PGV generation and are outside the scope of this
-demonstration. For help with powergate cells, contact the Cadence
-support team.</p>
+      <note id="note_hln_25d_mcc">The powergate cells require special handling for PGV generation
+        and are outside the scope of this demonstration. For help with powergate cells, contact the
+        Cadence support team.</note>
+    </p>
       </body>
     </topic>

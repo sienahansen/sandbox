@@ -167,6 +167,7 @@
     <topicref href="../chapters/power_grid_library/topics/power_grid_library.dita">
       <topicref href="../chapters/power_grid_library/topics/types_of_power_grid_views.dita"/>
       <topicref href="../chapters/power_grid_library/topics/required_collateral.dita"/>
+      <topicref href="../chapters/layout_abstracts_and_lef_files/topics/user_actions2.dita"/>
       <topicref href="../chapters/power_grid_library/topics/warning_explanations.dita"/>
     </topicref>
     <topicref href="../chapters/quality_assurance/topics/quality_assurance_qa.dita">
@@ -187,7 +188,6 @@
         <topicref href="../chapters/quality_assurance/topics/view_check_command_reference.dita"/>
       </topicref>
     </topicref>
-    <topicref href="../chapters/layout_abstracts_and_lef_files/topics/user_actions2.dita"/>
     <topicref href="../chapters/netlists_and_physical_views/topics/user_actions3.dita"/>
     <topicref href="../chapters/layout_abstracts_and_lef_files/topics/overview1.dita"/>
   </chapter>
