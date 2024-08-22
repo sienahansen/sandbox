@@ -14,27 +14,12 @@ point to the installation location for lab users.</li>
             <li>Make that path read-only for lab users (recommended).</li>
             <li>Prepare tool environment setup instructions for designers.
 Refer to the tools specified in CAD tools.</li>
-            <li>Inform users to set the environment variable $INTEL_LDK to
-point to the original LDK read-only content.</li>
-          </ol>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <tbody>
-                <row>
-                  <entry>
-                    <ol>
-                      <li>setenv INTEL_LDK &lt;LDK installation directory&gt;</li>
-                    </ol>
-                  </entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
-          <ol>
-            <li>Inform users that the LDK training labs require about 10 GB of
-disk space for each user.</li>
-            <li>If possible, prepare workspace disk area for designers.</li>
+            <li>Inform users to set the environment variable $INTEL_LDK to point to the original LDK
+        read-only content.
+        <codeblock id="codeblock_vb1_2mb_mcc">setenv INTEL_LDK &lt;LDK installation directory></codeblock></li>
+      <li>Inform users that the LDK training labs require about 10 GB of disk space for each
+        user.</li>
+      <li>If possible, prepare workspace disk area for designers. </li>
           </ol>
         </body>
         

@@ -23,8 +23,7 @@ various sizes and drive strengths. Standard cell libraries are used
 to implement the logic of an IC, and they are essential to achieve
 high-performance and low-power designs.</p>
       <table colsep="1" frame="all" id="Ref152161906" rowsep="1">
-        <title>Table 1: Standard
-cell libraries</title>
+        <title>Standard cell libraries</title>
         <tgroup cols="2">
           <colspec colname="col1" colnum="1" colwidth="0.3*"/>
           <colspec colname="col2" colnum="2" colwidth="1.7*"/>
@@ -36,53 +35,26 @@ cell libraries</title>
           </thead>
           <tbody>
             <row>
-              <entry>
-                <ol>
-                  <li>Fixed height</li>
-                </ol>
-              </entry>
-              <entry>
-                <ol>
-                  <li>All cells in a standard cell library have the same
-height or multiples of the base height, which makes it easy to
-place them in rows. This simplifies the automated layout
-process and makes it possible to achieve high density designs.</li>
-                </ol>
-              </entry>
+              <entry>Fixed height</entry>
+              <entry>All cells in a standard cell library have the same height or multiples of the
+              base height, which makes it easy to place them in rows. This simplifies the automated
+              layout process and makes it possible to achieve high density designs.</entry>
             </row>
             <row>
-              <entry>
-                <ol>
-                  <li>Variable width</li>
-                </ol>
-              </entry>
-              <entry>
-                <ol>
-                  <li>The width of each cell can vary depending on the drive strength
-requirements. This allows for trade-offs between performance
-and area.</li>
-                </ol>
-              </entry>
+              <entry>Variable width</entry>
+              <entry>The width of each cell can vary depending on the drive strength requirements.
+              This allows for trade-offs between performance and area.</entry>
             </row>
             <row>
-              <entry>
-                <ol>
-                  <li>Pre-characterized</li>
-                </ol>
-              </entry>
-              <entry>
-                <ol>
-                  <li>Each cell in a standard cell library is pre-characterized for
-its timing, power consumption, and so on.</li>
-                </ol>
-              </entry>
+              <entry>Pre-characterized</entry>
+              <entry>Each cell in a standard cell library is pre-characterized for its timing, power
+              consumption, and so on.</entry>
             </row>
           </tbody>
         </tgroup>
       </table>
       <table colsep="1" frame="all" id="Toc164238155" rowsep="1">
-        <title>Table
-2: Component cells of a typical standard cell library</title>
+        <title>Component cells of a typical standard cell library</title>
         <tgroup cols="2">
           <colspec colname="col1" colnum="1" colwidth="0.3*"/>
           <colspec colname="col2" colnum="2" colwidth="1.7*"/>
@@ -94,75 +66,33 @@ its timing, power consumption, and so on.</li>
           </thead>
           <tbody>
             <row>
-              <entry>
-                <ol>
-                  <li>Logic gates</li>
-                </ol>
-              </entry>
-              <entry>
-                <ol>
-                  <li>The basic building blocks of digital logic, such as
-AND, OR, NAND, NOR, and XOR gates.</li>
-                </ol>
-              </entry>
+              <entry>Logic gates</entry>
+              <entry>The basic building blocks of digital logic, such as AND, OR, NAND, NOR, and XOR
+              gates.</entry>
             </row>
             <row>
-              <entry>
-                <ol>
-                  <li>Flip flops and latches</li>
-                </ol>
-              </entry>
-              <entry>
-                <ol>
-                  <li>The memory cells store data and are triggered by a clock
-signal.</li>
-                </ol>
-              </entry>
+              <entry>Flip flops and latches</entry>
+              <entry>The memory cells store data and are triggered by a clock signal.</entry>
             </row>
             <row>
-              <entry>
-                <ol>
-                  <li>Buffers</li>
-                </ol>
-              </entry>
-              <entry>
-                <ol>
-                  <li>Buffers drive high fanout loads or isolate different parts of a
-circuit.</li>
-                </ol>
-              </entry>
+              <entry>Buffers</entry>
+              <entry>Buffers drive high fanout loads or isolate different parts of a
+              circuit.</entry>
             </row>
             <row>
-              <entry>
-                <ol>
-                  <li>Clock buffers</li>
-                </ol>
-              </entry>
-              <entry>
-                <ol>
-                  <li>Specialized buffers designed to drive clock signals.</li>
-                </ol>
-              </entry>
+              <entry>Clock buffers</entry>
+              <entry>Specialized buffers designed to drive clock signals.</entry>
             </row>
             <row>
-              <entry>
-                <ol>
-                  <li>Scan cells</li>
-                </ol>
-              </entry>
-              <entry>
-                <ol>
-                  <li>Scan cells implement scan chains, which are used for
-testing and debugging.</li>
-                </ol>
-              </entry>
+              <entry>Scan cells</entry>
+              <entry>Scan cells implement scan chains, which are used for testing and
+              debugging.</entry>
             </row>
           </tbody>
         </tgroup>
       </table>
       <table colsep="1" frame="all" id="Toc164238156" rowsep="1">
-        <title>Table
-3: Benefits of using standard cell libraries</title>
+        <title>Benefits of using standard cell libraries</title>
         <tgroup cols="2">
           <colspec colname="col1" colnum="1" colwidth="0.3*"/>
           <colspec colname="col2" colnum="2" colwidth="1.7*"/>
@@ -174,45 +104,19 @@ testing and debugging.</li>
           </thead>
           <tbody>
             <row>
-              <entry>
-                <ol>
-                  <li>Reduced design time</li>
-                </ol>
-              </entry>
-              <entry>
-                <ol>
-                  <li>Standard cell libraries are predesigned and
-characterized, which can significantly reduce the time it
-takes to design an IC.</li>
-                </ol>
-              </entry>
+              <entry>Reduced design time</entry>
+              <entry>Standard cell libraries are predesigned and characterized, which can
+              significantly reduce the time it takes to design an IC.</entry>
             </row>
             <row>
-              <entry>
-                <ol>
-                  <li>Improved design quality</li>
-                </ol>
-              </entry>
-              <entry>
-                <ol>
-                  <li>Standard cell libraries are optimized for
-speed, area, and power consumption, which can help
-to improve the quality of an IC.</li>
-                </ol>
-              </entry>
+              <entry>Improved design quality</entry>
+              <entry>Standard cell libraries are optimized for speed, area, and power consumption,
+              which can help to improve the quality of an IC.</entry>
             </row>
             <row>
-              <entry>
-                <ol>
-                  <li>Reduced design cost</li>
-                </ol>
-              </entry>
-              <entry>
-                <ol>
-                  <li>Standard cell libraries are commercially available, which
-can help reduce the cost of designing an IC.</li>
-                </ol>
-              </entry>
+              <entry>Reduced design cost</entry>
+              <entry>Standard cell libraries are commercially available, which can help reduce the
+              cost of designing an IC.</entry>
             </row>
           </tbody>
         </tgroup>

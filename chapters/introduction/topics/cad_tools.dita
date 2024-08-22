@@ -11,7 +11,7 @@ versions used for the LDK training labs. Enable these tools in your
 environment before running the LDK training labs. Use the version
 listed, or newer.</p>
           <table colsep="1" frame="all" id="Ref152161985" rowsep="1">
-            <title>Table 6: CAD tools</title>
+            <title>CAD tools</title>
             <tgroup cols="3">
               <colspec colname="col1" colnum="1" colwidth="0.9*"/>
               <colspec colname="col2" colnum="2" colwidth="1*"/>
@@ -25,88 +25,36 @@ listed, or newer.</p>
               </thead>
               <tbody>
                 <row>
-                  <entry morerows="5">
-                    <ol>
-                      <li>Cadence</li>
-                    </ol>
-                  </entry>
-                  <entry>
-                    <ol>
-                      <li>Liberate*</li>
-                    </ol>
-                  </entry>
-                  <entry>
-                    <ol>
-                      <li>23.12 ISR2, 23.12-s064_1</li>
-                    </ol>
-                  </entry>
+                  <entry morerows="5">Cadence</entry>
+                  <entry>Liberate*</entry>
+                  <entry>23.12 ISR2, 23.12-s064_1</entry>
                 </row>
                 <row>
-                  <entry>
-                    <ol>
-                      <li>MVS*</li>
-                    </ol>
-                  </entry>
-                  <entry>
-                    <ol>
-                      <li>23.11.001-s034</li>
-                    </ol>
-                  </entry>
+                  <entry>MVS*</entry>
+                  <entry>23.11.001-s034</entry>
                 </row>
                 <row>
-                  <entry>
-                    <ol>
-                      <li>Pegasus*</li>
-                    </ol>
-                  </entry>
-                  <entry>
-                    <ol>
-                      <li>22.24.000-s003</li>
-                    </ol>
-                  </entry>
+                  <entry>Pegasus*</entry>
+                  <entry>22.24.000-s003</entry>
                 </row>
                 <row>
-                  <entry>
-                    <ol>
-                      <li>Quantus*</li>
-                    </ol>
-                  </entry>
-                  <entry>
-                    <ol>
-                      <li>21.22.017-s209</li>
-                    </ol>
-                  </entry>
+                  <entry>Quantus*</entry>
+                  <entry>21.22.017-s209</entry>
                 </row>
                 <row>
-                  <entry>
-                    <ol>
-                      <li>Virtuoso*</li>
-                    </ol>
-                  </entry>
-                  <entry>
-                    <ol>
-                      <li>ICADVM23.1_ISR3</li>
-                    </ol>
-                  </entry>
+                  <entry>Virtuoso*</entry>
+                  <entry>ICADVM23.1_ISR3</entry>
                 </row>
                 <row>
-                  <entry>
-                    <ol>
-                      <li>Voltus*</li>
-                    </ol>
-                  </entry>
-                  <entry>
-                    <ol>
-                      <li>22.15-e019_1</li>
-                    </ol>
-                  </entry>
+                  <entry>Voltus*</entry>
+                  <entry>22.15-e019_1</entry>
                 </row>
               </tbody>
             </tgroup>
           </table>
           <p>
-            <b>Note:</b> Most LDK labs use the PDK-aligned tool
-versions listed above. Changes in tool versions are specified in
-those labs that require them.</p>
+      <note id="note_wqm_1mb_mcc">Most LDK labs use the PDK-aligned tool versions listed above.
+        Changes in tool versions are specified in those labs that require them.</note>
+    </p>
         </body>
       </topic>

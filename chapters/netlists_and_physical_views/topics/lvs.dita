@@ -20,7 +20,7 @@ to be LVS-clean.</p>
 
         <p>There are two main steps in the LVS process, as shown in <xref href="#lvs/Ref153272327">Table 11</xref>.</p>
         <table colsep="1" frame="all" id="Ref153272327" rowsep="1">
-          <title>Table 11: LVS process</title>
+          <title>LVS process</title>
           <tgroup cols="2">
             <colspec colname="col1" colnum="1" colwidth="0.3*"/>
             <colspec colname="col2" colnum="2" colwidth="1.7*"/>
@@ -32,33 +32,16 @@ to be LVS-clean.</p>
             </thead>
             <tbody>
               <row>
-                <entry>
-                  <ol>
-                    <li>Extraction</li>
-                  </ol>
-                </entry>
-                <entry>
-                  <ol>
-                    <li>The LVS tool extracts the netlist from the physical layout.
-This involves identifying the circuit components, such as
-transistors and resistors, and determining their connections. This
-is different from parasitic extraction.</li>
-                  </ol>
-                </entry>
+                <entry>Extraction</entry>
+                <entry>The LVS tool extracts the netlist from the physical layout. This involves
+              identifying the circuit components, such as transistors and resistors, and determining
+              their connections. This is different from parasitic extraction.</entry>
               </row>
               <row>
-                <entry>
-                  <ol>
-                    <li>Comparison</li>
-                  </ol>
-                </entry>
-                <entry>
-                  <ol>
-                    <li>The LVS tool compares the extracted netlist to the netlist
-generated from the circuit schematic. If the two netlists match,
-the layout is said to be LVS-clean.</li>
-                  </ol>
-                </entry>
+                <entry>Comparison</entry>
+                <entry>The LVS tool compares the extracted netlist to the netlist generated from the
+              circuit schematic. If the two netlists match, the layout is said to be
+              LVS-clean.</entry>
               </row>
             </tbody>
           </tgroup>

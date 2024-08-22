@@ -14,16 +14,12 @@ of LDK labs and handle large-scale cell processing tasks.</p>
 intensive of all the sections.</p>
         <p>The recommended hardware resources for LDK Labs are:</p>
         <ul>
-          <li>Small cell list (7 cells)
-<ul>
-              <li>10 cores, 4G RAM per core</li>
-            </ul>
-          </li>
-          <li>Large cell list (397 cells)
-<ul>
-              <li>2000 cores, 4G RAM per core</li>
-            </ul>
-          </li>
+          <li>Small cell list (7 cells) <ul>
+          <li>10 cores, 4G RAM per core</li>
+        </ul></li>
+          <li>Large cell list (397 cells) <ul>
+          <li>2000 cores, 4G RAM per core</li>
+        </ul></li>
         </ul>
       </body>
     </topic>

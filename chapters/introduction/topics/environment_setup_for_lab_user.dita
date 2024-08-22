@@ -13,82 +13,24 @@ Guide</i> for setup information:</p>
           <ul>
             <li>PDK version: pdk783_r0.9GA</li>
           </ul>
-          <p>This LDK training lab uses the opt12 tech option and the
-following layer stack:</p>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <tbody>
-                <row>
-                  <entry>
-                    <ol>
-                      <li>
-m14_2x_1xa_1xb_6ya_2yb_2yc__bm5_1ye_1yf_2ga_mim3x_1gb__bumpp</li>
-                    </ol>
-                  </entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
+          <p>This LDK training lab uses the opt12 tech option and the following layer
+      stack:<codeblock id="codeblock_u3m_w4b_mcc">m14_2x_1xa_1xb_6ya_2yb_2yc__bm5_1ye_1yf_2ga_mim3x_1gb__bumpp</codeblock></p>
           <ol>
-            <li>Ensure that the INTEL_PDK and LAYERSTACK shell environment
-variables are set as outlined in the user guide for the PDK.</li>
-            <li>Change the directory to a lab workspace with at least 10 GB of
-available disk space.</li>
-          </ol>
-          <ul>
-            <li>
-              <ul>
-                <li>Your administrator might specify a disk area that can be
-used.</li>
-                <li>Verify that this directory is empty and has directories for the
-first use:</li>
-              </ul>
-            </li>
-          </ul>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <tbody>
-                <row>
-                  <entry>
-                    <ol>
-                      <li>mkdir “&lt;path to your LDK workspace&gt;”</li>
-                      <li>setenv LDK_WORKAREA “&lt;path to your LDK
-workspace&gt;”</li>
-                      <li>cd $LDK_WORKAREA/</li>
-                    </ol>
-                  </entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
-          <ol>
-            <li>Set the environment pointer to the LDK source content as
-specified by the administrator:</li>
-          </ol>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <tbody>
-                <row>
-                  <entry>
-                    <ol>
-                      <li>setenv INTEL_LDK “&lt;path to tarball/extraction
-directory&gt;”</li>
-                    </ol>
-                  </entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
-          <ol>
-            <li>Prepare the work area by sourcing the setup as shown below:
-<ol>
-                <li>source $INTEL_LDK/training/setup/intel/ldk_setup.csh</li>
-              </ol>
-            </li>
-          </ol>
+      <li>Ensure that the INTEL_PDK and LAYERSTACK shell environment variables are set as outlined
+        in the user guide for the PDK.</li>
+      <li>Change the directory to a lab workspace with at least 10 GB of available disk space.<ol
+          id="ol_iky_1pb_mcc">
+          <li>Your administrator might specify a disk area that can be used.</li>
+          <li>Verify that this directory is empty and has directories for the first use:</li>
+        </ol><codeblock id="codeblock_k3x_bpb_mcc">mkdir “&lt;path to your LDK workspace>”
+setenv LDK_WORKAREA “&lt;path to your LDK workspace>”
+cd $LDK_WORKAREA/</codeblock></li>
+      <li>Set the environment pointer to the LDK source content as specified by the
+        administrator:<codeblock id="codeblock_kpx_dpb_mcc">setenv INTEL_LDK “&lt;path to tarball/extraction directory>”</codeblock></li>
+      <li>Prepare the work area by sourcing the setup as shown below: <codeph>source
+          $INTEL_LDK/training/setup/intel/ldk_setup.csh</codeph>
+      </li>
+    </ol>
           <p>This step sets up the CAD tool environment variables and copies
 the LDK content into your workspace. As a lab user, you can now run
 the steps of the LDK labs as described in this document.</p>

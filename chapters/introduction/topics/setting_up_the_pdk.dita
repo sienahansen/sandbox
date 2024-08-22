@@ -9,17 +9,9 @@ the PDK</title>
 <i>P1278.3 (Intel 18A) PDK 0.9GA Process Design Kit User
 Guide</i> for setup information.</p>
           <p>PDK version: pdk783_r0.9GA</p>
-          <p>This LDK training lab uses the opt12 tech option and the
-following layer stack:</p>
-          <ul>
-            <li>
-              <ol>
-                <li>
-m14_2x_1xa_1xb_6ya_2yb_2yc__bm5_1ye_1yf_2ga_mim3x_1gb__bumpp</li>
-              </ol>
-            </li>
-          </ul>
-          <p>Ensure that the INTEL_PDK and LAYERSTACK shell environment
-variables are set as outlined in the user guide listed, above.</p>
+          <p>This LDK training lab uses the opt12 tech option and the following layer
+      stack:<codeblock id="codeblock_anx_xlb_mcc">m14_2x_1xa_1xb_6ya_2yb_2yc__bm5_1ye_1yf_2ga_mim3x_1gb__bumpp</codeblock>
+      Ensure that the INTEL_PDK and LAYERSTACK shell environment variables are set as outlined in
+      the user guide listed, above.</p>
         </body>
       </topic>
