@@ -114,6 +114,33 @@
         </topicref>
       </topicref>
     </topicref>
+    <topicref href="../chapters/timing_liberty_and_verilog/topics/timing_liberty_and_verilog.dita">
+      <topicref href="../chapters/timing_liberty_and_verilog/topics/timing_liberty.dita"/>
+      <topicref href="../chapters/quality_assurance/topics/setup_environment_and_run_directory.dita"/>
+      <topicref href="../chapters/timing_liberty_and_verilog/topics/generate_template.dita"/>
+      <topicref
+        href="../chapters/timing_liberty_and_verilog/topics/run_characterization_library_base_ulvt.dita"/>
+      <topicref
+        href="../chapters/timing_liberty_and_verilog/topics/generate_verilog_model_library_base_ulvt.dita"/>
+      <topicref
+        href="../chapters/timing_liberty_and_verilog/topics/run_characterization_library_seq_ulvt.dita"/>
+      <topicref
+        href="../chapters/timing_liberty_and_verilog/topics/generate_verilog_model_library_seq_ulvt.dita"/>
+      <topicref
+        href="../chapters/timing_liberty_and_verilog/topics/library_characterization_kit_lck.dita">
+        <topicref href="../chapters/timing_liberty_and_verilog/topics/overview4.dita"/>
+        <topicref
+          href="../chapters/timing_liberty_and_verilog/topics/liberate_shell_environment_variable_setup.dita"/>
+        <topicref
+          href="../chapters/timing_liberty_and_verilog/topics/template_creation_gentemp.dita"/>
+        <topicref
+          href="../chapters/timing_liberty_and_verilog/topics/characterization_unified,_mpvt.dita"/>
+        <topicref href="../chapters/timing_liberty_and_verilog/topics/monte_carlo_flow.dita"/>
+        <topicref
+          href="../chapters/timing_liberty_and_verilog/topics/distributed_processing_setup_netbatch_distribution.dita"
+        />
+      </topicref>
+    </topicref>
     <topicref href="../chapters/layout_abstracts_and_lef_files/topics/layout_abstracts_and_lef_files.dita">
       <topicref href="../chapters/layout_abstracts_and_lef_files/topics/layout_abstracts.dita"/>
       <topicref href="../chapters/layout_abstracts_and_lef_files/topics/library_exchange_format.dita"/>
@@ -143,25 +170,10 @@
       <topicref href="../chapters/power_grid_library/topics/required_collateral.dita"/>
       <topicref href="../chapters/power_grid_library/topics/warning_explanations.dita"/>
     </topicref>
-    <topicref href="../chapters/timing_liberty_and_verilog/topics/timing_liberty_and_verilog.dita">
-      <topicref href="../chapters/timing_liberty_and_verilog/topics/timing_liberty.dita"/>
-      <topicref href="../chapters/timing_liberty_and_verilog/topics/setup_environment_and_run_directory2.dita"/>
-      <topicref href="../chapters/timing_liberty_and_verilog/topics/generate_template.dita"/>
-      <topicref href="../chapters/timing_liberty_and_verilog/topics/run_characterization_library_base_ulvt.dita"/>
-      <topicref href="../chapters/timing_liberty_and_verilog/topics/generate_verilog_model_library_base_ulvt.dita"/>
-      <topicref href="../chapters/timing_liberty_and_verilog/topics/run_characterization_library_seq_ulvt.dita"/>
-      <topicref href="../chapters/timing_liberty_and_verilog/topics/generate_verilog_model_library_seq_ulvt.dita"/>
-      <topicref href="../chapters/timing_liberty_and_verilog/topics/library_characterization_kit_lck.dita">
-        <topicref href="../chapters/timing_liberty_and_verilog/topics/overview4.dita"/>
-        <topicref href="../chapters/timing_liberty_and_verilog/topics/liberate_shell_environment_variable_setup.dita"/>
-        <topicref href="../chapters/timing_liberty_and_verilog/topics/template_creation_gentemp.dita"/>
-        <topicref href="../chapters/timing_liberty_and_verilog/topics/characterization_unified,_mpvt.dita"/>
-        <topicref href="../chapters/timing_liberty_and_verilog/topics/monte_carlo_flow.dita"/>
-        <topicref href="../chapters/timing_liberty_and_verilog/topics/distributed_processing_setup_netbatch_distribution.dita"/>
-      </topicref>
-    </topicref>
     <topicref href="../chapters/quality_assurance/topics/quality_assurance_qa.dita">
       <topicref href="../chapters/quality_assurance/topics/timing_liberty_qa.dita">
+        <topicref
+          href="../chapters/timing_liberty_and_verilog/topics/setup_environment_and_run_directory2.dita"/>
         <topicref href="../chapters/quality_assurance/topics/setup_environment_and_run_directory1.dita"/>
         <topicref href="../chapters/quality_assurance/topics/pre-requisite.dita"/>
         <topicref href="../chapters/quality_assurance/topics/qa_liberty.dita"/>
@@ -171,7 +183,6 @@
       <topicref href="../chapters/quality_assurance/topics/cadence_pegasus_fastxor.dita"/>
       <topicref href="../chapters/quality_assurance/topics/layout_summary_report_comparison_optional.dita"/>
       <topicref href="../chapters/quality_assurance/topics/schematic_versus_cdl.dita">
-        <topicref href="../chapters/quality_assurance/topics/setup_environment_and_run_directory.dita"/>
         <topicref href="../chapters/quality_assurance/topics/user_actions1.dita"/>
       </topicref>
       <topicref href="../chapters/quality_assurance/topics/flow_testing_standard_cells.dita"/>

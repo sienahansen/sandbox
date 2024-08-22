@@ -5,70 +5,37 @@
       <title>Setup
 environment and run directory</title>
       <body>
-        <p>
-
-          <b>Important:</b> Before proceeding with this section,
-you must perform the actions in Section <xref href="environment_setup_for_lab_user.dita#environment_setup_for_lab_user">1.3.4</xref>, Environment setup for lab
-user.</p>
+        <p><b>Important:</b> Before proceeding with this section, you must perform the actions in
+      Section <xref href="environment_setup_for_lab_user.dita#environment_setup_for_lab_user"
+        >1.3.4</xref>, Environment setup for lab user.</p>
         <ol>
           <li>Change the directory to the LDK working area
-./ldk_r0.9_cdns/training/setup/cadence/ldk.</li>
+        ./ldk_r0.9_cdns/training/setup/cadence/ldk.</li>
+      <li>Source the sourceme file if this is the first time launching Cadence tools from the shell
+        you are working in. <p>To set up the job distribution command, edit the Cadence Liberate*
+          Cluster section in the file
+          $LDK_WORKAREA/training/libraries/char/Trio_Flow_setup/Version1p10/char_tcls/char.tcl
+            (<xref href="#setup_environment_and_run_directory/Ref153268043">Figure 24</xref>). <fig
+              id="fig_up2_d3c_mcc"><title>File char.tcl, Cadence Liberate* Cluster section</title><image></image>
+            <note id="note_vm1_f3c_mcc">
+              <ul id="ul_jmt_f3c_mcc">
+                <li>The first section is an example of Intel’s nbjobs command.<p>The second section
+                    is an example of lsf commands used by Cadence*.</p><p>The third section is an
+                    example of running on a local machine with multiple CPU cores.</p></li>
+                <li>
+                  <p>The back slash character is needed to escape double quote and square bracket
+                    used in rsh_cmd.</p>
+                </li>
+              </ul>
+            </note></fig></p></li>
+      <li/>
+      <li/>
+      <li/>
+      <li/>
         </ol>
-        <ol>
-          <li>Source the sourceme file if this is the first time launching
-Cadence tools from the shell you are working in.</li>
-        </ol>
+    <p/>
 
-        <p>To set up the job distribution command, edit the Cadence
-Liberate* Cluster section in the file
-$LDK_WORKAREA/training/libraries/char/Trio_Flow_setup/Version1p10/char_tcls/char.tcl
-(<xref href="#setup_environment_and_run_directory/Ref153268043">Figure 24</xref>).</p>
-        <p>
-          <i id="Ref153268043">Figure 25: File char.tcl, Cadence Liberate*
-Cluster section</i>
-        </p>
-        <table colsep="1" frame="all" rowsep="1">
-          <tgroup cols="1">
-            <colspec colname="col1" colnum="1" colwidth="1*"/>
-            <thead>
-              <row>
-                <entry>
-                  <ol>
-                    <li>
-                      <image href="media/image29.png">
-                        <alt>A computer code on a white background Description automatically generated</alt>
-                      </image>
-                    </li>
-                  </ol>
-                </entry>
-              </row>
-            </thead>
-            <tbody/>
-          </tgroup>
-        </table>
-        <p>
-          <b>Notes:</b>
-        </p>
-        <ul>
-          <li>
-            <ul>
-              <li>The first section is an example of Intel’s nbjobs
-command.</li>
-            </ul>
-          </li>
-        </ul>
-        <p>The second section is an example of lsf commands used by
-Cadence*.</p>
-        <p>The third section is an example of running on a local machine
-with multiple CPU cores.</p>
-        <ul>
-          <li>
-            <ul>
-              <li>The back slash character is needed to escape double quote and
-square bracket used in rsh_cmd.</li>
-            </ul>
-          </li>
-        </ul>
+        <p/>
         <ol>
           <li>Intel standard cell characterization uses driver cell to drive
 input of standard cells (instead of using an ideal voltage driver).
