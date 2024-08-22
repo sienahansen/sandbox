@@ -64,45 +64,35 @@ graphically or non-graphically.</li>
 of:</p>
         <ul>
           <li>
-            <b>Pins</b> step:
-<ul>
-              <li>AG maps text labels to terminal names and creates physical pin
-shapes corresponding to the geometry overlapping the origin of the
-text labels.</li>
-              <li>Identifies pin geometries for connectivity extraction.</li>
-              <li>Creates the P&amp;R boundary.</li>
-              <li>Matches the pins created with the logical view present and
-appends the appropriate pin direction.</li>
-              <li>Specifies hierarchy depths for text label and metal geometry
-search for text-to-pin mapping and pin creation.</li>
-              <li>Has options to remove unnecessary text from pin labels or to
-replace text in a pin label.</li>
-              <li>Has an option to preserve layout labels in the final Abstract
-view.</li>
-            </ul>
-          </li>
+        <b>Pins</b> step: <ul>
+          <li>AG maps text labels to terminal names and creates physical pin shapes corresponding to
+            the geometry overlapping the origin of the text labels.</li>
+          <li>Identifies pin geometries for connectivity extraction.</li>
+          <li>Creates the P&amp;R boundary.</li>
+          <li>Matches the pins created with the logical view present and appends the appropriate pin
+            direction.</li>
+          <li>Specifies hierarchy depths for text label and metal geometry search for text-to-pin
+            mapping and pin creation.</li>
+          <li>Has options to remove unnecessary text from pin labels or to replace text in a pin
+            label.</li>
+          <li>Has an option to preserve layout labels in the final Abstract view.</li>
+        </ul></li>
           <li>
-            <b>Extract</b> step:
-<ul>
-              <li>In the Extract step, AG traces the connectivity hierarchically
-through the physical shapes in the layout to modify pin shapes,
-starting from the pins generated during the Pins step.</li>
-              <li>Constructs the correct database model for strong, weak, and
-“must connect” pins.</li>
-              <li>AG can also use the antenna options to create library process
-antenna information.</li>
-            </ul>
-          </li>
+        <b>Extract</b> step: <ul>
+          <li>In the Extract step, AG traces the connectivity hierarchically through the physical
+            shapes in the layout to modify pin shapes, starting from the pins generated during the
+            Pins step.</li>
+          <li>Constructs the correct database model for strong, weak, and “must connect” pins.</li>
+          <li>AG can also use the antenna options to create library process antenna
+            information.</li>
+        </ul></li>
           <li>
-            <b>Abstract</b> step:
-<ul>
-              <li>In the Abstract step, AG adjusts the pin shapes created during
-the Extract step to create the final shapes required by P&amp;R
-tools.</li>
-              <li>Then, AG applies a layer blockage model that you select to
-create the final blockage geometry in the abstract.</li>
-            </ul>
-          </li>
+        <b>Abstract</b> step: <ul>
+          <li>In the Abstract step, AG adjusts the pin shapes created during the Extract step to
+            create the final shapes required by P&amp;R tools.</li>
+          <li>Then, AG applies a layer blockage model that you select to create the final blockage
+            geometry in the abstract.</li>
+        </ul></li>
         </ul>
       </body>
     </topic>

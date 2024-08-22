@@ -36,9 +36,8 @@ overlapping the text labels</li>
 bin options relevant to the Pins step.</p>
           <p>An overview of the Pins steps is as follows:</p>
           <ul>
-            <li>Select one or more cells in the main window, and then click the
-<b>Pins</b> button. Alternatively, select the
-Flow &gt; Pins… command.</li>
+            <li>Select one or more cells in the main window, and then click the <b>Pins</b> button.
+        Alternatively, select the <codeph>Flow &gt; Pins… </codeph>command.</li>
             <li>This opens the <i>Running step Pins</i> form. The form
 contains four tabs: <i>Map</i>, <i>Text</i>, <i>Boundary</i>,
 and <i>Blocks</i>. You can use the radio buttons on the left to

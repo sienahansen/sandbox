@@ -19,10 +19,9 @@ and standard cells.</li>
           </ul>
           <p>To run the Extract step:</p>
           <ol>
-            <li>Select one or more cells in the main window, and then click the
-<b>Extract</b> button. Alternatively, select <b>Flow
-&gt; Extract</b>. The Flow &gt; Extract… command runs as
-far as the Extract step for the selected cells.</li>
+            <li>Select one or more cells in the main window, and then click the <b>Extract</b>
+        button. Alternatively, select <b>Flow &gt; Extract</b>. The <codeph>Flow &gt;
+          Extract…</codeph> command runs as far as the Extract step for the selected cells.</li>
           </ol>
           <ol>
             <li>When you select the command, the <i>Running Form</i> is

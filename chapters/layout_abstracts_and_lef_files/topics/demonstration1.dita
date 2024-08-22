@@ -2,141 +2,42 @@
 <!DOCTYPE topic
   PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="demonstration1">
-        <title>Demonstration</title>
-        <body>
-          <ol>
-            <li>From the AG menus, select <b>Flow &gt;
-Extract…</b>
-            </li>
-
-            <li>On the <i>Signal</i> tab, note that <i>Extract signal
-nets</i> is deselected (<xref href="#demonstration1/Ref153273400">Figure
-45</xref>).</li>
-          </ol>
-          <p>When the <i>Extract signal nets</i> option is selected, full
-extraction is performed; the geometry found during the extraction
-is turned into pin geometry.</p>
-          <p>To use the pins created in the layout and duplicate them in the
-Abstract view, deselect <i>Extract signal nets</i> so that AG
-does not extract them.</p>
-          <p>
-            <i id="Ref153273400">Figure 46: Running step Extract, Signal tab,
-Extract signal nets option</i>
-          </p>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <thead>
-                <row>
-                  <entry>
-                    <ol>
-                      <li>
-                        <image href="media/image52.png">
-                          <alt>A screenshot of a computer Description automatically generated</alt>
-                        </image>
-                      </li>
-                    </ol>
-                  </entry>
-                </row>
-              </thead>
-              <tbody/>
-            </tgroup>
-          </table>
-          <ol>
-
-            <li>On the <i>Power</i> tab, <i>Extract power nets</i> is
-deselected (<xref href="#demonstration1/Ref153273417">Figure 46</xref>).</li>
-          </ol>
-          <p>For the power and ground rails for standard cells, the
-recommended approach is to create pins in the layout as duplicated
-in the Abstract view, instead of having AG extract them.</p>
-          <p>
-            <i id="Ref153273417">Figure 47: Running step Extract, Power tab,
-Extract power nets option</i>
-          </p>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <thead>
-                <row>
-                  <entry>
-                    <ol>
-                      <li>
-                        <image href="media/image53.png">
-                          <alt>A screenshot of a cell Description automatically generated</alt>
-                        </image>
-                      </li>
-                    </ol>
-                  </entry>
-                </row>
-              </thead>
-              <tbody/>
-            </tgroup>
-          </table>
-          <ol>
-
-            <li>On the <i>Antenna</i> tab, no options are enabled; this
-capability is under development for this technology (<xref href="#demonstration1/Ref153273431">Figure 47</xref>).</li>
-          </ol>
-          <p>“Antenna effect” is a common name for charge
-accumulation in isolated nodes of an integrated circuit during
-processing. It may damage transistors and degrade performance if
-discharged through the gate oxide. Adding antenna information into
-the layout abstract and LEF enables the P&amp;R tools to calculate
-and mitigate the effect by jumping metal layers or adding an
-antenna diode.</p>
-          <p>
-            <i id="Ref153273431">Figure 48: Running step Extract, Antenna
-tab</i>
-          </p>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <thead>
-                <row>
-                  <entry>
-                    <ol>
-                      <li>
-                        <image href="media/image54.png">
-                          <alt>A screenshot of a computer Description automatically generated</alt>
-                        </image>
-                      </li>
-                    </ol>
-                  </entry>
-                </row>
-              </thead>
-              <tbody/>
-            </tgroup>
-          </table>
-          <ol>
-
-            <li>Click <b>Run</b> on the <i>Running step Extract</i>
-form (<xref href="#demonstration1/Ref153273453">Figure 48</xref>).</li>
-          </ol>
-          <p>
-            <i id="Ref153273453">Figure 49: AG UI, results from Extract
-step</i>
-          </p>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <thead>
-                <row>
-                  <entry>
-                    <ol>
-                      <li>
-                        <image href="media/image55.png">
-                          <alt>A screenshot of a computer Description automatically generated</alt>
-                        </image>
-                      </li>
-                    </ol>
-                  </entry>
-                </row>
-              </thead>
-              <tbody/>
-            </tgroup>
-          </table>
-          <p>For each standard cell in the library, a view named
-<i>abstract.ext</i> is created.</p>
-        </body>
-      </topic>
+  <title>Demonstration</title>
+  <body>
+    <ol>
+      <li>From the AG menus, select <b>Flow &gt; Extract…</b>
+      </li>
+      <li>On the <i>Signal</i> tab, note that <i>Extract signal nets</i> is deselected (<xref
+          href="#demonstration1/Ref153273400">Figure 45</xref>).<p>When the <i>Extract signal
+            nets</i> option is selected, full extraction is performed; the geometry found during the
+          extraction is turned into pin geometry.</p><p>To use the pins created in the layout and
+          duplicate them in the Abstract view, deselect <i>Extract signal nets</i> so that AG does
+          not extract them. <fig id="fig_mn4_brd_mcc">
+            <title>Running step Extract, Signal tab, Extract signal nets option</title>
+            <image href="media/image52.png"/>
+          </fig></p></li>
+      <li>On the <i>Power</i> tab, <i>Extract power nets</i> is deselected (<xref
+          href="#demonstration1/Ref153273417">Figure 46</xref>).<p>For the power and ground rails
+          for standard cells, the recommended approach is to create pins in the layout as duplicated
+          in the Abstract view, instead of having AG extract them.<fig id="fig_jn4_frd_mcc">
+            <title>Running step Extract, Power tab, Extract power nets option</title>
+            <image href="media/image53.png"/>
+          </fig></p></li>
+      <li>On the <i>Antenna</i> tab, no options are enabled; this capability is under development
+        for this technology (<xref href="#demonstration1/Ref153273431">Figure 47</xref>).<p>“Antenna
+          effect” is a common name for charge accumulation in isolated nodes of an integrated
+          circuit during processing. It may damage transistors and degrade performance if discharged
+          through the gate oxide. Adding antenna information into the layout abstract and LEF
+          enables the P&amp;R tools to calculate and mitigate the effect by jumping metal layers or
+          adding an antenna diode. <fig id="fig_wwd_jrd_mcc">
+            <title>Running step Extract, Antenna tab</title>
+            <image href="media/image54.png"/>
+          </fig></p></li>
+      <li>Click <b>Run</b> on the <i>Running step Extract</i> form (<xref
+          href="#demonstration1/Ref153273453">Figure 48</xref>). <fig id="fig_jcd_mrd_mcc">
+          <title>AG UI, results from Extract step</title>
+        </fig><image href="media/image55.png"/><p>For each standard cell in the library, a view
+          named <i>abstract.ext</i> is created.</p></li>
+    </ol>
+  </body>
+</topic>

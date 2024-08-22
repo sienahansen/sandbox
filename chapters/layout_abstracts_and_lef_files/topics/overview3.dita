@@ -9,16 +9,12 @@ generation process. AG adjusts pin shapes, performs blockage
 modeling, creates sites, and calculates overlap layers.</p>
           <p>To run the Abstract step:</p>
           <ul>
-            <li>Select one or more cells in the main window, and then click
-<b>Abstract</b>. Alternatively, select <b>Flow &gt;
-Abstract…</b>.
-<ul>
-                <li>This opens the <i>Running step Abstract</i> form.</li>
-                <li>There are six tabs on the form: <i>Adjust</i>,
-<i>Blockage</i>, <i>Density</i>, <i>Fracture</i>,
-<i>Site</i>, and <i>Overlap</i>.</li>
-              </ul>
-            </li>
+            <li>Select one or more cells in the main window, and then click <b>Abstract</b>.
+        Alternatively, select <b>Flow &gt; Abstract…</b>. <ul>
+          <li>This opens the <i>Running step Abstract</i> form.</li>
+          <li>There are six tabs on the form: <i>Adjust</i>, <i>Blockage</i>, <i>Density</i>,
+              <i>Fracture</i>, <i>Site</i>, and <i>Overlap</i>.</li>
+        </ul></li>
             <li>Select the options on this form, and then click
 <b>Run</b>.</li>
           </ul>
