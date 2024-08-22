@@ -1,63 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic
   PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="characterization_unified,_mpvt">
+<topic id="characterization_unified_mpvt">
         <title>Characterization – Unified,
 MPVT</title>
         <body>
-          <p>
-            <i id="Toc169527107">Figure 28: Liberate architecture
-overview</i>
-          </p>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <thead>
-                <row>
-                  <entry>
-                    <image href="media/image32.png"/>
-                  </entry>
-                </row>
-              </thead>
-              <tbody/>
-            </tgroup>
-          </table>
-          <p>
-            <i id="Toc169527108">Figure 29: Characterization flow
-directory and file structure</i>
-          </p>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <thead>
-                <row>
-                  <entry>
-                    <image href="media/image33.png">
-                      <alt>A diagram of a computer Description automatically generated</alt>
-                    </image>
-                  </entry>
-                </row>
-              </thead>
-              <tbody/>
-            </tgroup>
-          </table>
+    <fig id="fig_agn_dmd_mcc"><title>Liberate architecture
+overview</title><image href="media/image32.png"/></fig>
+    <fig id="fig_syw_dmd_mcc"><title>Characterization flow
+directory and file structure</title><image href="media/image33.png">                    </image></fig>
           <p>To create Char setup:</p>
           <p>Source CreateSetup.csh &lt;Ref Area&gt; &lt;kits to run&gt;</p>
-          <p>Example:</p>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <tbody>
-                <row>
-                  <entry>
-                    <ol>
-                      <li>source CreateSetupcsh $INTEL_LCK kits</li>
-                    </ol>
-                  </entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
+          <p>Example:
+      <codeblock id="codeblock_r3s_hmd_mcc">source CreateSetupcsh $INTEL_LCK kits</codeblock></p>
           <p>Update file CreateSetup.csh</p>
           <ul>
             <li>set vt=ulvt → set Vt type</li>
@@ -78,43 +33,27 @@ settings</li>
             <li>
               <b>driver.tcl:</b> Define finite drivers</li>
             <li>
-              <b>char.tcl:</b> Liberate characterization run
-script</li>
+        <b>char.tcl:</b> Liberate characterization run script run.csh</li>
           </ul>
-          <p>run.csh</p>
           <p>
-            <i id="Toc169527109">Figure 30: Section of run.csh file
-related to characterization</i>
-          </p>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <thead>
-                <row>
-                  <entry>
-                    <image href="media/image34.png"/>
-                  </entry>
-                </row>
-              </thead>
-              <tbody/>
-            </tgroup>
-          </table>
+      <fig id="fig_dff_kmd_mcc">
+        <title>Section of run.csh file related to characterization</title>
+        <image href="media/image34.png"/>
+      </fig>
+    </p>
           <p>PVT-related files:</p>
           <ul>
             <li>
-              <b>pvt.tcl:</b>
-              <ul>
-                <li>All PVTs are defined in this file</li>
-                <li>Vector/number of arcs of the default PVT are used across all
-PVTs</li>
-              </ul>
-            </li>
+        <b>pvt.tcl:</b>
+        <ul>
+          <li>All PVTs are defined in this file</li>
+          <li>Vector/number of arcs of the default PVT are used across all PVTs</li>
+        </ul></li>
             <li>
-              <b>active_pvts.list:</b>
-              <ul>
-                <li>Specify PVTs (defined in file pvt.tcl) to be characterized</li>
-              </ul>
-            </li>
+        <b>active_pvts.list:</b>
+        <ul>
+          <li>Specify PVTs (defined in file pvt.tcl) to be characterized</li>
+        </ul></li>
           </ul>
           <p>Liberate PVT-related commands:</p>
           <ul>
@@ -125,70 +64,25 @@ PVTs</li>
             <li>
               <b>set_pvt:</b> Set the active PVT</li>
           </ul>
-          <p>
-            <b>init.tcl:</b> This file provides a central location
-for all the common characterization input settings that you might
-need to update, such as:</p>
+          <p><b>init.tcl:</b> This file provides a central location for all the common
+      characterization input settings that you might need to update, such as:</p>
           <ul>
             <li>The number of clients to use for distributed processing</li>
             <li>The specific methodology to enable/disable control</li>
             <li>Input paths</li>
           </ul>
           <p>
-            <i id="Toc169527110">Figure 31: Example of file
-init.tcl</i>
-          </p>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <thead>
-                <row>
-                  <entry>
-                    <image href="media/image35.png"/>
-                  </entry>
-                </row>
-              </thead>
-              <tbody/>
-            </tgroup>
-          </table>
-          <p>
-            <b>Constraint probes:</b> probe.tcl. Define custom
-constrain measurement type and probe nodes.</p>
-          <p>
-            <i id="Toc169527111">Figure 32: Example of file
-probe.tcl</i>
-          </p>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <tbody>
-                <row>
-                  <entry>
-                    <image href="media/image36.png">
-                      <alt>A white envelope with black text Description automatically generated</alt>
-                    </image>
-                  </entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
-          <p>
-            <i id="Toc169527112">Figure 33: Characterization output
-directory structure</i>
-          </p>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <thead>
-                <row>
-                  <entry>
-                    <image href="media/image37.png"/>
-                  </entry>
-                </row>
-              </thead>
-              <tbody/>
-            </tgroup>
-          </table>
+      <fig id="fig_azs_nmd_mcc">
+        <title>Example of file init.tcl</title>
+        <image href="media/image35.png"/>
+      </fig>
+    </p>
+          <p><b>Constraint probes:</b> probe.tcl. Define custom constrain measurement type and probe
+      nodes.</p>
+    <fig id="fig_zg2_smd_mcc"><title>Example of file
+probe.tcl</title><image href="media/image36.png"></image></fig>
+    <fig id="fig_xjl_smd_mcc"><title>Characterization output
+directory structure</title><image href="media/image37.png"/></fig>
           <p>Characterization output directory structure:</p>
           <ul>
             <li>
@@ -199,33 +93,23 @@ directory</li>
 different counting, simulation and assembly jobs, command, log
 file, and so on</li>
             <li>LDB directory created will be &lt;LDB&gt;.ldb.&lt;N&gt;.gz</li>
-            <li>Latest directory will always be linked to &lt;LDB&gt;.ldb.gz
-<ul>
-                <li>This linking ensures that read_ldb &lt;LDB&gt;.ldb.gz always
-points to the latest LDB directory (no need to specify the value of
-&lt;N&gt;)</li>
-              </ul>
-            </li>
-            <li>In fresh char flow, N =1, for example:
-<ul>
-                <li>LDB.ldb.1.gz</li>
-                <li>ln -s LDB.ldb.1.gz LDB.ldb.gz</li>
-                <li>Example: out_dir_probe_fix_index/PV/allcells/ldb.ldb.1.gz/</li>
-              </ul>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <ul>
-                <li>checkpointLdbs</li>
-                <li>client_logs</li>
-                <li>preprocessing</li>
-                <li>rcss_0p495v_125c</li>
-                <li>tttt_0p550v_85c</li>
-                <li>tttt_0p700v_85c</li>
-                <li>vectorLdbs</li>
-              </ul>
-            </li>
+            <li>Latest directory will always be linked to &lt;LDB&gt;.ldb.gz <ul>
+          <li>This linking ensures that read_ldb &lt;LDB&gt;.ldb.gz always points to the latest LDB
+            directory (no need to specify the value of &lt;N&gt;)</li>
+        </ul></li>
+            <li>In fresh char flow, N =1, for example: <ul>
+          <li>LDB.ldb.1.gz</li>
+          <li>ln -s LDB.ldb.1.gz LDB.ldb.gz</li>
+          <li>Example: out_dir_probe_fix_index/PV/allcells/ldb.ldb.1.gz/<ul id="ul_wnb_xmd_mcc">
+              <li>checkpointLdbs</li>
+              <li>client_logs</li>
+              <li>preprocessing</li>
+              <li>rcss_0p495v_125c</li>
+              <li>tttt_0p550v_85c</li>
+              <li>tttt_0p700v_85c</li>
+              <li>vectorLdbs</li>
+            </ul></li>
+        </ul></li>
           </ul>
           <p>
             <b>Characterization Master Log:</b>
@@ -233,24 +117,7 @@ logs/log.&lt;rundir&gt;_fix_index</p>
           <p>
             <xref href="#characterization_unified,_mpvt/Ref164938862">Figure 33</xref> shows a summary reported
 in the log file upon completion of all jobs.</p>
-          <p>
-            <i id="Ref164938862">Figure 34:
-Log file, summary</i>
-          </p>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <tbody>
-                <row>
-                  <entry>
-                    <image href="media/image38.png">
-                      <alt>A screenshot of a computer Description automatically generated</alt>
-                    </image>
-                  </entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
+    <fig id="fig_p24_zmd_mcc"><title>Log file, summary</title><image href="media/image38.png"></image></fig>
           <ul>
             <li>
               <b>One shot (R, P, F):</b> Status of cell

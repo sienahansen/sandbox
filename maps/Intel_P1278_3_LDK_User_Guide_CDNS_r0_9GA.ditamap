@@ -128,7 +128,7 @@
         href="../chapters/timing_liberty_and_verilog/topics/generate_verilog_model_library_seq_ulvt.dita"/>
       <topicref
         href="../chapters/timing_liberty_and_verilog/topics/library_characterization_kit_lck.dita">
-        <topicref href="../chapters/timing_liberty_and_verilog/topics/overview4.dita"/>
+        <topicref href="../chapters/layout_abstracts_and_lef_files/topics/overview.dita"/>
         <topicref
           href="../chapters/timing_liberty_and_verilog/topics/liberate_shell_environment_variable_setup.dita"/>
         <topicref
@@ -149,6 +149,7 @@
       <topicref href="../chapters/layout_abstracts_and_lef_files/topics/options_file.dita"/>
       <topicref href="../chapters/layout_abstracts_and_lef_files/topics/pins_step.dita">
         <topicref href="../chapters/layout_abstracts_and_lef_files/topics/overview1.dita"/>
+        <topicref href="../chapters/timing_liberty_and_verilog/topics/overview4.dita"/>
         <topicref href="../chapters/layout_abstracts_and_lef_files/topics/demonstration.dita"/>
       </topicref>
       <topicref href="../chapters/layout_abstracts_and_lef_files/topics/extract_step.dita">

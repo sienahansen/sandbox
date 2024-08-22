@@ -2,68 +2,18 @@
 <!DOCTYPE topic
   PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="distributed_processing_setup_netbatch_distribution">
-        <title>Distributed Processing – setup
-Netbatch distribution</title>
-        <body>
-          <p>Update run.csh:</p>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <tbody>
-                <row>
-                  <entry>
-                    <ol>
-                      <li>setenv DRM 1</li>
-                      <li>setenv NBJOB 1</li>
-                    </ol>
-                  </entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
-          <p>
-            <i id="Toc169527116">Figure 37: Example of run.csh file</i>
-          </p>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <thead>
-                <row>
-                  <entry>
-                    <image href="media/image42.png"/>
-                  </entry>
-                </row>
-              </thead>
-              <tbody>
-                <row>
-                  <entry>
-                    <image href="media/image43.png">
-                      <alt>A computer screen with text Description automatically generated</alt>
-                    </image>
-                  </entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </table>
-          <p>Update char.tcl:</p>
-          <p>
-            <i id="Toc169527117">Figure 38: Example of char.tcl
-file</i>
-          </p>
-          <table colsep="1" frame="all" rowsep="1">
-            <tgroup cols="1">
-              <colspec colname="col1" colnum="1" colwidth="1*"/>
-              <thead>
-                <row>
-                  <entry>
-                    <image href="media/image44.png">
-                      <alt>A computer screen shot of a computer code Description automatically generated</alt>
-                    </image>
-                  </entry>
-                </row>
-              </thead>
-              <tbody/>
-            </tgroup>
-          </table>
-        </body>
-      </topic>
+  <title>Distributed Processing – setup Netbatch distribution</title>
+  <body>
+    <p>Update run.csh: <codeblock id="codeblock_i41_snd_mcc">setenv DRM 1
+setenv NBJOB 1</codeblock></p>
+    <fig id="fig_inv_snd_mcc">
+      <title>Example of run.csh file</title>
+      <image href="media/image42.png"/>
+    </fig>
+    <p>Update char.tcl:</p>
+    <fig id="fig_r1v_5nd_mcc">
+      <title>Example of char.tcl file</title>
+      <image href="media/image44.png"/>
+    </fig>
+  </body>
+</topic>
