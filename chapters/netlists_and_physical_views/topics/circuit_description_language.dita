@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="circuit_description_language">
+      <title>Circuit
+Description Language</title>
+      <body>
+        <p>CDL (Circuit Description Language) is a subset of SPICE
+(Simulation Program Integrated Circuit Emphasis) language. CDL
+netlists capture the device-level connectivity and parameters for
+the standard cells. A combined CDL netlist contains all standard
+cells in one file. This file is typically used when running LVS in
+combination with a Verilog netlist of the design.</p>
+      </body>
+    </topic>

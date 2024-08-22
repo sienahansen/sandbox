@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="mode_gdscdl_generation">
+          <title>Mode GDS/CDL generation</title>
+          <body>
+            <ol>
+              <li>In the Auto Lib View Generation form, select <b>Mode
+– GDS/CDL</b>.</li>
+              <li>Select <b>Run type – Input file.</b> The
+<i>Cell file</i> field is now editable, while the <i>Lib</i>
+field is not.</li>
+
+              <li>Select the file chooser on the right of the <i>Cell file</i>
+field to open a UNIX Browser (<xref href="#mode_gdscdl_generation/Ref153272655">Figure
+10</xref>).</li>
+              <li>Select <b>libCellFile</b>.</li>
+              <li>Click <b>Choose</b>.</li>
+            </ol>
+            <p>
+              <i id="Ref153272655">Figure 11: UNIX browser for Cell file
+field</i>
+            </p>
+            <table colsep="1" frame="all" rowsep="1">
+              <tgroup cols="1">
+                <colspec colname="col1" colnum="1" colwidth="1*"/>
+                <thead>
+                  <row>
+                    <entry>
+                      <image href="media/image13.png"/>
+                    </entry>
+                  </row>
+                </thead>
+                <tbody/>
+              </tgroup>
+            </table>
+            <p>The Auto Lib View Generation form should look like <xref href="#mode_gdscdl_generation/Ref153190937">Figure 11</xref>:</p>
+            <p>
+              <i id="Ref153190937">Figure 12: Auto Lib View Generation form in
+GDS/CDL mode</i>
+            </p>
+            <table colsep="1" frame="all" rowsep="1">
+              <tgroup cols="1">
+                <colspec colname="col1" colnum="1" colwidth="1*"/>
+                <thead>
+                  <row>
+                    <entry>
+                      <ol>
+                        <li>
+                          <image href="media/image14.png">
+                            <alt>A screenshot of a computer Description automatically generated</alt>
+                          </image>
+                        </li>
+                      </ol>
+                    </entry>
+                  </row>
+                </thead>
+                <tbody/>
+              </tgroup>
+            </table>
+            <ol>
+              <li>Click <b>Apply</b>.</li>
+            </ol>
+            <p>The default Run directory name is ./autoLib; you can change the
+name, as desired.</p>
+            <p id="Hlk152836121">Several messages are displayed in the CIW output pane. The entire operation is complete when the
+final message "Total time taken" displays (<xref href="#mode_gdscdl_generation/Ref153272741">Figure 12</xref>).</p>
+            <p>
+              <i id="Ref153272741">Figure 13: CIW output messages</i>
+            </p>
+            <table colsep="1" frame="all" rowsep="1">
+              <tgroup cols="1">
+                <colspec colname="col1" colnum="1" colwidth="1*"/>
+                <thead>
+                  <row>
+                    <entry>
+                      <ol>
+                        <li>
+                          <image href="media/image15.png">
+                            <alt>A screenshot of a computer Description automatically generated</alt>
+                          </image>
+                        </li>
+                      </ol>
+                    </entry>
+                  </row>
+                </thead>
+                <tbody/>
+              </tgroup>
+            </table>
+            <p>The structure of Run directory autoLib is shown in <xref href="#mode_gdscdl_generation/Ref152950804">Figure 13</xref>. The individual directories
+that are also cell names contain the cell-level gds and cdl files.
+These cell level files are combined for the library level in the
+ldk_demo_lib.gds and ldk_demo_lib.cdl file when the option <i>Copy
+to delivery dir</i> is enabled.</p>
+            <p>
+              <i id="Ref152950804">Figure 14: Run dir autoLib directory
+structure</i>
+            </p>
+            <table colsep="1" frame="all" rowsep="1">
+              <tgroup cols="1">
+                <colspec colname="col1" colnum="1" colwidth="1*"/>
+                <tbody>
+                  <row>
+                    <entry>
+                      <image href="media/image16.png">
+                        <alt>A screenshot of a computer program Description automatically generated</alt>
+                      </image>
+                    </entry>
+                  </row>
+                </tbody>
+              </tgroup>
+            </table>
+          </body>
+        </topic>

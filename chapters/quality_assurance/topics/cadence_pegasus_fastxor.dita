@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="cadence_pegasus_fastxor">
+      <title>Cadence
+Pegasus FastXOR*</title>
+      <body>
+        <p>Use Cadence Pegasus FastXOR* to compare two layout views/GDS
+files.</p>
+        <p>This section compares the GDS file with the layout_extract view
+of a cell.</p>
+        <ol>
+          <li>Open the following cell/view in read mode:</li>
+        </ol>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <tbody>
+              <row>
+                <entry>
+                  <ol>
+                    <li>Lib/Cell/View: ldk_demo_lib /i0mbfn000aa1d48x5
+/layout_extract</li>
+                  </ol>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <ol>
+          <li>From the <i>Layout</i> menu, select <b>Pegasus &gt; Run
+FastXOR…</b>
+          </li>
+        </ol>
+        <p>
+          <i id="Toc164238224">Figure 63:
+Opening Cadence Pegasus FastXOR*</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image69.png">
+                        <alt>A screenshot of a computer Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+        <ol>
+          <li>The Cadence Pegasus FastXOR* Run Submission form displays
+(Figure 63).</li>
+        </ol>
+        <p>In the <i>Run Data</i> section of the form, in the <i>Run
+Directory</i> field, specify <b>FAST_XOR</b>.</p>
+        <p>
+          <i id="Ref154046633">Figure 64: Pegasus FastXOR* form - Run Data
+section</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image70.png">
+                        <alt>A screenshot of a computer Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+        <ol>
+          <li>In the <i>Input</i> section, in the <i>Layout1</i>region,
+ensure the correct lib/cell/view is selected as highlighted in
+Figure 64 (this auto-populates because we launched Cadence Pegasus
+FastXOR* from the same Layout view).</li>
+          <li>In the <i>Layout2</i> region, select <b>Use Existing
+GDSII</b>, and then click on the three dots to select the
+GDSII file.</li>
+          <li>The FastXOR form displays; select the input GDS file:
+./autoLib/i0mbfn000aa1d48x5/SPEF/i0mbfn000aa1d48x5.gds”</li>
+        </ol>
+        <p>After the setup, as mentioned above, the FastXOR form should
+look like Figure 64.</p>
+        <p>
+          <i id="Ref154046689">Figure 65: Pegasus FastXOR* form - Input
+section</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image71.png">
+                        <alt>A screenshot of a computer Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+        <ol>
+          <li>Keep the default settings in the <i>Output</i> section of the
+form:</li>
+        </ol>
+        <p>
+          <i id="Toc164238227">Figure 66:
+Pegasus FastXOR* form - Output section</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image72.png">
+                        <alt>A screenshot of a computer Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+        <ol>
+          <li>In the <i>FastXOR Options</i> section, ensure nothing is
+enabled, and that no other options are specified.</li>
+        </ol>
+        <p>
+          <i id="Toc164238228">Figure 67:
+Cadence Pegasus FastXOR* - FastXOR Options section</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image73.png">
+                        <alt>A screenshot of a computer Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+        <ol>
+          <li>Click <b>Submit</b> to run FastXOR. This opens a
+Cadence Pegasus* Report window. When the run completes, review the
+comparison (Figure 67). The Total DRC Results is 0, which means the
+comparison passed the check.</li>
+        </ol>
+        <p>
+          <i id="Ref154046902">Figure 68: FastXOR report</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image74.png">
+                        <alt>A screenshot of a computer Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+      </body>
+    </topic>

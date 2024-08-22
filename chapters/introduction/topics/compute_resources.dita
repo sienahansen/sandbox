@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="compute_resources">
+      <title>Compute
+resources</title>
+      <body>
+        <p>Due to the computationally intensive nature of processing a
+large number of standard cells, this section provides
+recommendations for hardware resources to optimize the performance
+of LDK labs and handle large-scale cell processing tasks.</p>
+        <p>Section <xref href="timing_liberty_and_verilog.dita#timing_liberty_and_verilog">3</xref>, in which the timing
+(Liberty) models are generated, is the most computationally
+intensive of all the sections.</p>
+        <p>The recommended hardware resources for LDK Labs are:</p>
+        <ul>
+          <li>Small cell list (7 cells)
+<ul>
+              <li>10 cores, 4G RAM per core</li>
+            </ul>
+          </li>
+          <li>Large cell list (397 cells)
+<ul>
+              <li>2000 cores, 4G RAM per core</li>
+            </ul>
+          </li>
+        </ul>
+      </body>
+    </topic>

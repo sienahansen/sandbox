@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="cad_tools">
+        <title>CAD
+tools</title>
+        <body>
+          <p>
+            <xref href="#cad_tools/Ref152161985">Table 6</xref> lists the tools and
+versions used for the LDK training labs. Enable these tools in your
+environment before running the LDK training labs. Use the version
+listed, or newer.</p>
+          <table colsep="1" frame="all" id="Ref152161985" rowsep="1">
+            <title>Table 6: CAD tools</title>
+            <tgroup cols="3">
+              <colspec colname="col1" colnum="1" colwidth="0.9*"/>
+              <colspec colname="col2" colnum="2" colwidth="1*"/>
+              <colspec colname="col3" colnum="3" colwidth="1.1*"/>
+              <thead>
+                <row>
+                  <entry>Vendor</entry>
+                  <entry>Tool</entry>
+                  <entry>Version</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry morerows="5">
+                    <ol>
+                      <li>Cadence</li>
+                    </ol>
+                  </entry>
+                  <entry>
+                    <ol>
+                      <li>Liberate*</li>
+                    </ol>
+                  </entry>
+                  <entry>
+                    <ol>
+                      <li>23.12 ISR2, 23.12-s064_1</li>
+                    </ol>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>MVS*</li>
+                    </ol>
+                  </entry>
+                  <entry>
+                    <ol>
+                      <li>23.11.001-s034</li>
+                    </ol>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>Pegasus*</li>
+                    </ol>
+                  </entry>
+                  <entry>
+                    <ol>
+                      <li>22.24.000-s003</li>
+                    </ol>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>Quantus*</li>
+                    </ol>
+                  </entry>
+                  <entry>
+                    <ol>
+                      <li>21.22.017-s209</li>
+                    </ol>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>Virtuoso*</li>
+                    </ol>
+                  </entry>
+                  <entry>
+                    <ol>
+                      <li>ICADVM23.1_ISR3</li>
+                    </ol>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>Voltus*</li>
+                    </ol>
+                  </entry>
+                  <entry>
+                    <ol>
+                      <li>22.15-e019_1</li>
+                    </ol>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+          <p>
+            <b>Note:</b> Most LDK labs use the PDK-aligned tool
+versions listed above. Changes in tool versions are specified in
+those labs that require them.</p>
+        </body>
+      </topic>

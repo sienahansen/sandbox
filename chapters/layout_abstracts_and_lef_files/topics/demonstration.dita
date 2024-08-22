@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="demonstration">
+        <title>Demonstration</title>
+        <body>
+          <ol>
+
+            <li>From the AG menus, select <b>Flow &gt;
+Pins…</b> Review the settings on the <i>Map</i> tab
+(<xref href="#demonstration/Ref153273367">Figure 43</xref>).</li>
+          </ol>
+          <p>A regular expression must be entered that identifies the Power
+and Ground pin names. Clock, Analog, and Output pin names are
+optional; the Liberty model defines these three pin names and those
+definitions take precedence over the Abstract/LEF.</p>
+          <p>The modification of the Power/Ground pin names is as
+follows:</p>
+          <ul>
+            <li>
+              <ul>
+                <li>Power pin names: ^((V(DD|CC))|(v(dd|cc|cc_in)))(!)?$</li>
+                <li>Ground pin names: ^((VSS|GND)|(vss|vssx|gnd))(!)?$</li>
+              </ul>
+            </li>
+          </ul>
+          <p>
+            <i id="Ref153273367">Figure 44: Running step Pins, Map tab</i>
+          </p>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <thead>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>
+                        <image href="media/image50.png">
+                          <alt>A screenshot of a computer Description automatically generated</alt>
+                        </image>
+                      </li>
+                    </ol>
+                  </entry>
+                </row>
+              </thead>
+              <tbody/>
+            </tgroup>
+          </table>
+          <ol>
+            <li>Review the settings on the other tabs: <i>Text</i>,
+<i>Boundary</i>, and <i>Blocks</i>. The following options are
+important to consider:</li>
+          </ol>
+          <ul>
+            <li>
+              <ul>
+                <li>On the <i>Boundary</i> tab, <i>Create boundary</i> is set
+to <b>off</b>. This is the recommended setting for
+standard cells since they should contain a boundary (prBoundary
+object) that defines the height and width, instead of relying on
+the layer shapes to define it.</li>
+                <li>On the <i>Blocks</i> tab, <i>Create power pins from
+routing</i> should be disabled since it is not applicable to
+standard cells.</li>
+              </ul>
+            </li>
+          </ul>
+          <ol>
+
+            <li>Click <b>Run</b> on the <i>Running step Pins</i>
+form (<xref href="#demonstration/Ref153273382">Figure 44</xref>).</li>
+          </ol>
+          <p>
+            <i id="Ref153273382">Figure 45: AG UI, results from Pins step</i>
+          </p>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <thead>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>
+                        <image href="media/image51.png">
+                          <alt>A screenshot of a computer Description automatically generated</alt>
+                        </image>
+                      </li>
+                    </ol>
+                  </entry>
+                </row>
+              </thead>
+              <tbody/>
+            </tgroup>
+          </table>
+          <p>A yellow exclamation point (!) could appear instead of a green
+checkmark to indicate warnings were issued for the cell. It is
+recommended that the warnings be reviewed.</p>
+          <p>For each standard cell in the library, a view named
+<i>abstract.pin</i> is created.</p>
+        </body>
+      </topic>

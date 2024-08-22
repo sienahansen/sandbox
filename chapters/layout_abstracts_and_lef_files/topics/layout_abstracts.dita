@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="layout_abstracts">
+      <title>Layout
+abstracts</title>
+      <body>
+        <p>The library modeling tool AG (Abstract Generator) creates layout
+abstracts for standard cells, macro blocks, and IOs from detailed
+layout information in OA, GDSII, or OASIS formats. It is included
+with the Cadence Virtuoso* Studio installation.</p>
+        <p>An abstract is a high-level representation of a layout view. An
+abstract contains information about the type and size of cells, the
+position of pins or terminals, and the overall size of blockages.
+The abstracts generated are based on the physical layout and
+logical data, process technology information, and specific
+cell-modeling requirements. After P&amp;R (Place and Route) is
+complete, the abstracts are replaced with layouts with all the
+layers required for manufacturing.</p>
+        <p>Abstracts are used in place of full layouts by digital P&amp;R
+tools such as Cadence Innovus* to improve performance.</p>
+        <p>Layout views contain the full detailed layout of a cell,
+however, abstracts only contain information about:</p>
+        <ul>
+          <li>Type and size of a cell</li>
+          <li>Location of pins</li>
+          <li>Obstructions</li>
+          <li>Antenna data for signal pins (if available)</li>
+        </ul>
+        <p>The functionality for abstract generation is available through
+two interfaces, which access the same executable. The standalone AG
+interface can generate abstracts for a single library at a time.
+The standalone AG interface is used in this demonstration. It can
+be run in either GUI or non-GUI mode. This interface provides
+advanced options and is designed for experienced users and library
+developers.</p>
+        <p>The integrated AG interface launched from the Cadence Virtuoso*
+design environment can generate abstracts for individual or
+multiple library cells. This interface is simple and is designed
+for novice users who are unfamiliar with the standalone application
+or who find the advanced options of the standalone application
+unnecessary. AG retrieves the technology information from the
+technology library to which the design library is attached. In this
+demonstration, the technology library is intel78tech.</p>
+        <p>Features of AG include the ability to:</p>
+        <ul>
+          <li>Create pins from shapes under the label text. Text and pin
+shapes can also be at levels of hierarchy lower than the current
+level of the cell.</li>
+          <li>Check the consistency of cell name, pin name, and pin direction
+between LEF and Verilog or LIB files.</li>
+          <li>Control extraction by layer, hierarchy, and distance. Gate and
+diffusion areas can also be extracted at the same time.</li>
+          <li>Create Detailed, Cover, or Shrink-wrapped blockages for each
+layer.</li>
+          <li>Cut out pin access from Cover blockages.</li>
+          <li>Calculate process antenna effects, including partial area metal
+for boundary pins.</li>
+          <li>Automate the flow by recording commands from a graphical AG
+session to a replay file which can be rerun later either
+graphically or non-graphically.</li>
+        </ul>
+        <p>Abstract generation using AG is a three-step process consisting
+of:</p>
+        <ul>
+          <li>
+            <b>Pins</b> step:
+<ul>
+              <li>AG maps text labels to terminal names and creates physical pin
+shapes corresponding to the geometry overlapping the origin of the
+text labels.</li>
+              <li>Identifies pin geometries for connectivity extraction.</li>
+              <li>Creates the P&amp;R boundary.</li>
+              <li>Matches the pins created with the logical view present and
+appends the appropriate pin direction.</li>
+              <li>Specifies hierarchy depths for text label and metal geometry
+search for text-to-pin mapping and pin creation.</li>
+              <li>Has options to remove unnecessary text from pin labels or to
+replace text in a pin label.</li>
+              <li>Has an option to preserve layout labels in the final Abstract
+view.</li>
+            </ul>
+          </li>
+          <li>
+            <b>Extract</b> step:
+<ul>
+              <li>In the Extract step, AG traces the connectivity hierarchically
+through the physical shapes in the layout to modify pin shapes,
+starting from the pins generated during the Pins step.</li>
+              <li>Constructs the correct database model for strong, weak, and
+“must connect” pins.</li>
+              <li>AG can also use the antenna options to create library process
+antenna information.</li>
+            </ul>
+          </li>
+          <li>
+            <b>Abstract</b> step:
+<ul>
+              <li>In the Abstract step, AG adjusts the pin shapes created during
+the Extract step to create the final shapes required by P&amp;R
+tools.</li>
+              <li>Then, AG applies a layer blockage model that you select to
+create the final blockage geometry in the abstract.</li>
+            </ul>
+          </li>
+        </ul>
+      </body>
+    </topic>

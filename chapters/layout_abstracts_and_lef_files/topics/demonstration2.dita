@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="demonstration2">
+        <title>Demonstration</title>
+        <body>
+          <ol>
+            <li>From the AG menus, select <b>Flow &gt;
+Abstract…</b>
+            </li>
+          </ol>
+          <ol>
+
+            <li>On the <i>Site</i> tab, <i>Define new site name</i> is
+pre-set to <b>core</b> (<xref href="#demonstration2/Ref153273499">Figure
+49</xref>). This corresponds to the site name used in the PDK for
+single height cells.</li>
+          </ol>
+          <p>Different site names for different cells cannot be accomplished
+in a single step in AG or through a post hook. Site specification
+in AG for cells is based on the bin type assigned to the cells.
+Libraries with single height (site: core) and double height (site:
+core2h) cells must be processed separately as groups. Select all
+the single height cells and set the site name to <i>core</i>, and
+then generate the abstracts. Do the same for the double height
+cells.</p>
+          <p>
+            <i id="Ref153273499">Figure 50: Running step Abstract, Site
+tab</i>
+          </p>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <thead>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>
+                        <image href="media/image56.png">
+                          <alt>A screenshot of a computer program Description automatically generated</alt>
+                        </image>
+                      </li>
+                    </ol>
+                  </entry>
+                </row>
+              </thead>
+              <tbody/>
+            </tgroup>
+          </table>
+          <ol>
+
+            <li>The default settings can be used for all the other options;
+click <b>Run</b>. Results are generated (<xref href="#demonstration2/Ref153273540">Figure 50</xref>).</li>
+          </ol>
+          <p>
+            <i id="Ref153273540">Figure 51: AG UI, results from Abstract
+step</i>
+          </p>
+          <table colsep="1" frame="all" rowsep="1">
+            <tgroup cols="1">
+              <colspec colname="col1" colnum="1" colwidth="1*"/>
+              <thead>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>
+                        <image href="media/image57.png">
+                          <alt>A screenshot of a computer Description automatically generated</alt>
+                        </image>
+                      </li>
+                    </ol>
+                  </entry>
+                </row>
+              </thead>
+              <tbody/>
+            </tgroup>
+          </table>
+          <p>The warnings indicate that the site “core” is not
+declared in the PDK technology file and is created temporarily; you
+can ignore the warnings.</p>
+          <ol>
+            <li>Exit AG.</li>
+          </ol>
+        </body>
+      </topic>

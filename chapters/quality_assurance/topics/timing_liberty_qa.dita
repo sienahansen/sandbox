@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="timing_liberty_qa">
+      <title>Timing
+(Liberty) QA</title>
+      <body>
+        <p>Cadence Liberty LV* has many Liberty checking features. The
+following checks are performed in this LDK:</p>
+        <ul>
+          <li>
+            <b>Data Range:</b> Check that data is within the
+specified range using the validate_data_range command. You can
+specify thresholds for min and max range in the file. The tool also
+checks for two or more consecutive zeros in the data table.</li>
+          <li>
+            <b>Monotonicity:</b> Check data is monotonically
+increasing (when input slew or output load is increasing) using the
+validate_monotonicity command in Liberate LV. Data types checked
+include:
+<ul>
+              <li>cell_rise</li>
+              <li>cell_fall</li>
+              <li>rise_transition</li>
+              <li>fall_transition</li>
+              <li>mpw</li>
+            </ul>
+          </li>
+          <li>
+            <b>CCS versus NLDM:</b> Compare the CCS data to the
+NLDM data in a single library and report any difference that
+exceeds the defined tolerance. Tolerance threshold is set to
+1 ps, 1%.</li>
+          <li>
+            <b>CCSN:</b> Data consistency check using the
+check_ccsn command. It checks for CCB attributes and overall CCSN
+data and structure.</li>
+          <li>
+            <b>LVF:</b> LVF data consistency checks using the
+check_lvf_data command in Cadence Liberate LV*. This checks for:
+<ul>
+              <li>Out-of-bound values</li>
+              <li>OCV out-of-range values</li>
+              <li>Consistency between LVF moments and OCV early/late sigma
+values</li>
+              <li>Early / late sigma ratio</li>
+              <li>OCV sigma by nom ratio</li>
+              <li>Delay / trans sigma ratio</li>
+            </ul>
+          </li>
+          <li>
+            <b>Validate LVF:</b> Check using the
+validate_lvf_data command in Cadence Liberate LV*. This checks for:
+<ul>
+              <li>Missing OCV arc</li>
+              <li>NLDM table and OCV table having different size</li>
+              <li>Any zero value for OCV</li>
+            </ul>
+          </li>
+        </ul>
+        <p>Detail information of these checks can be found in the Cadence
+Liberate LV* manual.</p>
+      </body>
+      
+      
+      
+    </topic>

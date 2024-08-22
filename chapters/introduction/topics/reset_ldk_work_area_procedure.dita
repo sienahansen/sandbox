@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="reset_ldk_work_area_procedure">
+        <title>Reset LDK
+work area procedure</title>
+        <body>
+          <p>To return the LDK workspace to its initial state:</p>
+          <ol>
+            <li>Close all CAD tools started from the LDK workspace.</li>
+          </ol>
+          <ol>
+            <li>Close all xterms with LDK environment setup.</li>
+            <li>Remove the files/directory content in the workspace
+directory.</li>
+            <li>Follow the steps in Environment setup for lab user to
+reinitialize the lab environment.</li>
+          </ol>
+        </body>
+      </topic>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="user_actions1">
+      <title>User
+actions</title>
+      <body>
+        <p>Change the directory to the LDK work area
+./ldk_r0.9_cdns/training/setup/cadence/ldk, and then source the
+sourceme file, if this is the first time launching Cadence tools,
+from the shell you are working in.</p>
+        <ol>
+          <li>Type the command abstract &amp; to launch the AG (<xref href="#user_actions1/Ref153268436">Figure 38</xref>).</li>
+        </ol>
+        <p>
+          <i id="Ref153268436">Figure 39: AG User Interface (UI)</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image45.png">
+                        <alt>A screenshot of a computer Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+        <ol>
+
+          <li>From the AG menus, select <b>File &gt; Library &gt;
+Open.</b> Then select the library
+<b>ldk_demo_lib</b>. Click <b>OK</b>. (<xref href="#user_actions1/Ref153268472">Figure 39</xref> shows that library as having
+been selected.)</li>
+        </ol>
+        <p>
+          <i id="Ref153268472">Figure 40: AG UI after library open</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image46.png">
+                        <alt>A screenshot of a computer Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+        <p>All the cells should be in the <i>Core</i> bin. If not, select
+the cells in the other bin(s), and then use <b>Cells &gt;
+Move…</b> to move them into the <i>Core</i> bin.</p>
+        <p>Bins are like buckets for placing cells. Each cell in a library
+is always contained in one bin. Each bin is associated with
+specific options, which allows the cells in a library to be
+distributed into mutually exclusive sets for processing. For
+example, AG uses the option settings for a bin to determine how to
+treat the cells in the bin. There are five predefined bins, one for
+each of the five main types of cells: <i>Core</i>, <i>IO</i>,
+<i>Corner</i>, <i>Block</i> and <i>Ignore</i> (to store any
+cells you do not want to process at a particular time). Cells
+placed in the <i>Ignore</i> bin are excluded from the set of
+cells to be processed but not deleted.</p>
+        <ol>
+
+          <li>From the AG menus, select <b>File &gt; General
+Options..</b>. On the <i>General</i> tab, <i>Pin purpose
+name</i> should be pre-set to <b>pin</b>. If not, update
+it (<xref href="#user_actions1/Ref153268554">Figure 40</xref>).</li>
+        </ol>
+        <p>
+          <i id="Ref153268554">Figure 41: General Options, General tab</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image47.png">
+                        <alt>A screenshot of a computer program Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+        <ol>
+
+          <li>On the <i>Views</i> tab, <i>Logical view name</i> should be
+pre-set to <b>schematic</b>. If not, update it, and then
+click <b>OK</b> (<xref href="#user_actions1/Ref153546986">Figure
+41</xref>).</li>
+        </ol>
+        <p>
+          <i id="Ref153546986">Figure 42: General Options, Views tab</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image48.jpeg">
+                        <alt>A screenshot of a computer Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+        <ol>
+
+          <li>Select the <i>Core</i> bin, highlighting it. From the AG
+menus, select <b>Cells &gt; Select All</b> (<xref href="#user_actions1/Ref153268570">Figure 42</xref>)<b>.</b>
+          </li>
+        </ol>
+        <p>All cell libraries are processed in the next steps.</p>
+        <p>
+          <i id="Ref153268570">Figure 43: AG UI, Core bin</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image49.png">
+                        <alt>A screenshot of a computer Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+      </body>
+    </topic>

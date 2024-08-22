@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="view_check_command_reference">
+        <title>View Check
+Command Reference</title>
+        <body>
+          <p>
+            <b>view_check_read_lib [options]</b>
+          </p>
+          <p>Read Liberty files and generate view check DB.</p>
+          <p>
+            <b>Options:</b>
+          </p>
+          <p>-files &lt;list of input files&gt;</p>
+          <p>
+            <b>Examples:</b>
+          </p>
+          <p>set db_lib [view_check_read_lib -files lib/test.lib]</p>
+          <p>_____</p>
+          <p>
+            <b>view_check_read_lef [options]</b>
+          </p>
+          <p>Read LEF files and generate view check DB.</p>
+          <p>
+            <b>Options:</b>
+          </p>
+          <p>-files &lt;list of input files&gt;</p>
+          <p>
+            <b>Examples:</b>
+          </p>
+          <p>set db_lef [view_check_read_lef -files lef/test.lef]</p>
+          <p>_____</p>
+          <p>
+            <b>view_check_read_spice [options]</b>
+          </p>
+          <p>Read SPICE-type files and generate view check DB.</p>
+          <p>
+            <b>Options:</b>
+          </p>
+          <p>-type &lt;type of SPICE&gt;</p>
+          <p>Supported types: [ spice | spectre | dspf | cdl ]</p>
+          <p>-power_pins &lt;list of power pins&gt;</p>
+          <p>-ground_pins &lt;list of ground pins&gt;</p>
+          <p>-dir &lt;directory containing input files&gt;</p>
+          <p>-file_ext &lt;file extension of input files in directory
+specified by -dir&gt;</p>
+          <p>-files &lt;list of input files&gt;</p>
+          <p>
+            <b>Examples:</b>
+          </p>
+          <p>set db_spf [view_check_read_spice -power_pins vcc -ground_pins
+vssx -type dspf -dir spf -file_ext spf]</p>
+          <p>______</p>
+          <p>
+            <b>xview_check [options] &lt;db_ref&gt;
+&lt;db_cmp&gt;</b>
+          </p>
+          <p>Cross view comparison: comparison between 2 views.</p>
+          <p>The output report is organized into 4 different sections:</p>
+          <ol>
+            <li>Compare Cell: a table listing cells from reference and compare
+database</li>
+            <li>Compare Cell Attribute: a table listing cells and the
+cell’s attributes</li>
+            <li>Compare Pin: a table listing cells and the cell’s
+pins</li>
+            <li>Compare Pin Attribute: one table for each cell, a table
+containing all pins and their attributes and values</li>
+          </ol>
+          <p>Output report legend:</p>
+          <p>&lt; - mismatch</p>
+          <p>
+? - missing</p>
+          <p>
+            <b>Options:</b>
+          </p>
+          <p>-compare_types &lt;list of data types to compare&gt;</p>
+          <p>Supported data types: * cell pin cell_attribute
+pin_attribute</p>
+          <p>-cells &lt;list of cells&gt;</p>
+          <p>List of cells to include (or exclude if -exclude_cells).
+Supports wildcard.</p>
+          <p>-exclude_cells</p>
+          <p>-pins</p>
+          <p>List of pins to include (or exclude if -exclude_pins). Supports
+wildcard.</p>
+          <p>-exclude_pin</p>
+          <p>-cell_attrs &lt;list of cell attributes&gt;</p>
+          <p>List of cell attributes to include (or exclude if
+-exclude_cell_attrs). Supports wildcard.</p>
+          <p>-exclude_cell_attrs</p>
+          <p>-pin_attrs &lt;list of cell attributes&gt;</p>
+          <p>List of pin attributes to include (or exclude if
+-exclude_pin_attrs). Supports wildcard.</p>
+          <p>-exclude_pin_attrs</p>
+          <p>-abstol &lt;absolute tolerance&gt;</p>
+          <p>Absolute tolerance applied to numeric cell / pin attribute
+comparison; for example, area. Default = 0.001.</p>
+          <p>-reltol &lt;relative tolerance&gt;</p>
+          <p>Relative tolerance applied to numeric cell / pin attribute
+comparison; for example area. Default = 0.01 (1%).</p>
+          <p>-report &lt;output report file&gt;</p>
+          <p>Support stdout.</p>
+          <p>-verbose</p>
+          <p>Include matched data in report.</p>
+          <p>
+            <b>Examples:</b>
+          </p>
+          <p>Compare Liberty vs. LEF: include cell attribute area and pin
+attribute direction in comparison.</p>
+          <p>set db_lib [view_check_read_lib -files lib/test.lib]</p>
+          <p>set db_lef [view_check_read_lef -files lef/test.lef]</p>
+          <p>xview_check -cell_attrs {area} -pin_attrs {direction} -report
+lib2lef.rpt $db_lib $db_lef</p>
+          <p>Compare Liberty vs. DSPF</p>
+          <p>set db_lib [view_check_read_lib -files lib/test.lib]</p>
+          <p>set db_dspf [view_check_read_spice -type dspf -power_pins vcc
+-ground_pins vssx -dir spf -file_ext spf]</p>
+          <p>xview_check -compare_types {cell pin} -report lib2dspf.rpt
+$db_lib $db_dspf</p>
+          <p>Compare Liberty vs. CDL</p>
+          <p>set db_lib [view_check_read_lib -files lib/test.lib]</p>
+          <p>set db_cdl [view_check_read_spice -type cdl -power_pins vcc
+-ground_pins vssx -files cdl/test.cdl]</p>
+          <p>xview_check -compare_types {cell pin pin_attribute} -pin_attrs
+{direction} -report lib2cdl.rpt $db_lib $db_cdl</p>
+          <ol>
+            <li id="Toc164238153">Document
+References</li>
+          </ol>
+          <p>
+            <xref href="#view_check_command_reference/Ref421204078">Table 22</xref> lists other documents
+referenced in this document. Contact your Intel Representative to
+obtain these documents.</p>
+          <table colsep="1" frame="all" id="Ref421204078" rowsep="1">
+            <title>Table 22: References</title>
+            <tgroup cols="2">
+              <colspec colname="col1" colnum="1" colwidth="1.7*"/>
+              <colspec colname="col2" colnum="2" colwidth="0.3*"/>
+              <thead>
+                <row>
+                  <entry>Document title</entry>
+                  <entry>Type</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>
+                        <i>P1278.3 (Intel 18A) PDK 0.9GA Process Design Kit User
+Guide</i>
+                      </li>
+                    </ol>
+                  </entry>
+                  <entry>
+                    <ol>
+                      <li>Kit</li>
+                    </ol>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <ol>
+                      <li>
+                        <i>P1278.3 (Intel 18A) PDK 0.9GA Library Development Kit
+Overview for Cadence Tools, Release 0.9GA_c</i>
+                      </li>
+                    </ol>
+                  </entry>
+                  <entry/>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </body>
+      </topic>

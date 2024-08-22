@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="overview4">
+        <title>Overview</title>
+        <body>
+          <p>(LEF) Library Exchange Format defines the elements of IC process
+technology and the associated library of cell models. Once the
+layout abstracts have been created with AG, the LEF translator
+creates the standard cell LEF files (macro LEF).</p>
+          <p>If the digital P&amp;R tool, Cadence Innovus*, uses the
+Mixed-Signal OpenAccess (MOSA) mode, the technology information is
+read from the PDK technology library, and abstract views are used
+for the standard cells.</p>
+          <p>If the Cadence Innovus* uses the LEF/DEF mode, the technology
+information is read from the technology LEF and the macro LEF is
+used for the standard cells.</p>
+        </body>
+      </topic>

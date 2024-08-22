@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="layout_versus_schematic_gds_versus_cdl">
+      <title>Layout
+Versus Schematic: GDS versus CDL</title>
+      <body>
+
+        <p>Use the LVS process to verify that the physical layout
+implementation connectivity matches the Schematic (or Netlist). The
+flow steps to run LVS are explained in Section <xref href="lvs.dita#lvs">2.5</xref>. There are no lab steps in this
+section. When running the SPEF generation, it runs the LVS, and
+then generates the LVS run directory at
+./autoLib/&lt;cell_name&gt;/SPEF/ location.</p>
+        <p>To verify the LVS results, view the lvs.report.cls file from
+that location, above.</p>
+        <p>
+          <i id="Ref154046309">Figure 62: LVS
+Results file</i>
+        </p>
+        <table colsep="1" frame="all" rowsep="1">
+          <tgroup cols="1">
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <thead>
+              <row>
+                <entry>
+                  <ol>
+                    <li>
+                      <image href="media/image68.png">
+                        <alt>A screenshot of a computer Description automatically generated</alt>
+                      </image>
+                    </li>
+                  </ol>
+                </entry>
+              </row>
+            </thead>
+            <tbody/>
+          </tgroup>
+        </table>
+        <p>
+          <xref href="#layout_versus_schematic_gds_versus_cdl/Ref154046309">Figure 61</xref> highlights the Run Result
+representing the LVS run as a match.</p>
+      </body>
+    </topic>

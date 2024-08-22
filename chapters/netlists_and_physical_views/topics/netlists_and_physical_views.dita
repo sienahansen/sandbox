@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="netlists_and_physical_views">
+    <title>Netlists and Physical Views</title>
+    <body>
+      <p>This section covers generation of:</p>
+      <ul>
+        <li>Stream file (GDSII) (Section <xref href="stream_file_gdsii.dita#stream_file_gdsii">2.1</xref>)</li>
+        <li>OASIS design file (OASIS)</li>
+        <li>CDL (Circuit Description Language) (Section <xref href="circuit_description_language.dita#circuit_description_language">2.3</xref>)</li>
+        <li>Container cell generation (Section <xref href="container_cell_generation.dita#container_cell_generation">2.4</xref>)</li>
+        <li>LVS (Layout Versus Schematic) (Section <xref href="lvs.dita#lvs">2.5</xref>)</li>
+        <li>Parasitic Extraction and SPEF generation (Section <xref href="parasitic_extraction_and_spef_generation.dita#parasitic_extraction_and_spef_generation">2.6</xref>)</li>
+      </ul>
+      <p>Each of these formats is defined, and a custom utility is
+demonstrated to generate them for an entire library.</p>
+    </body>
+    
+    
+    
+    
+    
+    
+    
+  </topic>
