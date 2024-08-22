@@ -103,7 +103,7 @@
       <topicref href="../chapters/netlists_and_physical_views/topics/lvs.dita"/>
       <topicref
         href="../chapters/netlists_and_physical_views/topics/parasitic_extraction_and_spef_generation.dita"/>
-      <topicref href="../chapters/netlists_and_physical_views/topics/user_actions3.dita">
+      <topicref href="../chapters/power_grid_library/topics/user_actions.dita">
         <topicref href="../chapters/netlists_and_physical_views/topics/getting_started.dita"/>
         <topicref
           href="../chapters/netlists_and_physical_views/topics/auto_lib_view_generation_form.dita">
@@ -118,6 +118,7 @@
       <topicref href="../chapters/layout_abstracts_and_lef_files/topics/layout_abstracts.dita"/>
       <topicref href="../chapters/layout_abstracts_and_lef_files/topics/library_exchange_format.dita"/>
       <topicref href="../chapters/layout_abstracts_and_lef_files/topics/user_actions2.dita"/>
+      <topicref href="../chapters/netlists_and_physical_views/topics/user_actions3.dita"/>
       <topicref href="../chapters/layout_abstracts_and_lef_files/topics/options_file.dita"/>
       <topicref href="../chapters/layout_abstracts_and_lef_files/topics/pins_step.dita">
         <topicref href="../chapters/layout_abstracts_and_lef_files/topics/overview1.dita"/>
@@ -140,7 +141,6 @@
     <topicref href="../chapters/power_grid_library/topics/power_grid_library.dita">
       <topicref href="../chapters/power_grid_library/topics/types_of_power_grid_views.dita"/>
       <topicref href="../chapters/power_grid_library/topics/required_collateral.dita"/>
-      <topicref href="../chapters/power_grid_library/topics/user_actions.dita"/>
       <topicref href="../chapters/power_grid_library/topics/warning_explanations.dita"/>
     </topicref>
     <topicref href="../chapters/timing_liberty_and_verilog/topics/timing_liberty_and_verilog.dita">
