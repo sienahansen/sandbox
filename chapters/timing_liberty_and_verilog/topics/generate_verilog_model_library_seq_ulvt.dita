@@ -2,47 +2,17 @@
 <!DOCTYPE topic
   PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="generate_verilog_model_library_seq_ulvt">
-      <title>Generate
-Verilog model – library seq_ulvt</title>
-      <body>
-        <ol>
-          <li>Use Cadence Liberate* to create the Verilog model. The tool
-uses the .lib file as the source information for the cells:</li>
-        </ol>
-        <table colsep="1" frame="all" rowsep="1">
-          <tgroup cols="1">
-            <colspec colname="col1" colnum="1" colwidth="1*"/>
-            <tbody>
-              <row>
-                <entry>
-                  <ol>
-                    <li>liberate --trio $INTEL_LCK/common_tcls/gen_verilog.tcl
-out_dir_probe_fix_index/PV/allcells/lib783_i0m_180h_50pp_seq_ulvt_tttt_0p700v_85c_tttt_ctyp_nldm.lib
-lib783_i0m_180h_50pp_seq_ulvt |&amp; tee logs/gen_verilog.log</li>
-                  </ol>
-                </entry>
-              </row>
-            </tbody>
-          </tgroup>
-        </table>
-        <ol>
-          <li>Review the Verilog model files in the directory ./verilog, and
-then copy to the golden DB area:</li>
-        </ol>
-        <table colsep="1" frame="all" rowsep="1">
-          <tgroup cols="1">
-            <colspec colname="col1" colnum="1" colwidth="1*"/>
-            <tbody>
-              <row>
-                <entry>
-                  <ol>
-                    <li>cp verilog/*.v
-$LDK_WORKAREA/training/setup/cadence/ldk/stdcells_1278.ldk_demo_lib/verilog/</li>
-                  </ol>
-                </entry>
-              </row>
-            </tbody>
-          </tgroup>
-        </table>
-      </body>
-    </topic>
+  <title>Generate Verilog model – library seq_ulvt</title>
+  <body>
+    <ol>
+      <li>Use Cadence Liberate* to create the Verilog model. The tool uses the .lib file as the
+        source information for the
+        cells:<codeblock id="codeblock_ylz_hlc_mcc">liberate --trio $INTEL_LCK/common_tcls/gen_verilog.tcl 
+out_dir_probe_fix_index/PV/allcells/lib783_i0m_180h_50pp_seq_ulvt_tttt_0p700v_85c_tttt_
+ctyp_nldm.lib lib783_i0m_180h_50pp_seq_ulvt |&amp; tee logs/gen_verilog.log</codeblock></li>
+      <li>Review the Verilog model files in the directory ./verilog, and then copy to the golden DB
+        area:<codeblock id="codeblock_dsc_klc_mcc">cp verilog/*.v 
+$LDK_WORKAREA/training/setup/cadence/ldk/stdcells_1278.ldk_demo_lib/verilog/</codeblock></li>
+    </ol>
+  </body>
+</topic>

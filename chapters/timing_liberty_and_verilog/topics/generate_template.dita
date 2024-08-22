@@ -6,50 +6,16 @@
 template</title>
       <body>
         <ol>
-          <li>Run the setup script to create the template generation run
-directory, and then cd to that directory:</li>
-        </ol>
-        <table colsep="1" frame="all" rowsep="1">
-          <tgroup cols="1">
-            <colspec colname="col1" colnum="1" colwidth="1*"/>
-            <tbody>
-              <row>
-                <entry>
-                  <ol>
-                    <li>$INTEL_LDK/training/libraries/char/setup/CreateSetup.csh
-genTemp</li>
-                    <li>cd genTemp</li>
-                  </ol>
-                </entry>
-              </row>
-            </tbody>
-          </tgroup>
-        </table>
-        <ol>
-          <li>To generate the characterization setup files, run the script
-run.csh:</li>
-        </ol>
-        <table colsep="1" frame="all" rowsep="1">
-          <tgroup cols="1">
-            <colspec colname="col1" colnum="1" colwidth="1*"/>
-            <tbody>
-              <row>
-                <entry>
-                  <ol>
-                    <li>./run.csh</li>
-                  </ol>
-                </entry>
-              </row>
-            </tbody>
-          </tgroup>
-        </table>
-
-        <p>The run reads all Liberty files in the file list and generates
-the characterization setup files (<xref href="#generate_template/Ref153268216">Table
-12</xref>).</p>
-        <table colsep="1" frame="all" id="Ref153268216" rowsep="1">
-          <title>Table 12: Characterization setup
-files</title>
+      <li>Run the setup script to create the template generation run directory, and then cd to that
+        directory:
+        <codeblock id="codeblock_xfc_njc_mcc">$INTEL_LDK/training/libraries/char/setup/CreateSetup.csh genTemp
+cd genTemp</codeblock></li>
+      <li>To generate the characterization setup files, run the script run.csh:
+          <codeblock id="codeblock_yjx_4jc_mcc">./run.csh</codeblock><p>The run reads all Liberty
+          files in the file list and generates the characterization setup files (<xref
+            href="#generate_template/Ref153268216">Table 12</xref>). </p><table colsep="1"
+          frame="all" id="Ref153268216" rowsep="1">
+          <title>Table 12: Characterization setup files</title>
           <tgroup cols="2">
             <colspec colname="col1" colnum="1" colwidth="0.8*"/>
             <colspec colname="col2" colnum="2" colwidth="1.2*"/>
@@ -61,79 +27,30 @@ files</title>
             </thead>
             <tbody>
               <row>
-                <entry>
-                  <ol>
-                    <li>templates_fi</li>
-                  </ol>
-                </entry>
-                <entry>
-                  <ol>
-                    <li>Template for each cell.</li>
-                  </ol>
-                </entry>
+                <entry>templates_fi</entry>
+                <entry>Template for each cell.</entry>
               </row>
               <row>
-                <entry>
-                  <ol>
-                    <li>user_data</li>
-                  </ol>
-                </entry>
-                <entry>
-                  <ol>
-                    <li>User data file for each cell.</li>
-                  </ol>
-                </entry>
+                <entry>user_data</entry>
+                <entry>User data file for each cell.</entry>
               </row>
               <row>
-                <entry>
-                  <ol>
-                    <li>cells.list_*</li>
-                  </ol>
-                </entry>
-                <entry>
-                  <ol>
-                    <li>Cell list for each library.</li>
-                  </ol>
-                </entry>
+                <entry>cells.list_*</entry>
+                <entry>Cell list for each library.</entry>
               </row>
               <row>
-                <entry>
-                  <ol>
-                    <li>tsl_node_*</li>
-                  </ol>
-                </entry>
-                <entry>
-                  <ol>
-                    <li>Custom Intel cell attributes.</li>
-                  </ol>
-                </entry>
+                <entry>tsl_node_*</entry>
+                <entry>Custom Intel cell attributes.</entry>
               </row>
             </tbody>
           </tgroup>
-        </table>
-        <p>The file list (copy of the file genTep_list_libs_ldk_startup)
-contains only four library files. They cover the seven cells and
-two PVTs for the small cell list. The full LDK library list is
-specified in the file genTemp_list_libs_ldk.</p>
-        <p>The run time for the four libs is about 40 minutes.</p>
-        <ol>
-          <li>(Optional) To generate characterization setup files for the
-large cell list which contains 154 files:</li>
-        </ol>
-        <table colsep="1" frame="all" rowsep="1">
-          <tgroup cols="1">
-            <colspec colname="col1" colnum="1" colwidth="1*"/>
-            <tbody>
-              <row>
-                <entry>
-                  <ol>
-                    <li>cp genTemp_list_libs_ldk list</li>
-                    <li>./run.csh</li>
-                  </ol>
-                </entry>
-              </row>
-            </tbody>
-          </tgroup>
-        </table>
+        </table><p>The file list (copy of the file genTep_list_libs_ldk_startup) contains only four
+          library files. They cover the seven cells and two PVTs for the small cell list. The full
+          LDK library list is specified in the file genTemp_list_libs_ldk.</p><p>The run time for
+          the four libs is about 40 minutes.</p></li>
+      <li>(Optional) To generate characterization setup files for the large cell list which contains
+        154 files: <codeblock id="codeblock_zvd_tjc_mcc">cp genTemp_list_libs_ldk list
+./run.csh</codeblock></li>
+    </ol>
       </body>
     </topic>

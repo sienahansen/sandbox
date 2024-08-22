@@ -9,14 +9,16 @@ environment and run directory</title>
       Section <xref href="environment_setup_for_lab_user.dita#environment_setup_for_lab_user"
         >1.3.4</xref>, Environment setup for lab user.</p>
         <ol>
-          <li>Change the directory to the LDK working area
+      <li>Change the directory to the LDK working area
         ./ldk_r0.9_cdns/training/setup/cadence/ldk.</li>
       <li>Source the sourceme file if this is the first time launching Cadence tools from the shell
         you are working in. <p>To set up the job distribution command, edit the Cadence Liberate*
           Cluster section in the file
           $LDK_WORKAREA/training/libraries/char/Trio_Flow_setup/Version1p10/char_tcls/char.tcl
             (<xref href="#setup_environment_and_run_directory/Ref153268043">Figure 24</xref>). <fig
-              id="fig_up2_d3c_mcc"><title>File char.tcl, Cadence Liberate* Cluster section</title><image></image>
+            id="fig_up2_d3c_mcc">
+            <title>File char.tcl, Cadence Liberate* Cluster section</title>
+            <image/>
             <note id="note_vm1_f3c_mcc">
               <ul id="ul_jmt_f3c_mcc">
                 <li>The first section is an example of Intel’s nbjobs command.<p>The second section
@@ -27,90 +29,25 @@ environment and run directory</title>
                     used in rsh_cmd.</p>
                 </li>
               </ul>
-            </note></fig></p></li>
-      <li/>
-      <li/>
-      <li/>
-      <li/>
-        </ol>
-    <p/>
-
-        <p/>
-        <ol>
-          <li>Intel standard cell characterization uses driver cell to drive
-input of standard cells (instead of using an ideal voltage driver).
-<ol>
-              <li>Update the file
-$LDK_WORKAREA/training/libraries/char/setup/char_tcls/init.tcl.</li>
-              <li>Change set DRIVER_CELL_netlist_dir &lt;DRIVER_CELL_dir&gt; to
-the driver cell netlist directory.</li>
-            </ol>
-          </li>
-          <li>Cadence Liberate* characterization requires the use of the
-Cadence Liberate* Bolt Server for job control and
-distribution.</li>
-        </ol>
-        <ul>
-          <li>
-            <ul>
-              <li>If the Cadence Liberate* Bolt server is already set up, set the
-shell environment variable to point to the Bolt server:</li>
-            </ul>
-          </li>
-        </ul>
-        <table colsep="1" frame="all" rowsep="1">
-          <tgroup cols="1">
-            <colspec colname="col1" colnum="1" colwidth="1*"/>
-            <tbody>
-              <row>
-                <entry>
-                  <ol>
-                    <li>setenv CDS_BOLT_SERVER &lt;server&gt;</li>
-                  </ol>
-                </entry>
-              </row>
-            </tbody>
-          </tgroup>
-        </table>
-        <ul>
-          <li>
-            <ul>
-              <li>If the Cadence Liberate* Bolt server is not already setup, then
-start the server on your local machine:</li>
-            </ul>
-          </li>
-        </ul>
-        <table colsep="1" frame="all" rowsep="1">
-          <tgroup cols="1">
-            <colspec colname="col1" colnum="1" colwidth="1*"/>
-            <tbody>
-              <row>
-                <entry>
-                  <ol>
-                    <li>$ALTOSHOME/bin/start_bolt</li>
-                    <li>setenv CDS_BOLT_SERVER `hostname`</li>
-                  </ol>
-                </entry>
-              </row>
-            </tbody>
-          </tgroup>
-        </table>
-        <ol>
-          <li>Change to the characterization working directory:</li>
-        </ol>
-        <table colsep="1" frame="all" rowsep="1">
-          <tgroup cols="1">
-            <colspec colname="col1" colnum="1" colwidth="1*"/>
-            <tbody>
-              <row>
-                <entry>
-                  <ol>
-                    <li>cd $LDK_WORKAREA/training/setup/cadence/ldk/char</li>
-                  </ol>
-                </entry>
-              </row>
-            </tbody>
-          </tgroup>
-        </table>
+            </note>
+          </fig></p></li>
+      <li>Intel standard cell characterization uses driver cell to drive input of standard cells
+        (instead of using an ideal voltage driver). <ol id="ol_ijf_djc_mcc">
+          <li>Update the file $LDK_WORKAREA/training/libraries/char/setup/char_tcls/init.tcl.</li>
+          <li>Change set DRIVER_CELL_netlist_dir &lt;DRIVER_CELL_dir&gt; to the driver cell netlist
+            directory.</li>
+        </ol></li>
+      <li>Cadence Liberate* characterization requires the use of the Cadence Liberate* Bolt Server
+        for job control and distribution.<ul id="ul_dfk_2jc_mcc">
+          <li>If the Cadence Liberate* Bolt server is already set up, set the shell environment
+            variable to point to the Bolt server:
+            <codeblock id="codeblock_pcm_fjc_mcc">setenv CDS_BOLT_SERVER &lt;server&gt;</codeblock></li>
+          <li>If the Cadence Liberate* Bolt server is not already setup, then start the server on
+            your local machine:<codeblock id="codeblock_hkv_gjc_mcc">$ALTOSHOME/bin/start_bolt
+setenv CDS_BOLT_SERVER `hostname`</codeblock></li>
+        </ul></li>
+      <li>Change to the characterization working directory:
+        <codeblock id="codeblock_ltf_kjc_mcc">cd $LDK_WORKAREA/training/setup/cadence/ldk/char</codeblock></li>
+    </ol>
       </body>
     </topic>
