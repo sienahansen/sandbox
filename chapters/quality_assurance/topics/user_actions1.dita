@@ -8,16 +8,20 @@
       then source the sourceme file, if this is the first time launching Cadence tools, from the
       shell you are working in.</p>
     <ol>
-      <li>Type the command abstract &amp; to launch the AG (<xref href="#user_actions1/Ref153268436"
-          >Figure 38</xref>).<fig>
+      <li>Type the command abstract &amp; to launch the AG (<xref
+          href="#user_actions1/ag_user_interface"/>).<fig id="ag_user_interface">
           <title>AG User Interface (UI)</title>
-          <image href="media/image45.png" id="image_lcn_hpd_mcc"/>
+          <image
+            href="../../layout_abstracts_and_lef_files/images/layout_abstract_lef_files_user_actions_01.png"
+            id="image_ssj_xtg_ncc"/>
         </fig></li>
       <li>From the AG menus, select <b>File &gt; Library &gt; Open.</b> Then select the library
-          <b>ldk_demo_lib</b>. Click <b>OK</b>. (<xref href="#user_actions1/Ref153268472">Figure
-          39</xref> shows that library as having been selected.) <fig id="fig_jmz_3pd_mcc">
+          <b>ldk_demo_lib</b>. Click <b>OK</b>. (<xref href="#user_actions1/fig_jmz_3pd_mcc"/> shows
+        that library as having been selected.) <fig id="fig_jmz_3pd_mcc">
           <title>AG UI after library open</title>
-          <image href="media/image46.png"/>
+          <image
+            href="../../layout_abstracts_and_lef_files/images/layout_abstract_lef_files_user_actions_02.png"
+            id="image_tsj_xtg_ncc"/>
         </fig><p>All the cells should be in the <i>Core</i> bin. If not, select the cells in the
           other bin(s), and then use <b>Cells &gt; Move…</b> to move them into the <i>Core</i>
           bin.</p><p>Bins are like buckets for placing cells. Each cell in a library is always
@@ -30,21 +34,27 @@
           from the set of cells to be processed but not deleted.</p></li>
       <li>From the AG menus, select <b>File &gt; General Options..</b>. On the <i>General</i> tab,
           <i>Pin purpose name</i> should be pre-set to <b>pin</b>. If not, update it (<xref
-          href="#user_actions1/Ref153268554">Figure 40</xref>). <fig id="fig_utt_mpd_mcc">
+          href="#user_actions1/fig_utt_mpd_mcc"/>). <fig id="fig_utt_mpd_mcc">
           <title>General Options, General tab</title>
-          <image href="media/image47.png"/>
+          <image
+            href="../../layout_abstracts_and_lef_files/images/layout_abstract_lef_files_user_actions_03.png"
+            id="image_usj_xtg_ncc"/>
         </fig></li>
       <li>On the <i>Views</i> tab, <i>Logical view name</i> should be pre-set to <b>schematic</b>.
-        If not, update it, and then click <b>OK</b> (<xref href="#user_actions1/Ref153546986">Figure
-          41</xref>).<fig id="fig_vc5_rpd_mcc">
+        If not, update it, and then click <b>OK</b> (<xref href="#user_actions1/fig_vc5_rpd_mcc"
+          />).<fig id="fig_vc5_rpd_mcc">
           <title>General Options, Views tab</title>
-          <image href="media/image48.jpeg"/>
+          <image
+            href="../../layout_abstracts_and_lef_files/images/layout_abstract_lef_files_user_actions_04.jpeg"
+            id="image_qsj_xtg_ncc"/>
         </fig></li>
       <li>Select the <i>Core</i> bin, highlighting it. From the AG menus, select <b>Cells &gt;
-          Select All</b> (<xref href="#user_actions1/Ref153268570">Figure 42</xref>).<p>All cell
-          libraries are processed in the next steps.<fig id="fig_sy4_vpd_mcc">
+          Select All</b> (<xref href="#user_actions1/fig_sy4_vpd_mcc"/>).<p>All cell libraries are
+          processed in the next steps.<fig id="fig_sy4_vpd_mcc">
             <title>AG UI, Core bin</title>
-            <image href="media/image49.png"/>
+            <image
+              href="../../layout_abstracts_and_lef_files/images/layout_abstract_lef_files_user_actions_05.png"
+              id="image_rsj_xtg_ncc"/>
           </fig></p></li>
     </ol>
   </body>

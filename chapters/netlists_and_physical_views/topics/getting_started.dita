@@ -10,24 +10,23 @@
         from the shell you are working in. <p>Prior to invoking Cadence Virtuoso*, ensure the
           Cadence Virtuoso* Application Library Environment (VALE) Framework is available according
           to the local VALE setup installation and modified accordingly in the &lt;ldk&gt;.cdsinit
-          file (<xref href="#getting_started/Ref153272465">Figure 4</xref>). <fig
-            id="fig_u3g_nxb_mcc"/><i id="Ref153272465">Figure 5: CDS_MVS_IMF_CM Shell
-            Variable</i><fig id="fig_bvb_kxb_mcc">
-            <image href="media/image6.png" id="image_q2k_mxb_mcc"/>
+          file (<xref href="#getting_started/fig_u3g_nxb_mcc"/>). <fig id="fig_u3g_nxb_mcc">
+            <title>CDS_MVS_IMF_CM Shell Variable</title>
+            <image href="../images/netlists_physical_views_user_actions_02.png"
+              id="image_wqv_y3g_ncc"/>
           </fig></p></li>
       <li>Launch Cadence
           Virtuoso*:<codeblock id="codeblock_lwm_4xb_mcc">virtuoso &amp;</codeblock><p>The Command
           Interpreter Window (CIW) and Library Manager display. </p></li>
       <li>
         <p>Load the autoLib utility in the CIW entry field using command shown in <xref
-            href="#getting_started/Ref155601344">Figure 5</xref> (you can copy/paste the following
+            href="#getting_started/fig_x2w_vxb_mcc"/> (you can copy/paste the following
           string):<codeblock id="codeblock_owv_sxb_mcc">loadContext("./files/64bit/autoLib.cxt")</codeblock></p>
         <p>
           <fig id="fig_x2w_vxb_mcc">
             <title>CIW:loadContext command</title>
-            <image href="media/image7.png">
-              <alt>A screenshot of a computer Description automatically generated</alt>
-            </image>
+            <image href="../images/netlists_physical_views_user_actions_03.png" id="image_awj_1jg_ncc"
+            />
           </fig>
         </p>
       </li>

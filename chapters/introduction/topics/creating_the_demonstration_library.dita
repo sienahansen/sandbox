@@ -4,10 +4,8 @@
 <topic id="creating_the_demonstration_library">
           <title>Creating the demonstration library</title>
           <body>
-            <p>
-              <b>Important:</b> The administrator installing the LDK
-should complete the steps in this section. Creation of the
-demonstration library is required so that labs can run.</p>
+            <p><b>Important:</b> The administrator installing the LDK should complete the steps in
+      this section. Creation of the demonstration library is required so that labs can run.</p>
             <p>The demonstration library is created using a supplied Python
 script. The recommended Python version to run the script is v3.7,
 or higher, for access to the modules used in the script, use
@@ -154,15 +152,14 @@ libraries to run the demonstration.</p>
             <p>The script's output is a command file containing the actions
 required to copy the necessary cells to the
 $INTEL_LDK/training/libraries/ldk_demo_lib/ directory.</p>
-            <p>
-              <xref href="#creating_the_demonstration_library/Ref168326490">Table 8</xref> describes the base case of
-running the Python script, from finding all library paths to
-command file generation:</p>
+            <p><xref href="#creating_the_demonstration_library/Ref168326490"/> describes the base
+      case of running the Python script, from finding all library paths to command file
+      generation:</p>
             <table colsep="1" frame="all" id="Ref168326490" rowsep="1">
               <title>Description of Python script arguments</title>
               <tgroup cols="2">
-                <colspec colname="col1" colnum="1" colwidth="0.9*"/>
-                <colspec colname="col2" colnum="2" colwidth="1.1*"/>
+                <colspec colname="col1" colnum="1" colwidth="1*"/>
+                <colspec colname="col2" colnum="2" colwidth="1*"/>
                 <thead>
                   <row>
                     <entry>Arguments</entry>
@@ -228,12 +225,13 @@ command file generation:</p>
           <li>Run the command file to create the desired library and cells (<xref
               href="#creating_the_demonstration_library/Ref168328785">Figure 2</xref>):
             <codeblock id="codeblock_twh_zmb_mcc">source copyCommands.csh</codeblock></li>
-        </ol><p><i id="Ref168328785">Figure 3: Commands executed on the terminal from
-            commandsFile.txt</i><fig id="fig_sys_k4b_mcc">
-            <image href="media/image4.png">
-              <alt>A screen shot of a computer code Description automatically generated</alt>
-            </image>
-          </fig><table frame="all" rowsep="1" colsep="1" id="table_rgp_n4b_mcc">
+        </ol><p>
+          <fig id="fig_y3v_bhg_ncc">
+            <title>Commands executed on the terminal from commandsFile.txt</title>
+            <image href="../images/introduction_environment_presetup_for_administrator_01.png"
+              id="image_kxl_fhg_ncc"/>
+          </fig>
+          <table frame="all" rowsep="1" colsep="1" id="table_rgp_n4b_mcc">
             <title>Description of additional script purposes</title>
             <tgroup cols="3">
               <colspec colname="c1" colnum="1" colwidth="1*"/>
@@ -264,11 +262,11 @@ command file generation:</p>
                 </row>
               </tbody>
             </tgroup>
-          </table></p><p>Additionally, the Python script allows you to run separate commands in
-          three separate cases, carrying out the same functionality as the base case run but in
-          three individual steps, as seen in <xref
-            href="#creating_the_demonstration_library/Ref168328899">Table 9</xref>:</p><ul
-          id="ul_oj2_r4b_mcc">
+          </table>
+        </p><p>Additionally, the Python script allows you to run separate commands in three separate
+          cases, carrying out the same functionality as the base case run but in three individual
+          steps, as seen in <xref href="#creating_the_demonstration_library/Ref168328899">Table
+            9</xref>:</p><ul id="ul_oj2_r4b_mcc">
           <li>To run Case 1:
             <codeblock id="codeblock_ssp_rnb_mcc">./demo_lib_create.py -r &lt;LDK_STDCELL_LIBRARY_ROOT&gt; -l librarySearchPaths.txt</codeblock></li>
         </ul><ul id="ul_wnn_snb_mcc">

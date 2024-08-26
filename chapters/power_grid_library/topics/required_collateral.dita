@@ -5,11 +5,10 @@
       <title>Required
 collateral</title>
       <body>
-        <p>
-          <xref href="#required_collateral/Ref153179088">Table 16</xref> lists the files required
-to generate PGV views:</p>
+        <p><xref href="#required_collateral/Ref153179088"/> lists the files required to generate PGV
+      views:</p>
         <table colsep="1" frame="all" id="Ref153179088" rowsep="1">
-          <title>Table 16: Required collateral</title>
+          <title>Required collateral</title>
           <tgroup cols="2">
             <colspec colname="col1" colnum="1" colwidth="0.7*"/>
             <colspec colname="col2" colnum="2" colwidth="1.3*"/>

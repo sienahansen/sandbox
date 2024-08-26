@@ -13,7 +13,8 @@
       run.csh:<codeblock id="codeblock_wfj_gnd_mcc">set flowFlag=char_BMC</codeblock></p>
     <fig id="fig_fhz_gnd_mcc">
       <title>Example of run.csh file</title>
-      <image href="media/image39.png"/>
+      <image href="../images/timing_liberty_verilog_lib_characterization_kit_10.png"
+        id="image_a5p_dqg_ncc"/>
     </fig>
     <p>Update the file init.tcl:<codeblock id="codeblock_ust_lnd_mcc">## BMC settings
  if {[regexp (BMC) $tag]} {
@@ -30,8 +31,9 @@
     <p>Example: 10 threads will distribute 30k samples, that is, 300 samples/thread.</p>
     <p>Update char.tcl. <fig id="fig_zvs_mnd_mcc">
         <title>Example of char.tcl file</title>
-        <image href="media/image40.png"/>
-        <image href="media/image41.png"/>
+      <image href="../images/timing_liberty_verilog_lib_characterization_kit_11a.png"
+        id="image_o5d_2qg_ncc"/><image href="../images/timing_liberty_verilog_lib_characterization_kit_11b.png"
+        id="image_n5d_2qg_ncc"/>
       </fig></p>
   </body>
 </topic>

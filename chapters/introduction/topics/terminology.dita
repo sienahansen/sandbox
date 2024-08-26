@@ -10,133 +10,133 @@ used in this document.</p>
         <table colsep="1" frame="all" id="Ref152161934" rowsep="1">
           <title>Terminology</title>
           <tgroup cols="2">
-            <colspec colname="col1" colnum="1" colwidth="0.5*"/>
-            <colspec colname="col2" colnum="2" colwidth="1.5*"/>
-            <thead>
-              <row>
-                <entry>Term/Acronym</entry>
-                <entry>Description</entry>
-              </row>
-            </thead>
-            <tbody>
-              <row>
-                <entry>AG</entry>
-                <entry>Abstract Generator</entry>
-              </row>
-              <row>
-                <entry>CAD</entry>
-                <entry>Computer Aided Design (tools)</entry>
-              </row>
-              <row>
-                <entry>CCS</entry>
-                <entry>Concurrent Current Source</entry>
-              </row>
-              <row>
-                <entry>CCSN</entry>
-                <entry>Composite Current Source Noise</entry>
-              </row>
-              <row>
-                <entry>CDL</entry>
-                <entry>Circuit Description Language</entry>
-              </row>
-              <row>
-                <entry>CC</entry>
-                <entry>Custom IC</entry>
-              </row>
-              <row>
-                <entry>CIW</entry>
-                <entry>Command Interpreter Window</entry>
-              </row>
-              <row>
-                <entry>CRF</entry>
-                <entry>Custom Reference Flow</entry>
-              </row>
-              <row>
-                <entry>DEF</entry>
-                <entry>Design Exchange Format</entry>
-              </row>
-              <row>
-                <entry>DSPF</entry>
-                <entry>Detailed Standard Parasitic Forma</entry>
-              </row>
-              <row>
-                <entry>GDS</entry>
-                <entry>Graphic Database System</entry>
-              </row>
-              <row>
-                <entry>GUI</entry>
-                <entry>Graphical User Interface</entry>
-              </row>
-              <row>
-                <entry>IC</entry>
-                <entry>Integrated Circuit</entry>
-              </row>
-              <row>
-                <entry>LDK</entry>
-                <entry>Library Development Kit</entry>
-              </row>
-              <row>
-                <entry>LEF</entry>
-                <entry>Library Exchange Format</entry>
-              </row>
-              <row>
-                <entry>LVS</entry>
-                <entry>Layout Versus Schematic</entry>
-              </row>
-              <row>
-                <entry>MOSA</entry>
-                <entry>Mixed-Signal OpenAccess</entry>
-              </row>
-              <row>
-                <entry>NLDM</entry>
-                <entry>Non-linear Delay Model</entry>
-              </row>
-              <row>
-                <entry>NLPM</entry>
-                <entry>Normal Liter per Minute</entry>
-              </row>
-              <row>
-                <entry>OA</entry>
-                <entry>OpenAccess</entry>
-              </row>
-              <row>
-                <entry>OCV</entry>
-                <entry>On-Chip Variation</entry>
-              </row>
-              <row>
-                <entry>P&amp;R</entry>
-                <entry>Place and Route</entry>
-              </row>
-              <row>
-                <entry>PDK</entry>
-                <entry>Process Design Kit</entry>
-              </row>
-              <row>
-                <entry>PGV</entry>
-                <entry>Power Grid View</entry>
-              </row>
-              <row>
-                <entry>PVS</entry>
-                <entry>Cadence Pegasus Verification System*</entry>
-              </row>
-              <row>
-                <entry>SPEF</entry>
-                <entry>Standard Parasitic Exchange Format</entry>
-              </row>
-              <row>
-                <entry>SPICE</entry>
-                <entry>Simulation Program Integrated Circuit Emphasis</entry>
-              </row>
-              <row>
-                <entry>STA</entry>
-                <entry>Static Path Timing Analysis</entry>
-              </row>
-              <row>
-                <entry>VALE</entry>
-                <entry>Cadence Virtuoso* Application Library Environment*</entry>
-              </row>
-            </tbody>
-          </tgroup>
+        <colspec colname="col1" colnum="1" colwidth="1*"/>
+        <colspec colname="col2" colnum="2" colwidth="1.9*"/>
+        <thead>
+          <row>
+            <entry>Term/Acronym</entry>
+            <entry>Description</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>AG</entry>
+            <entry>Abstract Generator</entry>
+          </row>
+          <row>
+            <entry>CAD</entry>
+            <entry>Computer Aided Design (tools)</entry>
+          </row>
+          <row>
+            <entry>CCS</entry>
+            <entry>Concurrent Current Source</entry>
+          </row>
+          <row>
+            <entry>CCSN</entry>
+            <entry>Composite Current Source Noise</entry>
+          </row>
+          <row>
+            <entry>CDL</entry>
+            <entry>Circuit Description Language</entry>
+          </row>
+          <row>
+            <entry>CC</entry>
+            <entry>Custom IC</entry>
+          </row>
+          <row>
+            <entry>CIW</entry>
+            <entry>Command Interpreter Window</entry>
+          </row>
+          <row>
+            <entry>CRF</entry>
+            <entry>Custom Reference Flow</entry>
+          </row>
+          <row>
+            <entry>DEF</entry>
+            <entry>Design Exchange Format</entry>
+          </row>
+          <row>
+            <entry>DSPF</entry>
+            <entry>Detailed Standard Parasitic Forma</entry>
+          </row>
+          <row>
+            <entry>GDS</entry>
+            <entry>Graphic Database System</entry>
+          </row>
+          <row>
+            <entry>GUI</entry>
+            <entry>Graphical User Interface</entry>
+          </row>
+          <row>
+            <entry>IC</entry>
+            <entry>Integrated Circuit</entry>
+          </row>
+          <row>
+            <entry>LDK</entry>
+            <entry>Library Development Kit</entry>
+          </row>
+          <row>
+            <entry>LEF</entry>
+            <entry>Library Exchange Format</entry>
+          </row>
+          <row>
+            <entry>LVS</entry>
+            <entry>Layout Versus Schematic</entry>
+          </row>
+          <row>
+            <entry>MOSA</entry>
+            <entry>Mixed-Signal OpenAccess</entry>
+          </row>
+          <row>
+            <entry>NLDM</entry>
+            <entry>Non-linear Delay Model</entry>
+          </row>
+          <row>
+            <entry>NLPM</entry>
+            <entry>Normal Liter per Minute</entry>
+          </row>
+          <row>
+            <entry>OA</entry>
+            <entry>OpenAccess</entry>
+          </row>
+          <row>
+            <entry>OCV</entry>
+            <entry>On-Chip Variation</entry>
+          </row>
+          <row>
+            <entry>P&amp;R</entry>
+            <entry>Place and Route</entry>
+          </row>
+          <row>
+            <entry>PDK</entry>
+            <entry>Process Design Kit</entry>
+          </row>
+          <row>
+            <entry>PGV</entry>
+            <entry>Power Grid View</entry>
+          </row>
+          <row>
+            <entry>PVS</entry>
+            <entry>Cadence Pegasus Verification System*</entry>
+          </row>
+          <row>
+            <entry>SPEF</entry>
+            <entry>Standard Parasitic Exchange Format</entry>
+          </row>
+          <row>
+            <entry>SPICE</entry>
+            <entry>Simulation Program Integrated Circuit Emphasis</entry>
+          </row>
+          <row>
+            <entry>STA</entry>
+            <entry>Static Path Timing Analysis</entry>
+          </row>
+          <row>
+            <entry>VALE</entry>
+            <entry>Cadence Virtuoso* Application Library Environment*</entry>
+          </row>
+        </tbody>
+      </tgroup>
         </table>
       </body>
     </topic>

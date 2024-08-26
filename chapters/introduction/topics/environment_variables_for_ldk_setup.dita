@@ -4,9 +4,8 @@
 <topic id="environment_variables_for_ldk_setup">
           <title>Environment variables for LDK setup</title>
           <body>
-            <p>
-              <xref href="#environment_variables_for_ldk_setup/Ref152162089">Table 10</xref> lists the environment
-variables required to use the Custom Reference Flow (CRF).</p>
+            <p><xref href="#environment_variables_for_ldk_setup/Ref152162089"/> lists the
+      environment variables required to use the Custom Reference Flow (CRF).</p>
             <table colsep="1" frame="all" id="Ref152162089" rowsep="1">
               <title>Environment variables for LDK setup</title>
               <tgroup cols="2">

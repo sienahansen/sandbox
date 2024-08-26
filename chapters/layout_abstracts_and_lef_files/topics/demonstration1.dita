@@ -8,36 +8,40 @@
       <li>From the AG menus, select <b>Flow &gt; Extract…</b>
       </li>
       <li>On the <i>Signal</i> tab, note that <i>Extract signal nets</i> is deselected (<xref
-          href="#demonstration1/Ref153273400">Figure 45</xref>).<p>When the <i>Extract signal
-            nets</i> option is selected, full extraction is performed; the geometry found during the
-          extraction is turned into pin geometry.</p><p>To use the pins created in the layout and
-          duplicate them in the Abstract view, deselect <i>Extract signal nets</i> so that AG does
-          not extract them. <fig id="fig_mn4_brd_mcc">
+          href="#demonstration1/fig_mn4_brd_mcc"/>).<p>When the <i>Extract signal nets</i> option is
+          selected, full extraction is performed; the geometry found during the extraction is turned
+          into pin geometry.</p><p>To use the pins created in the layout and duplicate them in the
+          Abstract view, deselect <i>Extract signal nets</i> so that AG does not extract them. <fig
+            id="fig_mn4_brd_mcc">
             <title>Running step Extract, Signal tab, Extract signal nets option</title>
-            <image href="media/image52.png"/>
+            <image href="../images/layout_abstract_lef_files_extract_step_01.png"
+              id="image_gw4_mvg_ncc"/>
           </fig></p></li>
       <li>On the <i>Power</i> tab, <i>Extract power nets</i> is deselected (<xref
-          href="#demonstration1/Ref153273417">Figure 46</xref>).<p>For the power and ground rails
-          for standard cells, the recommended approach is to create pins in the layout as duplicated
-          in the Abstract view, instead of having AG extract them.<fig id="fig_jn4_frd_mcc">
+          href="#demonstration1/fig_jn4_frd_mcc"/>).<p>For the power and ground rails for standard
+          cells, the recommended approach is to create pins in the layout as duplicated in the
+          Abstract view, instead of having AG extract them.<fig id="fig_jn4_frd_mcc">
             <title>Running step Extract, Power tab, Extract power nets option</title>
-            <image href="media/image53.png"/>
+            <image href="../images/layout_abstract_lef_files_extract_step_02.png"
+              id="image_hw4_mvg_ncc"/>
           </fig></p></li>
       <li>On the <i>Antenna</i> tab, no options are enabled; this capability is under development
-        for this technology (<xref href="#demonstration1/Ref153273431">Figure 47</xref>).<p>“Antenna
-          effect” is a common name for charge accumulation in isolated nodes of an integrated
-          circuit during processing. It may damage transistors and degrade performance if discharged
-          through the gate oxide. Adding antenna information into the layout abstract and LEF
-          enables the P&amp;R tools to calculate and mitigate the effect by jumping metal layers or
-          adding an antenna diode. <fig id="fig_wwd_jrd_mcc">
+        for this technology (<xref href="#demonstration1/fig_wwd_jrd_mcc"/>).<p>“Antenna effect” is
+          a common name for charge accumulation in isolated nodes of an integrated circuit during
+          processing. It may damage transistors and degrade performance if discharged through the
+          gate oxide. Adding antenna information into the layout abstract and LEF enables the
+          P&amp;R tools to calculate and mitigate the effect by jumping metal layers or adding an
+          antenna diode. <fig id="fig_wwd_jrd_mcc">
             <title>Running step Extract, Antenna tab</title>
-            <image href="media/image54.png"/>
+            <image href="../images/layout_abstract_lef_files_extract_step_03.png"
+              id="image_wyq_nvg_ncc"/>
           </fig></p></li>
       <li>Click <b>Run</b> on the <i>Running step Extract</i> form (<xref
-          href="#demonstration1/Ref153273453">Figure 48</xref>). <fig id="fig_jcd_mrd_mcc">
+          href="#demonstration1/fig_jcd_mrd_mcc"/>). <fig id="fig_jcd_mrd_mcc">
           <title>AG UI, results from Extract step</title>
-        </fig><image href="media/image55.png"/><p>For each standard cell in the library, a view
-          named <i>abstract.ext</i> is created.</p></li>
+        </fig><image href="../images/layout_abstract_lef_files_extract_step_04.png"
+          id="image_vyq_nvg_ncc"/><p>For each standard cell in the library, a view named
+            <i>abstract.ext</i> is created.</p></li>
     </ol>
   </body>
 </topic>

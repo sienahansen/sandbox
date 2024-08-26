@@ -18,7 +18,8 @@ components and the LVS tool checks for any discrepancies between
 the two netlists. If there are no discrepancies, the layout is said
 to be LVS-clean.</p>
 
-        <p>There are two main steps in the LVS process, as shown in <xref href="#lvs/Ref153272327">Table 11</xref>.</p>
+        <p>There are two main steps in the LVS process, as shown in <xref href="#lvs/Ref153272327"
+      />.</p>
         <table colsep="1" frame="all" id="Ref153272327" rowsep="1">
           <title>LVS process</title>
           <tgroup cols="2">

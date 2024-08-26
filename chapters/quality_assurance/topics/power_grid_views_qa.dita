@@ -5,7 +5,7 @@
       <title>Power Grid
 views QA</title>
       <body>
-        <p>The PGV view generation section (Section <xref
+    <p>The PGV view generation section (Section <xref
         href="power_grid_library.dita#power_grid_library">5</xref>) has its own QA section which is
       covered by the check_pg_library option (steps 15 and 16). These steps cover the basic QA
       checks, such as parameter checks and LEF consistency checks. These are detailed in Section
@@ -17,12 +17,17 @@ views QA</title>
       -rule_file validate_rule.txt \
       -output Validate_PGV \
       -summary</codeblock></p>
-    <p>
-      <fig id="fig_yg1_3zd_mcc"><title>LEF Consistency Check results</title><image href="media/image67(1).png"/></fig>
-    </p>
+    <p><fig id="fig_yg1_3zd_mcc">
+        <title>LEF Consistency Check results</title>
+      <image href="../images/quality_assurance_power_grid_views_qa_01.png"
+        id="image_esw_txg_ncc"/>
+      </fig></p>
     <p>The output of that step can be found at $LDK_WORKAREA/pgv/Validate_PGV.<fig
-      id="fig_q3v_pzd_mcc"><title>Summary file contents</title><image href="media/image65(1).png"/></fig></p>
+        id="fig_q3v_pzd_mcc">
+        <title>Summary file contents</title>
+      <image href="../images/quality_assurance_power_grid_views_qa_02.png" id="image_qr1_5xg_ncc"/>
+      </fig></p>
     <p>This directory has a summary file which can be reviewed to check for data discrepancies, such
       as large capacitances across rails, and so on.</p>
-      </body>
+  </body>
     </topic>

@@ -8,15 +8,17 @@
       <li>Start Cadence
         Virtuoso*:<codeblock id="codeblock_sbg_1td_mcc">virtuoso &amp;</codeblock></li>
       <li>From the CIW, select <b>File &gt; Export &gt; LEF…</b> (<xref
-          href="#demonstration3/Ref153269010">Figure 51</xref>). <fig id="fig_swj_btd_mcc">
+          href="#demonstration3/fig_swj_btd_mcc"/>). <fig id="fig_swj_btd_mcc">
           <title>CIW menu to export LEF</title>
-          <image href="media/image59.png"/>
+          <image href="../images/layout_abstract_lef_files_exporting_lef_01.png"
+            id="image_unm_gwg_ncc"/>
         </fig></li>
-      <li>Complete the <i>LEF Out</i> form as shown in <xref href="#demonstration3/Ref152940460"
-          >Figure 52</xref>, and then click <b>OK</b>. Click <b>OK</b> again for the pop-up that
-        follows; the warnings can be ignored. <fig id="fig_vk5_std_mcc">
+      <li>Complete the <i>LEF Out</i> form as shown in <xref href="#demonstration3/fig_vk5_std_mcc"
+        />, and then click <b>OK</b>. Click <b>OK</b> again for the pop-up that follows; the
+        warnings can be ignored. <fig id="fig_vk5_std_mcc">
           <title>LEF out form</title>
-          <image href="media/image61.png"/>
+          <image href="../images/layout_abstract_lef_files_exporting_lef_02.png"
+            id="image_tnm_gwg_ncc"/>
         </fig><p>This creates the LEF file ldk_demo_lib.lef.</p></li>
       <li>Open the file ldk_demo_lib.lef in a text editor to review its contents.</li>
       <li>Move the newly created LEF file into the library collateral collection area. The following

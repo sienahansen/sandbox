@@ -8,21 +8,22 @@
       <li>From the AG menus, select <b>Flow &gt; Abstract…</b>
       </li>
       <li>On the <i>Site</i> tab, <i>Define new site name</i> is pre-set to <b>core</b> (<xref
-          href="#demonstration2/Ref153273499">Figure 49</xref>). This corresponds to the site name
-        used in the PDK for single height cells. <p>Different site names for different cells cannot
-          be accomplished in a single step in AG or through a post hook. Site specification in AG
-          for cells is based on the bin type assigned to the cells. Libraries with single height
-          (site: core) and double height (site: core2h) cells must be processed separately as
-          groups. Select all the single height cells and set the site name to <i>core</i>, and then
-          generate the abstracts. Do the same for the double height cells. <fig id="fig_rfj_msd_mcc">
+          href="#demonstration2/fig_rfj_msd_mcc"/>). This corresponds to the site name used in the
+        PDK for single height cells. <p>Different site names for different cells cannot be
+          accomplished in a single step in AG or through a post hook. Site specification in AG for
+          cells is based on the bin type assigned to the cells. Libraries with single height (site:
+          core) and double height (site: core2h) cells must be processed separately as groups.
+          Select all the single height cells and set the site name to <i>core</i>, and then generate
+          the abstracts. Do the same for the double height cells. <fig id="fig_rfj_msd_mcc">
             <title>Running step Abstract, Site tab</title>
-            <image href="media/image56.png"/>
+            <image href="../images/layout_abstract_lef_files_abstract_step_01.png"
+              id="image_mb2_zvg_ncc"/>
           </fig></p></li>
       <li>The default settings can be used for all the other options; click <b>Run</b>. Results are
-        generated (<xref href="#demonstration2/Ref153273540">Figure 50</xref>).<fig
-          id="fig_okc_qsd_mcc">
+        generated (<xref href="#demonstration2/fig_okc_qsd_mcc"/>).<fig id="fig_okc_qsd_mcc">
           <title>AG UI, results from Abstract step</title>
-          <image href="media/image57.png"/>
+          <image href="../images/layout_abstract_lef_files_abstract_step_02.png"
+            id="image_lb2_zvg_ncc"/>
         </fig><p>The warnings indicate that the site “core” is not declared in the PDK technology
           file and is created temporarily; you can ignore the warnings.</p></li>
       <li>Exit AG.</li>

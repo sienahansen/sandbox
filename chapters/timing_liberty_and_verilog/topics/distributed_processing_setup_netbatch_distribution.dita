@@ -8,12 +8,15 @@
 setenv NBJOB 1</codeblock></p>
     <fig id="fig_inv_snd_mcc">
       <title>Example of run.csh file</title>
-      <image href="media/image42.png"/>
+      <image href="../images/timing_liberty_verilog_lib_characterization_kit_12a.png"
+        id="image_wyp_hqg_ncc"/>
+      <image href="../images/timing_liberty_verilog_lib_characterization_kit_12b.png"
+        id="image_vyp_hqg_ncc"/>
     </fig>
     <p>Update char.tcl:</p>
     <fig id="fig_r1v_5nd_mcc">
-      <title>Example of char.tcl file</title>
-      <image href="media/image44.png"/>
+      <title>Example of char.tcl file</title><image href="../images/timing_liberty_verilog_lib_characterization_kit_13.png"
+      id="image_vqd_qqg_ncc"/>
     </fig>
   </body>
 </topic>

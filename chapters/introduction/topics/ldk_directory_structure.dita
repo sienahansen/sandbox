@@ -4,31 +4,13 @@
 <topic id="ldk_directory_structure">
       <title>LDK directory structure</title>
       <body>
-        <p>
-          <xref href="#ldk_directory_structure/Ref390942378">Figure 1</xref> shows the LDK (Library
-Development Kit) directory structure.</p>
-        <p>
-          <i id="Ref390942378">Figure 1: LDK
-directory structure</i>
-        </p>
-        <table colsep="1" frame="all" rowsep="1">
-          <tgroup cols="1">
-            <colspec colname="col1" colnum="1" colwidth="1*"/>
-            <thead>
-              <row>
-                <entry>
-              <image href="media/image3.png" id="image_aq5_tlb_mcc">
-                <alt>A computer screen shot of a program Description automatically generated</alt>
-              </image>
-            </entry>
-              </row>
-            </thead>
-            <tbody/>
-          </tgroup>
-        </table>
-        <p>
-          <xref href="#ldk_directory_structure/Ref152161951">Table 5</xref> provides a description of
-the directory structure.</p>
+        <p><xref href="#ldk_directory_structure/fig_z1h_nfg_ncc"/> shows the LDK (Library
+      Development Kit) directory structure. <fig id="fig_z1h_nfg_ncc">
+        <title>LDK directory structure</title>
+        <image href="../images/introduction_ldk_directory_structure_01.png" id="image_uyc_rfg_ncc"/>
+      </fig></p>
+        <p><xref href="#ldk_directory_structure/Ref152161951"/> provides a description of the
+      directory structure.</p>
         <table colsep="1" frame="all" id="Ref152161951" rowsep="1">
           <title>LDK directory details</title>
           <tgroup cols="2">

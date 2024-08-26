@@ -6,16 +6,17 @@
         <body>
           <ol>
       <li>From the AG menus, select <b>Flow &gt; Pins…</b> Review the settings on the <i>Map</i> tab
-          (<xref href="#demonstration/Ref153273367">Figure 43</xref>). <p>A regular expression must
-          be entered that identifies the Power and Ground pin names. Clock, Analog, and Output pin
-          names are optional; the Liberty model defines these three pin names and those definitions
-          take precedence over the Abstract/LEF.</p><p>The modification of the Power/Ground pin
-          names is as follows:</p><ul id="ul_kl1_3qd_mcc">
+          (<xref href="#demonstration/fig_i3v_3qd_mcc"/>). <p>A regular expression must be entered
+          that identifies the Power and Ground pin names. Clock, Analog, and Output pin names are
+          optional; the Liberty model defines these three pin names and those definitions take
+          precedence over the Abstract/LEF.</p><p>The modification of the Power/Ground pin names is
+          as follows:</p><ul id="ul_kl1_3qd_mcc">
           <li>Power pin names: ^((V(DD|CC))|(v(dd|cc|cc_in)))(!)?$</li>
           <li>Ground pin names: ^((VSS|GND)|(vss|vssx|gnd))(!)?$</li>
         </ul><fig id="fig_i3v_3qd_mcc">
           <title>Running step Pins, Map tab</title>
-          <image href="media/image50.png"/>
+          <image href="../images/layout_abstract_lef_files_user_actions_06.png"
+            id="image_gtf_v5g_ncc"/>
         </fig></li>
       <li>Review the settings on the other tabs: <i>Text</i>, <i>Boundary</i>, and <i>Blocks</i>.
         The following options are important to consider:<ul id="ul_z2q_lqd_mcc">
@@ -27,9 +28,10 @@
             since it is not applicable to standard cells.</li>
         </ul></li>
       <li>Click <b>Run</b> on the <i>Running step Pins</i> form (<xref
-          href="#demonstration/Ref153273382">Figure 44</xref>). <fig id="fig_m2b_nqd_mcc">
+          href="#demonstration/fig_m2b_nqd_mcc"/>). <fig id="fig_m2b_nqd_mcc">
           <title>AG UI, results from Pins step</title>
-          <image href="media/image51.png"/>
+          <image href="../images/layout_abstract_lef_files_user_actions_07.png"
+            id="image_htf_v5g_ncc"/>
         </fig><p>A yellow exclamation point (!) could appear instead of a green checkmark to
           indicate warnings were issued for the cell. It is recommended that the warnings be
           reviewed.</p><p>For each standard cell in the library, a view named <i>abstract.pin</i> is

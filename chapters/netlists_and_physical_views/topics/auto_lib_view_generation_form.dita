@@ -4,17 +4,16 @@
 <topic id="auto_lib_view_generation_form">
   <title>Auto Lib View Generation form</title>
   <body>
-    <p>
-      <xref href="#auto_lib_view_generation_form/Ref152950521">Figure 6</xref> is the default view
-      for the Auto Lib View Generation form. For this LDK module, there are several defaults to
-      assist in the autoLib generation in the P1278 Technology already present in the form.<fig
+    <p><xref href="#auto_lib_view_generation_form/fig_svk_lyb_mcc"/> is the default view for the
+      Auto Lib View Generation form. For this LDK module, there are several defaults to assist in
+      the autoLib generation in the P1278 Technology already present in the form.<fig
         id="fig_svk_lyb_mcc">
         <title>Default view for the Auto Lib View Generation form</title>
-        <image href="media/image8.png"/>
+        <image href="../images/netlists_physical_views_user_actions_04.png" id="image_rsg_kjg_ncc"/>
       </fig></p>
     <p><b>Mode:</b></p>
     <p>There are four Modes for output generation (<xref
-        href="#auto_lib_view_generation_form/Ref153272519">Figure 7</xref>):</p>
+        href="#auto_lib_view_generation_form/fig_tsc_bzb_mcc"/>):</p>
     <ul>
       <li>GDS for the entire library</li>
       <li>OASIS for the entire library</li>
@@ -23,9 +22,7 @@
     </ul>
     <fig id="fig_tsc_bzb_mcc">
       <title>Mode options for output generation</title>
-      <image href="media/image9.png">
-        <alt>A screenshot of a computer Description automatically generated</alt>
-      </image>
+      <image href="../images/netlists_physical_views_user_actions_05.png" id="image_mzv_kjg_ncc"/>
     </fig>
     <p>Each output mode can be run independently or there are two options for combined modes. The
       SPEF mode generates a container cell from library layout and calls in layout_extract. Cadence
@@ -34,7 +31,7 @@
     <p><b>Run Type:</b>
     </p>
     <p>There are two options for Run Type to specify a cell list for the autoLib to work with (<xref
-        href="#auto_lib_view_generation_form/Ref153535180">Figure 8</xref>).</p>
+        href="#auto_lib_view_generation_form/fig_b2l_jzb_mcc"/>).</p>
     <ul>
       <li><b>All cells in lib:</b> The entire set of cells from the library specified in the
           <i>Lib</i> field are run for the specified modes. </li>
@@ -43,14 +40,14 @@
     </ul>
     <fig id="fig_b2l_jzb_mcc">
       <title>Run Type options</title>
-      <image href="media/image10.png"/>
+      <image href="../images/netlists_physical_views_user_actions_06.png" id="image_p2m_ljg_ncc"/>
     </fig>
     <p>The Input file should contain only two columns of lib and cell names. <xref
-        href="#auto_lib_view_generation_form/Ref153272627">Figure 9</xref> shows the libCellFile
-      provided in the current working directory:</p>
+        href="#auto_lib_view_generation_form/fig_zyl_lzb_mcc"/> shows the libCellFile provided in
+      the current working directory:</p>
     <fig id="fig_zyl_lzb_mcc">
       <title>Input file example file structure</title>
-      <image href="media/image11.png"/>
+      <image href="../images/netlists_physical_views_user_actions_07.png" id="image_d4d_mjg_ncc"/>
     </fig>
   </body>
 </topic>

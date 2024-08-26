@@ -13,21 +13,23 @@
           SPEF files in the spef_file_list file. They should all point to each of the seven SPEF
           files generated earlier in Section <xref
             href="netlists_and_physical_views.dita#netlists_and_physical_views">2</xref>, Netlists
-          and Physical Views, delimited by new lines (<xref href="#user_actions2/Ref155779873"
-            >Figure 53</xref>). <fig id="fig_anb_s5d_mcc">
+          and Physical Views, delimited by new lines (<xref href="#user_actions2/fig_anb_s5d_mcc"
+          />). <fig id="fig_anb_s5d_mcc">
             <title>Paths to the SPEF files in spef_file_list</title>
-            <image href="media/image62.png"/>
+            <image href="../../power_grid_library/images/power_grid_library_user_actions_01.png"
+              id="image_i11_xwg_ncc"/>
           </fig></p><p>The path might vary if the you change the SPEF generation output path in
           Section <xref href="netlists_and_physical_views.dita#netlists_and_physical_views"
           >2</xref>, Netlists and Physical Views. Replace the path with the appropriate
         path.</p></li>
       <li>Open the run.tcl file, and then review the contents (<xref
-          href="#user_actions2/Ref153181857">Figure 54</xref>). <fig id="fig_rrs_v5d_mcc">
+          href="#user_actions2/fig_rrs_v5d_mcc"/>). <fig id="fig_rrs_v5d_mcc">
           <title>Contents of the run.tcl file</title>
-          <image href="media/image63.png"/>
-        </fig><p>As seen in <xref href="#user_actions2/Ref153181857">Figure 54</xref>, the inputs
-          are given to the set_pg_library_mode command, after which we write the power grid library
-          into a directory, and then validate the run results.</p></li>
+          <image href="../../power_grid_library/images/power_grid_library_user_actions_02.png"
+            id="image_nsd_xwg_ncc"/>
+        </fig><p>As seen in <xref href="#user_actions2/fig_rrs_v5d_mcc"/>, the inputs are given to
+          the set_pg_library_mode command, after which we write the power grid library into a
+          directory, and then validate the run results.</p></li>
       <li>Type the following command in the terminal:<codeblock id="codeblock_adb_z5d_mcc">voltus -stylus -no_gui</codeblock><p>
           <note id="note_fvk_z5d_mcc">Steps 5-17 are performed in the run.tcl file. You may type
             source run.tcl in the command line to do the next few steps.</note>
@@ -50,9 +52,9 @@ $pdk_release_path/apr/cadence/$metal_stack/${lib_type}/p1278.lef \
           <b>Enter</b>:<codeblock id="codeblock_q1x_gvd_mcc">set_advanced_pg_library_mode -lef_pin_short true -use_embedded_spectre false -
 tap_node_distance 2 -decap_frequency 1e8 -default_frequency 2e8</codeblock><p>The
           set_advanced_pg_library_mode command is used to specify any advanced power grid generation
-          features that might be needed (<xref href="#user_actions2/Ref153273626">Table
-            17</xref>).<table colsep="1" frame="all" id="Ref153273626" rowsep="1">
-            <title>Table 17: set_advanced_pg_library_mode options</title>
+          features that might be needed (<xref href="#user_actions2/Ref153548123"/>).<table
+            colsep="1" frame="all" id="Ref153273626" rowsep="1">
+            <title>set_advanced_pg_library_mode options</title>
             <tgroup cols="2">
               <colspec colname="col1" colnum="1" colwidth="0.6*"/>
               <colspec colname="col2" colnum="2" colwidth="1.4*"/>
@@ -108,9 +110,10 @@ ${pdk_release_path}/extraction/qrc/techfiles/${metal_stack}/tttt/qrcTechFile \
         -design_qrc_layer_map 
 ${pdk_release_path}/extraction/qrc/asic/${metal_stack}/asic.qrc.map</codeblock><p>Use
             <codeph>set_pg_library_mode</codeph> to specify the options being used when generating
-          the PGV views. Table 18 details the options used in this case.</p><p>
+          the PGV views. <xref href="#user_actions2/table_wdq_gxd_mcc"/> details the options used in
+          this case.</p><p>
           <table colsep="1" frame="all" id="Ref153548123" rowsep="1">
-            <title>Table 18: set_pg_library_mode options</title>
+            <title>set_pg_library_mode options</title>
             <tgroup cols="2">
               <colspec colname="col1" colnum="1" colwidth="0.4*"/>
               <colspec colname="col2" colnum="2" colwidth="1.6*"/>
@@ -183,30 +186,32 @@ ${pdk_release_path}/extraction/qrc/asic/${metal_stack}/asic.qrc.map</codeblock><
       <li>Type the following command in the terminal, and then press
           <b>Enter</b>:<codeblock id="codeblock_xlv_3wd_mcc">write_pg_library -out_dir ../stdcells_1278.ldk_demo_lib/pgv</codeblock><p>This
           outputs the PGV views to the specified location. This step should start the actual PGV
-          view generation. <xref href="#user_actions2/Ref153182323">Figure 55:</xref> shows that the
-          views were successfully generated. Any warnings that might occur during generation are
-          explained in Section <xref href="warning_explanations.dita#warning_explanations"
-            >5.4</xref>, Warning Explanations. <fig id="fig_qkr_lwd_mcc">
+          view generation. <xref href="#user_actions2/fig_qkr_lwd_mcc"/> shows that the views were
+          successfully generated. Any warnings that might occur during generation are explained in
+          Section <xref href="warning_explanations.dita#warning_explanations">5.4</xref>, Warning
+          Explanations. <fig id="fig_qkr_lwd_mcc">
             <title>View generation complete</title>
-            <image href="media/image64.png"/>
+            <image href="../../power_grid_library/images/power_grid_library_user_actions_03.png"
+              id="image_fyq_xwg_ncc"/>
           </fig></p></li>
       <li>Next, the report, summary files, and the actual PGV views are generated in the same
         specified directory. You can now review those files to see if there are any
         discrepancies.</li>
       <li>Open the following file in a text editor:<codeblock id="codeblock_rvv_pwd_mcc">../stdcells_1278.ldk_demo_lib/pgv/stdcells.report</codeblock><p>
-          <xref href="#user_actions2/Ref153269492">Figure 56</xref> shows that the intrinsic
-          capacitances for each cell are within range and do not vary significantly between vcc
-          (power) and vssx (ground). <fig id="fig_xvt_qwd_mcc">
+          <xref href="#user_actions2/fig_xvt_qwd_mcc"/> shows that the intrinsic capacitances for
+          each cell are within range and do not vary significantly between vcc (power) and vssx
+          (ground). <fig id="fig_xvt_qwd_mcc">
             <title>Content of the stdcells.report file</title>
-            <image href="media/image65.png"/>
+            <image href="../../power_grid_library/images/power_grid_library_user_actions_04.png"
+              id="image_xfx_xwg_ncc"/>
           </fig></p></li>
       <li>Close the report file, and then open the summary file located at
         ../stdcells_1278.ldk_demo_lib/pgv/stdcells.summary. This is a much more detailed report on
         each cell. Because the summary file is much longer, only one cell is shown below for
-        reference (<xref href="#user_actions2/Ref153269515">Figure 57</xref>).<fig
-          id="fig_h2z_twd_mcc">
+        reference (<xref href="#user_actions2/fig_h2z_twd_mcc"/>).<fig id="fig_h2z_twd_mcc">
           <title>Contents of the stdcells.summary file</title>
-          <image href="media/image66.png"/>
+          <image href="../../power_grid_library/images/power_grid_library_user_actions_05.png"
+            id="image_wfb_ywg_ncc"/>
         </fig></li>
       <li>Designers can also define their own rules and constraints for passing and failing
         conditions of intrinsic capacitance. You can also validate their generated PGV views by
@@ -222,7 +227,7 @@ echo $rules > validate_rule.txt</codeblock><p>This creates a validate_rule.txt f
           CINT_MAX defines the maximum. You can choose which max and min capacitance values are
           suitable for your design.</p></li>
       <li>Type the following command in the terminal, and then press <b>Enter</b> (see <xref
-          href="#user_actions2/Ref153269567">Table 19</xref>):<codeblock id="codeblock_xpq_zwd_mcc">check_pg_library \
+          href="#user_actions2/table_wdq_gxd_mcc"/>):<codeblock id="codeblock_xpq_zwd_mcc">check_pg_library \
                -list { ../stdcells_1278.ldk_demo_lib/pgv/stdcells.cl } \
                -check_parameters \
                -lef_consistency \
@@ -271,10 +276,11 @@ echo $rules > validate_rule.txt</codeblock><p>This creates a validate_rule.txt f
             </tgroup>
           </table>
         </p><p>
-          <xref href="#user_actions2/Ref153269608">Figure 58</xref> shows what the terminal displays
-          after that command runs: <fig id="fig_bmb_hxd_mcc">
+          <xref href="#user_actions2/fig_bmb_hxd_mcc"/> shows what the terminal displays after that
+          command runs: <fig id="fig_bmb_hxd_mcc">
             <title>Result of the check_pg_library command</title>
-            <image href="media/image67.png"/>
+            <image href="../../power_grid_library/images/power_grid_library_user_actions_06.png"
+              id="image_kzg_ywg_ncc"/>
           </fig></p></li>
       <li>Verify the contents of the Validate_PGV directory; it contains a summary file with
         detailed information on the Power Grid views.</li>

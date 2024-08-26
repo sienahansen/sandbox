@@ -25,7 +25,8 @@ set netlist_area ldk_demo_lib_${spf_temp}c_${stat_skew}_c${default_grp_modeling}
           <codeblock id="codeblock_j2p_hkc_mcc">./run.csh</codeblock><p>The run characterizes cells
           specified in the file cell_list and PVT specified in the file active_pvt.pvts in a single
           run. Two .lib files (per PVT) are generated (<xref
-            href="#run_characterization_library_base_ulvt/Ref153265267">Table 13</xref>). <table>
+            href="#run_characterization_library_base_ulvt/lib_files_generated"/>). <table
+            id="lib_files_generated">
             <title>Lib files generated</title>
             <tgroup cols="2">
               <colspec colname="col1" colnum="1" colwidth="0.4*"/>
@@ -50,10 +51,11 @@ set netlist_area ldk_demo_lib_${spf_temp}c_${stat_skew}_c${default_grp_modeling}
           </table></p></li>
       <li>Review the resulting .lib files in the directory ./out_dir_probe_fix_index/PV/allcells/
         and then copy the .lib files to the golden database area (<xref
-          href="#run_characterization_library_base_ulvt/Ref153265267">Table 13</xref>).<codeblock id="codeblock_hkm_lkc_mcc">mkdir -p $LDK_WORKAREA/training/setup/cadence/ldk/stdcells_1278.ldk_demo_lib/lib/base_ulvt
-cp out_dir_probe_fix_index/PV/allcells/*.lib $LDK_WORKAREA/training/setup/cadence/ldk/stdcells_1278.ldk_demo_lib/lib/base_ulvt/</codeblock><p>
-          <xref href="#run_characterization_library_base_ulvt/Ref153265495">Table 14</xref> lists
-          some characterization files to note: <table>
+          href="#run_characterization_library_base_ulvt/Ref153265267">Table
+            13</xref>).<codeblock id="codeblock_hkm_lkc_mcc">mkdir -p $LDK_WORKAREA/training/setup/cadence/ldk/stdcells_1278.ldk_demo_lib/lib/base_ulvt
+cp out_dir_probe_fix_index/PV/allcells/*.lib $LDK_WORKAREA/training/setup/cadence/ldk/stdcells_1278.ldk_demo_lib/lib/base_ulvt/</codeblock><p><xref
+            href="#run_characterization_library_base_ulvt/characterization_files"/> lists some
+          characterization files to note: <table id="characterization_files">
             <title>Characterization files</title>
             <tgroup cols="2">
               <colspec colname="col1" colnum="1" colwidth="0.5*"/>

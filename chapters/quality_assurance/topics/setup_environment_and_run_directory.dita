@@ -15,10 +15,12 @@ environment and run directory</title>
         you are working in. <p>To set up the job distribution command, edit the Cadence Liberate*
           Cluster section in the file
           $LDK_WORKAREA/training/libraries/char/Trio_Flow_setup/Version1p10/char_tcls/char.tcl
-            (<xref href="#setup_environment_and_run_directory/Ref153268043">Figure 24</xref>). <fig
+            (<xref href="#setup_environment_and_run_directory/fig_up2_d3c_mcc"/>). <fig
             id="fig_up2_d3c_mcc">
             <title>File char.tcl, Cadence Liberate* Cluster section</title>
-            <image/>
+            <image
+              href="../../timing_liberty_and_verilog/images/timing_liberty_verilog_setup_env_run_directory_01.png"
+              id="image_a1b_p4g_ncc"/>
             <note id="note_vm1_f3c_mcc">
               <ul id="ul_jmt_f3c_mcc">
                 <li>The first section is an example of Intel’s nbjobs command.<p>The second section

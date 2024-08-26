@@ -10,8 +10,8 @@
       and how to customize them.</p>
     <p>AG provides predefined hooks, which are automatically called before and after running a flow
       step (Pin, Extract, or Abstract) (<xref
-        href="#customization_of_the_abstract_generation_flow/Ref153178154">Table 15</xref>). There
-      are therefore, two predefined hooks for every flow step.</p>
+        href="#customization_of_the_abstract_generation_flow/Ref153178154"/>). There are therefore,
+      two predefined hooks for every flow step.</p>
     <table colsep="1" frame="all" id="Ref153178154" rowsep="1">
       <title>Predefined hooks in AG</title>
       <tgroup cols="2">

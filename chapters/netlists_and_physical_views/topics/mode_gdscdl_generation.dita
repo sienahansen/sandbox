@@ -9,32 +9,35 @@
       <li>Select <b>Run type – Input file.</b> The <i>Cell file</i> field is now editable, while the
           <i>Lib</i> field is not.</li>
       <li>Select the file chooser on the right of the <i>Cell file</i> field to open a UNIX Browser
-          (<xref href="#mode_gdscdl_generation/Ref153272655">Figure 10</xref>).</li>
+          (<xref href="#mode_gdscdl_generation/fig_sv2_wzb_mcc"/>).</li>
       <li>Select <b>libCellFile</b>.</li>
       <li>Click <b>Choose</b>.<p>
           <fig id="fig_sv2_wzb_mcc">
             <title>UNIX browser for Cell file field</title>
-            <image href="media/image13.png"/>
+            <image href="../images/netlists_physical_views_user_actions_08.png"
+              id="image_atd_nkg_ncc"/>
           </fig>
         </p><p>The Auto Lib View Generation form should look like <xref
-            href="#mode_gdscdl_generation/Ref153190937">Figure 11</xref>:<fig id="fig_ogz_yzb_mcc">
+            href="#mode_gdscdl_generation/fig_ogz_yzb_mcc"/>:<fig id="fig_ogz_yzb_mcc">
             <title>Auto Lib View Generation form in GDS/CDL mode</title>
-            <image href="media/image14.png"/>
+            <image href="../images/netlists_physical_views_user_actions_09.png"
+              id="image_zhj_nkg_ncc"/>
           </fig></p></li>
       <li>Click <b>Apply</b>.<p>The default Run directory name is ./autoLib; you can change the
           name, as desired.</p><p>Several messages are displayed in the CIW output pane. The entire
           operation is complete when the final message "Total time taken" displays (<xref
-            href="#mode_gdscdl_generation/Ref153272741">Figure 12</xref>).</p><fig
-          id="fig_ups_g1c_mcc">
+            href="#mode_gdscdl_generation/fig_ups_g1c_mcc"/>).</p><fig id="fig_ups_g1c_mcc">
           <title>CIW output messages</title>
-          <image href="media/image15.png"/>
+          <image href="../images/netlists_physical_views_user_actions_10.png" id="image_nhv_nkg_ncc"
+          />
         </fig><p>The structure of Run directory autoLib is shown in <xref
-            href="#mode_gdscdl_generation/Ref152950804">Figure 13</xref>. The individual directories
-          that are also cell names contain the cell-level gds and cdl files. These cell level files
-          are combined for the library level in the ldk_demo_lib.gds and ldk_demo_lib.cdl file when
-          the option <i>Copy to delivery dir</i> is enabled. <fig id="fig_ucm_k1c_mcc">
+            href="#mode_gdscdl_generation/fig_ucm_k1c_mcc"/>. The individual directories that are
+          also cell names contain the cell-level gds and cdl files. These cell level files are
+          combined for the library level in the ldk_demo_lib.gds and ldk_demo_lib.cdl file when the
+          option <i>Copy to delivery dir</i> is enabled. <fig id="fig_ucm_k1c_mcc">
             <title>Run dir autoLib directory structure</title>
-            <image href="media/image16.png"/>
+            <image href="../images/netlists_physical_views_user_actions_11.png"
+              id="image_ll1_4kg_ncc"/>
           </fig></p></li>
     </ol>
   </body>

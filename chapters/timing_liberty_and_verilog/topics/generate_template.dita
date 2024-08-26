@@ -13,9 +13,9 @@ cd genTemp</codeblock></li>
       <li>To generate the characterization setup files, run the script run.csh:
           <codeblock id="codeblock_yjx_4jc_mcc">./run.csh</codeblock><p>The run reads all Liberty
           files in the file list and generates the characterization setup files (<xref
-            href="#generate_template/Ref153268216">Table 12</xref>). </p><table colsep="1"
-          frame="all" id="Ref153268216" rowsep="1">
-          <title>Table 12: Characterization setup files</title>
+            href="#generate_template/Ref153268216"/>). </p><table colsep="1" frame="all"
+          id="Ref153268216" rowsep="1">
+          <title>Characterization setup files</title>
           <tgroup cols="2">
             <colspec colname="col1" colnum="1" colwidth="0.8*"/>
             <colspec colname="col2" colnum="2" colwidth="1.2*"/>

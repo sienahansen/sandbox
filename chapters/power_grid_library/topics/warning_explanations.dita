@@ -5,41 +5,40 @@
       <title>Warning explanations</title>
       <body>
         <table colsep="1" frame="all" id="Toc164238172" rowsep="1">
-          <title>Table
-20: Warning explanations</title>
+          <title>Warning explanations</title>
           <tgroup cols="2">
-            <colspec colname="col1" colnum="1" colwidth="0.5*"/>
-            <colspec colname="col2" colnum="2" colwidth="1.5*"/>
-            <thead>
-              <row>
-                <entry>Warning</entry>
-                <entry>Description</entry>
-              </row>
-            </thead>
-            <tbody>
-              <row>
-                <entry>**WARN: (IMPLF-200/201)</entry>
-                <entry>Related to the antenna rules. This is a known issue and will be addressed in
-              a future release.</entry>
-              </row>
-              <row>
-                <entry>**WARN: (VOLTUS_LGEN-3087)</entry>
-                <entry>Can be ignored because we use the following option:<p>-design_qrc_layer_map
+        <colspec colname="col1" colnum="1" colwidth="1*"/>
+        <colspec colname="col2" colnum="2" colwidth="2.06*"/>
+        <thead>
+          <row>
+            <entry>Warning</entry>
+            <entry>Description</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>**WARN: (IMPLF-200/201)</entry>
+            <entry>Related to the antenna rules. This is a known issue and will be addressed in a
+              future release.</entry>
+          </row>
+          <row>
+            <entry>**WARN: (VOLTUS_LGEN-3087)</entry>
+            <entry>Can be ignored because we use the following option:<p>-design_qrc_layer_map
                 ${pdk_release_path}/extraction/qrc/asic/${metal_stack}/asic.qrc.map</p><p>This
                 covers all the routing layers in the tech node. Other items not covered are ignored
                 as they not extracted for ASIC flow anyway.</p></entry>
-              </row>
-              <row>
-                <entry>** WARN: (VOLTUS_LSIM-5004)</entry>
-                <entry>X2.mM22:b bulk node is not connected to a voltage source.<p>These warnings
-                can happen due to the following scenarios:<ul id="ul_ir4_qxd_mcc">
+          </row>
+          <row>
+            <entry>** WARN: (VOLTUS_LSIM-5004)</entry>
+            <entry>X2.mM22:b bulk node is not connected to a voltage source.<p>These warnings can
+                happen due to the following scenarios:<ul id="ul_ir4_qxd_mcc">
                   <li>A bulk node is connected to a pin that is not present at the hierarchy level
                     that we are using</li>
                   <li>A bulk node is actually floating</li>
                 </ul></p></entry>
-              </row>
-            </tbody>
-          </tgroup>
+          </row>
+        </tbody>
+      </tgroup>
         </table>
         <p>To verify if these warnings are legitimate, view the SPEF file
 manually and check whether the bulk is floating. In this case, they

@@ -13,10 +13,13 @@ section. When running the SPEF generation, it runs the LVS, and
 then generates the LVS run directory at
 ./autoLib/&lt;cell_name&gt;/SPEF/ location.</p>
         <p>To verify the LVS results, view the lvs.report.cls file from that location, above.<fig
-          id="fig_hhl_szd_mcc"><title>LVS
-            Results file</title><image href="media/image68.png"/></fig></p>
+        id="fig_hhl_szd_mcc">
+        <title>LVS Results file</title>
+          <image href="../images/quality_assurance_layout_vs_schematic_gdvscdl_01.png"
+            id="image_xdp_yxg_ncc"/>
+      </fig></p>
         <p>
-          <xref href="#layout_versus_schematic_gds_versus_cdl/Ref154046309">Figure 61</xref> highlights the Run Result
-representing the LVS run as a match.</p>
+      <xref href="#layout_versus_schematic_gds_versus_cdl/fig_hhl_szd_mcc"/> highlights the Run
+      Result representing the LVS run as a match.</p>
       </body>
     </topic>

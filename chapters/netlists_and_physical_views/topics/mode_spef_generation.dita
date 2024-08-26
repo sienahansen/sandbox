@@ -12,16 +12,19 @@
       <li>Using your preferred editor, open the ./qrc_cmd.template file. This file requires very
         little editing and only when switching between the two covered PVT corners in the delivery
         directory. View the area for process_technology (<xref
-          href="#mode_spef_generation/Ref152950861">Figure 14</xref>). Close the file when done
-        viewing. <fig id="fig_dvl_mcc_mcc">
+          href="#mode_spef_generation/fig_dvl_mcc_mcc"/>). Close the file when done viewing. <fig
+          id="fig_dvl_mcc_mcc">
           <title>Technology section of qrc_cmd.template file</title>
+          <image href="../images/netlists_physical_views_user_actions_12.png" id="image_rhf_qlg_ncc"
+          />
         </fig><note id="note_ibb_ncc_mcc">You can use other corners in the SPEF generation
           operation, however, the other corners are not available in the delivery directory. Ensure
           the <i>Copy to delivery dir</i> option is deselected if corners other than those listed in
           the delivery directory are used. Other corners are written in the specified Run dir (<xref
-            href="#mode_spef_generation/Ref153269863">Figure 15</xref>).</note><fig
-          id="fig_q2l_ncc_mcc">
+            href="#mode_spef_generation/fig_q2l_ncc_mcc"/>).</note><fig id="fig_q2l_ncc_mcc">
           <title>Delivery directory structure</title>
+          <image href="../images/netlists_physical_views_user_actions_13.png" id="image_ncp_rlg_ncc"
+          />
         </fig></li>
       <li>SPEF generation requires Cadence Pegasus* LVS to be run before Cadence Quantus*
         extraction. The autoLib utility needs the full path to the lvs.pvl. <p>In the UNIX window
@@ -33,63 +36,76 @@
       <li>If the Auto Lib View Generation form was closed, select <b>Bindkey</b> &lt;F10&gt;.<p>If
           running subsequent operations, it is recommended to use <b>Apply</b> instead of <b>OK</b>
           on the form to retain entry field values.</p></li>
-      <li>See <xref href="#mode_spef_generation/Ref152950927">Figure 16</xref> for the values for
-        the Auto Lib View Generation form. The <i>Run type</i> is now <b>All cells in lib</b>.
-        Choose <b>ldk_demo_lib</b> from the <i>Lib</i> menu. Select <b>SPEF</b> from the <i>Mode</i>
-        menu and ensure <b>Copy to delivery dir</b> is selected. Set <i>QTS gnd net</i> to
+      <li>See <xref href="#mode_spef_generation/fig_ytx_pdc_mcc"/> for the values for the Auto Lib
+        View Generation form. The <i>Run type</i> is now <b>All cells in lib</b>. Choose
+          <b>ldk_demo_lib</b> from the <i>Lib</i> menu. Select <b>SPEF</b> from the <i>Mode</i> menu
+        and ensure <b>Copy to delivery dir</b> is selected. Set <i>QTS gnd net</i> to
           <b>vssx</b>.<fig id="fig_ytx_pdc_mcc">
           <title>Auto Lib View Generation form in SPEF mode</title>
+          <image href="../images/netlists_physical_views_user_actions_14.png" id="image_kqs_slg_ncc"
+          />
         </fig></li>
       <li>Click <b>Apply</b>. Several messages display in the CIW. The first operation is to create
         a container cell. A GDS is output for &lt;cell&gt;/layout_extract. A CDL file is written for
         the &lt;cell&gt;. LVS file and is then run. This can take several minutes for each cell
-          (<xref href="#mode_spef_generation/Ref153269937">Figure 17</xref>).<note
-          id="note_dmz_tdc_mcc">The VALE messages can be ignored and will be removed in a future
-          release.</note><fig id="fig_xn1_vdc_mcc">
+          (<xref href="#mode_spef_generation/fig_xn1_vdc_mcc"/>).<note id="note_dmz_tdc_mcc">The
+          VALE messages can be ignored and will be removed in a future release.</note><fig
+          id="fig_xn1_vdc_mcc">
           <title>CIW Output messages during SPEF generation</title>
+          <image href="../images/netlists_physical_views_user_actions_15.png" id="image_x1n_tlg_ncc"
+          />
         </fig><p>The Keyword messages are displayed while the qrc_cmd.template file is customized
           for the cell under operation. When the operation is complete after the last cell, a
           message is displayed to indicate copying of output files to the delivery directory when
           the <b>Copy to delivery dir</b> option is set. When the final message "Total time taken"
           displays, the entire operation is complete (<xref
-            href="#mode_spef_generation/Ref153269956">Figure 18</xref>). <fig id="fig_h52_xdc_mcc">
+            href="#mode_spef_generation/fig_h52_xdc_mcc"/>). <fig id="fig_h52_xdc_mcc">
             <title>CIW Output message after SPEF generation</title>
+            <image href="../images/netlists_physical_views_user_actions_16.png"
+              id="image_wfj_5lg_ncc"/>
           </fig></p><p>The delivery directory now contains the &lt;cell&gt;.spf files for the
-          specific corner (<xref href="#mode_spef_generation/Ref153269983">Figure 19</xref>).<fig
+          specific corner (<xref href="#mode_spef_generation/fig_x2w_ydc_mcc"/>).<fig
             id="fig_x2w_ydc_mcc">
             <title>Delivery directory - spf first corner</title>
+            <image href="../images/netlists_physical_views_user_actions_17.png"
+              id="image_p2q_5lg_ncc"/>
           </fig></p></li>
       <li>Using your preferred editor, open the ./qrc_cmd.template file for editing (<xref
-          href="#mode_spef_generation/Ref153270080">Figure 20</xref>). <ol id="ol_sh3_c2c_mcc">
+          href="#mode_spef_generation/fig_a5n_d2c_mcc"/>). <ol id="ol_sh3_c2c_mcc">
           <li>Comment out the original technology_corner “tttt” and uncomment the technology_corner
             “pcss”.</li>
           <li>Comment out the original temperature “85.0”.</li>
           <li>Uncomment the temperature line for “-40.0”.</li>
           <li>Save and close the file.<fig id="fig_a5n_d2c_mcc">
               <title>qrc_cmd.template edits for spf alternate corner</title>
-              <image/>
               <p>Before edits: </p>
+              <image href="../images/netlists_physical_views_user_actions_18a.png"
+                id="image_i4n_vlg_ncc"/>
               <p>After edits: </p>
+              <image href="../images/netlists_physical_views_user_actions_18b.png"
+                id="image_j4n_vlg_ncc"/>
             </fig></li>
         </ol></li>
       <li>
         <p>Complete the Auto Lib View Generation form as shown in <xref
-            href="#mode_spef_generation/Ref153267847">Figure 21</xref>, and then click
-          <b>Apply</b>.</p>
+            href="#mode_spef_generation/fig_yvn_p2c_mcc"/>, and then click <b>Apply</b>.</p>
         <p>All three modes (GDS/CDL/SPEF) will be run.<fig id="fig_yvn_p2c_mcc">
             <title>Auto Lib View Generation form GDS/CDL/SPEF mode</title>
-            <image/>
+            <image href="../images/netlists_physical_views_user_actions_19.png"
+              id="image_qk1_wlg_ncc"/>
           </fig></p>
         <p>When the operation is done, &lt;library&gt;.gds and &lt;library&gt;.cdl are also created;
           all outputs are copied to the delivery directory (<xref
-            href="#mode_spef_generation/Ref153267925">Figure 22</xref> and <xref
-            href="#mode_spef_generation/Ref153267946">Figure 23</xref>).<fig id="fig_qcd_s2c_mcc">
-            <title/>
-            <image/>
+            href="#mode_spef_generation/fig_qcd_s2c_mcc"/> and <xref
+            href="#mode_spef_generation/fig_mwm_s2c_mcc"/>).<fig id="fig_qcd_s2c_mcc">
+            <title>CIW Output messages - All files moved to delivery directory</title>
+            <image href="../images/netlists_physical_views_user_actions_20.png"
+              id="image_swj_wlg_ncc"/>
           </fig></p>
         <fig id="fig_mwm_s2c_mcc">
-          <title/>
-          <image/>
+          <title>Final step delivery directory output files</title>
+          <image href="../images/netlists_physical_views_user_actions_21.png" id="image_rk4_wlg_ncc"
+          />
         </fig>
       </li>
     </ol>
