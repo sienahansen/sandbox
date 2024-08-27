@@ -6,8 +6,8 @@
 environment and run directory</title>
       <body>
         <p><b>Important:</b> Before proceeding with this section, you must perform the actions in
-      Section <xref href="environment_setup_for_lab_user.dita#environment_setup_for_lab_user"
-        >1.3.4</xref>, Environment setup for lab user.</p>
+        <xref href="../../introduction/topics/environment_setup_for_lab_user.dita"/>, Environment
+      setup for lab user.</p>
         <ol>
       <li>Change the directory to the LDK working area
         ./ldk_r0.9_cdns/training/setup/cadence/ldk.</li>

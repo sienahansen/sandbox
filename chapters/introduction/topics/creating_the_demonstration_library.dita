@@ -212,9 +212,9 @@ $INTEL_LDK/training/libraries/ldk_demo_lib/ directory.</p>
       <li>Run the script to generate the necessary files for command file
           creation:<codeblock id="codeblock_hhx_qmb_mcc">./demo_lib_create.py [-r R] [-l L] [-m M] [-c C] [-cf CF] [-n N] [-v V]</codeblock><p>Filenames
           may be used as command line entries, as seen in <xref
-            href="#creating_the_demonstration_library/Ref168326490">Table 8</xref>, for files to be
-          generated in the current working directory; otherwise, the full or relative path is
-          necessary for the script. </p><ol id="ol_tnw_tmb_mcc">
+            href="#creating_the_demonstration_library/Ref168326490"/>, for files to be generated in
+          the current working directory; otherwise, the full or relative path is necessary for the
+          script. </p><ol id="ol_tnw_tmb_mcc">
           <li>Sample command line entry: (output files are in
             <b>green</b>)<codeblock id="codeblock_g34_5mb_mcc">./demo_lib_create.py -r &lt;LDK_STDCELL_LIBRARY_ROOT&gt; -l <b>librarySearchPaths.txt</b> -m <b>mastercellLibPairs.txt</b> -c CellsToBeCopied.txt -cf <b>copyCommands.csh</b> -n <b>$INTEL_LDK/training/libraries/ldk_demo_lib</b> -v layout:abstract</codeblock></li>
         </ol><note id="note_rfc_xmb_mcc">For all views of a cell to be copied, use <i>-v
@@ -223,7 +223,7 @@ $INTEL_LDK/training/libraries/ldk_demo_lib/ directory.</p>
         finished, the command file to create the new library will appear as specified. <ol
           id="ol_pxx_mnb_mcc">
           <li>Run the command file to create the desired library and cells (<xref
-              href="#creating_the_demonstration_library/Ref168328785">Figure 2</xref>):
+              href="#creating_the_demonstration_library/fig_y3v_bhg_ncc"/>):
             <codeblock id="codeblock_twh_zmb_mcc">source copyCommands.csh</codeblock></li>
         </ol><p>
           <fig id="fig_y3v_bhg_ncc">
@@ -265,8 +265,8 @@ $INTEL_LDK/training/libraries/ldk_demo_lib/ directory.</p>
           </table>
         </p><p>Additionally, the Python script allows you to run separate commands in three separate
           cases, carrying out the same functionality as the base case run but in three individual
-          steps, as seen in <xref href="#creating_the_demonstration_library/Ref168328899">Table
-            9</xref>:</p><ul id="ul_oj2_r4b_mcc">
+          steps, as seen in <xref href="#creating_the_demonstration_library/Ref168326490"/>:</p><ul
+          id="ul_oj2_r4b_mcc">
           <li>To run Case 1:
             <codeblock id="codeblock_ssp_rnb_mcc">./demo_lib_create.py -r &lt;LDK_STDCELL_LIBRARY_ROOT&gt; -l librarySearchPaths.txt</codeblock></li>
         </ul><ul id="ul_wnn_snb_mcc">
@@ -276,9 +276,9 @@ $INTEL_LDK/training/libraries/ldk_demo_lib/ directory.</p>
             3:<codeblock id="codeblock_mtg_wnb_mcc">./demo_lib_create.py -m mastercellLibPairs.txt -c CellsToBeCopied.txt -cf commandsfile.txt -n $INTEL_LDK/training/libraries/ldk_demo_lib -v layout:abstract</codeblock></li>
         </ul><p>
           <note id="note_w5k_ynb_mcc">The entry format for the values in each case is as described
-            in <xref href="#creating_the_demonstration_library/Ref168326490">Table 8</xref>, and as
-            described above for the base case. <p>For additional help, use: ./demo_lib_create.py
-              [-h]</p></note>
+            in <xref href="#creating_the_demonstration_library/Ref168326490"/>, and as described
+            above for the base case. <p>For additional help, use: ./demo_lib_create.py
+            [-h]</p></note>
         </p></li>
       <li>Because the new cells and views are copied into the ldk_demo_lib included in the cds.lib
         file, start a new session or refresh an existing session of the Cadence Virtuoso* Library

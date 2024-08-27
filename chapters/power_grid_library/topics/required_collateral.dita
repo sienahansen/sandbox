@@ -37,15 +37,15 @@ collateral</title>
               </row>
               <row>
                 <entry>STD Cell Transistor Level xDSPF files</entry>
-                <entry>Must be generated beforehand (See Section <xref
-                href="netlists_and_physical_views.dita#netlists_and_physical_views">2</xref>,
-              Netlists and Physical Views)</entry>
+                <entry>Must be generated beforehand (See <xref
+                href="../../netlists_and_physical_views/topics/netlists_and_physical_views.dita"
+              />)</entry>
               </row>
               <row>
                 <entry>STD Cell LEF file</entry>
-                <entry>Must be generated beforehand (See Section <xref
-                href="layout_abstracts_and_lef_files.dita#layout_abstracts_and_lef_files">4</xref>,
-              Layout Abstracts and LEF Files)</entry>
+                <entry>Must be generated beforehand (See <xref
+                href="../../layout_abstracts_and_lef_files/topics/layout_abstracts_and_lef_files.dita"
+              />)</entry>
               </row>
             </tbody>
           </tgroup>

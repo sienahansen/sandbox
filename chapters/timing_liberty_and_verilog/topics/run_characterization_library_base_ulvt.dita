@@ -15,8 +15,8 @@ cd i0m_base_ulvt</codeblock></li>
           <li>Change number of the client
               jobs:<codeblock id="codeblock_mwb_2kc_mcc">set client &lt;#jobs&gt;</codeblock><p>The
               run time for 20 jobs is about 12 minutes.</p></li>
-          <li>To use the extracted netlists generated in Section <xref
-              href="netlists_and_physical_views.dita#netlists_and_physical_views">2</xref> for
+          <li>To use the extracted netlists generated in <xref
+              href="../../netlists_and_physical_views/topics/netlists_and_physical_views.dita"/> for
             characterization, uncomment the following lines:
             <codeblock id="codeblock_wqp_fkc_mcc">set netlist_dir $env(LDK_WORKAREA)/training/setup/cadence/ldk/stdcells_1278.ldk_demo_lib/spf/
 set netlist_area ldk_demo_lib_${spf_temp}c_${stat_skew}_c${default_grp_modeling}</codeblock></li>
@@ -51,8 +51,8 @@ set netlist_area ldk_demo_lib_${spf_temp}c_${stat_skew}_c${default_grp_modeling}
           </table></p></li>
       <li>Review the resulting .lib files in the directory ./out_dir_probe_fix_index/PV/allcells/
         and then copy the .lib files to the golden database area (<xref
-          href="#run_characterization_library_base_ulvt/Ref153265267">Table
-            13</xref>).<codeblock id="codeblock_hkm_lkc_mcc">mkdir -p $LDK_WORKAREA/training/setup/cadence/ldk/stdcells_1278.ldk_demo_lib/lib/base_ulvt
+          href="#run_characterization_library_base_ulvt/characterization_files"
+            />).<codeblock id="codeblock_hkm_lkc_mcc">mkdir -p $LDK_WORKAREA/training/setup/cadence/ldk/stdcells_1278.ldk_demo_lib/lib/base_ulvt
 cp out_dir_probe_fix_index/PV/allcells/*.lib $LDK_WORKAREA/training/setup/cadence/ldk/stdcells_1278.ldk_demo_lib/lib/base_ulvt/</codeblock><p><xref
             href="#run_characterization_library_base_ulvt/characterization_files"/> lists some
           characterization files to note: <table id="characterization_files">
