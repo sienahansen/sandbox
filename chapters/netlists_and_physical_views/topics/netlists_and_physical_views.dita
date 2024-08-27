@@ -6,12 +6,14 @@
     <body>
       <p>This section covers generation of:</p>
       <ul>
-        <li>Stream file (GDSII) (Section <xref href="stream_file_gdsii.dita#stream_file_gdsii">2.1</xref>)</li>
-        <li>OASIS design file (OASIS)</li>
-        <li>CDL (Circuit Description Language) (Section <xref href="circuit_description_language.dita#circuit_description_language">2.3</xref>)</li>
-        <li>Container cell generation (Section <xref href="container_cell_generation.dita#container_cell_generation">2.4</xref>)</li>
-        <li>LVS (Layout Versus Schematic) (Section <xref href="lvs.dita#lvs">2.5</xref>)</li>
-        <li>Parasitic Extraction and SPEF generation (Section <xref href="parasitic_extraction_and_spef_generation.dita#parasitic_extraction_and_spef_generation">2.6</xref>)</li>
+        <li>Stream file (GDSII) (<xref href="stream_file_gdsii.dita"/>)</li>
+        <li>OASIS design file (<xref href="oasis_design_file_oasis.dita"/>)</li>
+        <li>CDL (Circuit Description Language) (<xref href="circuit_description_language.dita"
+        />)</li>
+        <li>Container cell generation (<xref href="container_cell_generation.dita"/>)</li>
+        <li>LVS (Layout Versus Schematic) (<xref href="lvs.dita"/>)</li>
+        <li>Parasitic Extraction and SPEF generation (<xref
+          href="parasitic_extraction_and_spef_generation.dita"/>)</li>
       </ul>
       <p>Each of these formats is defined, and a custom utility is
 demonstrated to generate them for an entire library.</p>

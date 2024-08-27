@@ -3,9 +3,8 @@
 <topic id="appendix_a">
     <title>Appendix A. Document References </title>
     <body>
-        <p><xref href="#view_check_command_reference/Ref421204078">Table 22</xref> lists other
-            documents referenced in this document. Contact your Intel Representative to obtain these
-            documents.</p>
+        <p><xref href="#appendix_a/Ref421204078"/> lists other documents referenced in this
+            document. Contact your Intel Representative to obtain these documents.</p>
         <table colsep="1" frame="all" id="Ref421204078" rowsep="1">
             <title>References</title>
             <tgroup cols="2">

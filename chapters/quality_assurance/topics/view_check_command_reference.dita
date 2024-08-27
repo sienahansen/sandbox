@@ -5,39 +5,31 @@
         <title>View Check
 Command Reference</title>
         <body>
-          <p>
-            <b>view_check_read_lib [options]</b>
-          </p>
+          <p><b>view_check_read_lib [options]</b>
+    </p>
           <p>Read Liberty files and generate view check DB.</p>
-          <p>
-            <b>Options:</b>
-          </p>
+          <p><b>Options:</b>
+    </p>
           <p>-files &lt;list of input files&gt;</p>
-          <p>
-            <b>Examples:</b>
-          </p>
+          <p><b>Examples:</b>
+    </p>
           <p>set db_lib [view_check_read_lib -files lib/test.lib]</p>
           <p>_____</p>
-          <p>
-            <b>view_check_read_lef [options]</b>
-          </p>
+          <p><b>view_check_read_lef [options]</b>
+    </p>
           <p>Read LEF files and generate view check DB.</p>
-          <p>
-            <b>Options:</b>
-          </p>
+          <p><b>Options:</b>
+    </p>
           <p>-files &lt;list of input files&gt;</p>
-          <p>
-            <b>Examples:</b>
-          </p>
+          <p><b>Examples:</b>
+    </p>
           <p>set db_lef [view_check_read_lef -files lef/test.lef]</p>
           <p>_____</p>
-          <p>
-            <b>view_check_read_spice [options]</b>
-          </p>
+          <p><b>view_check_read_spice [options]</b>
+    </p>
           <p>Read SPICE-type files and generate view check DB.</p>
-          <p>
-            <b>Options:</b>
-          </p>
+          <p><b>Options:</b>
+    </p>
           <p>-type &lt;type of SPICE&gt;</p>
           <p>            Supported types: [ spice | spectre | dspf | cdl ]</p>
           <p>-power_pins &lt;list of power pins&gt;</p>
@@ -46,9 +38,8 @@ Command Reference</title>
           <p>-file_ext &lt;file extension of input files in directory
 specified by -dir&gt;</p>
           <p>-files &lt;list of input files&gt;</p>
-          <p>
-            <b>Examples:</b>
-          </p>
+          <p><b>Examples:</b>
+    </p>
           <p>set db_spf [view_check_read_spice -power_pins vcc -ground_pins
 vssx -type dspf -dir spf -file_ext spf]</p>
           <p>______</p>
@@ -71,9 +62,8 @@ containing all pins and their attributes and values</li>
           <p>Output report legend:</p>
           <p>              &lt; - mismatch</p>
           <p>               ? - missing</p>
-          <p>
-            <b>Options:</b>
-          </p>
+          <p><b>Options:</b>
+    </p>
           <p>-compare_types &lt;list of data types to compare&gt;</p>
           <p>              Supported data types: * cell pin cell_attribute pin_attribute</p>
           <p>-cells &lt;list of cells&gt;</p>
@@ -102,9 +92,8 @@ containing all pins and their attributes and values</li>
           <p>              Support stdout.</p>
           <p>-verbose</p>
           <p>              Include matched data in report.</p>
-          <p>
-            <b>Examples:</b>
-          </p>
+          <p><b>Examples:</b>
+    </p>
           <p>Compare Liberty vs. LEF: include cell attribute area and pin
 attribute direction in comparison.</p>
           <p>              set db_lib [view_check_read_lib -files lib/test.lib]</p>

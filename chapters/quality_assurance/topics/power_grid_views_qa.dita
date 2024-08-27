@@ -5,11 +5,11 @@
       <title>Power Grid
 views QA</title>
       <body>
-    <p>The PGV view generation section (Section <xref
-        href="power_grid_library.dita#power_grid_library">5</xref>) has its own QA section which is
-      covered by the check_pg_library option (steps 15 and 16). These steps cover the basic QA
-      checks, such as parameter checks and LEF consistency checks. These are detailed in Section
-        <xref href="power_grid_library.dita#power_grid_library">5</xref>; there are no lab steps in
+    <p>The PGV view generation section (<xref
+        href="../../power_grid_library/topics/power_grid_library.dita"/>) has its own QA section
+      which is covered by the check_pg_library option (steps 15 and 16). These steps cover the basic
+      QA checks, such as parameter checks and LEF consistency checks. These are detailed in <xref
+        href="../../power_grid_library/topics/power_grid_library.dita"/>; there are no lab steps in
       this section.<codeblock id="codeblock_vx2_fzd_mcc">check_pg_library
       -list { ../stdcells_1278.ldk_demo_lib/pgv/stdcells.cl } \
       -check_parameters \

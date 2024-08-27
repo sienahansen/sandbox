@@ -6,12 +6,11 @@
 Versus Schematic: GDS versus CDL</title>
       <body>
 
-        <p>Use the LVS process to verify that the physical layout
-implementation connectivity matches the Schematic (or Netlist). The
-flow steps to run LVS are explained in Section <xref href="lvs.dita#lvs">2.5</xref>. There are no lab steps in this
-section. When running the SPEF generation, it runs the LVS, and
-then generates the LVS run directory at
-./autoLib/&lt;cell_name&gt;/SPEF/ location.</p>
+        <p>Use the LVS process to verify that the physical layout implementation connectivity
+      matches the Schematic (or Netlist). The flow steps to run LVS are explained in <xref
+        href="../../netlists_and_physical_views/topics/lvs.dita"/>. There are no lab steps in this
+      section. When running the SPEF generation, it runs the LVS, and then generates the LVS run
+      directory at ./autoLib/&lt;cell_name&gt;/SPEF/ location.</p>
         <p>To verify the LVS results, view the lvs.report.cls file from that location, above.<fig
         id="fig_hhl_szd_mcc">
         <title>LVS Results file</title>

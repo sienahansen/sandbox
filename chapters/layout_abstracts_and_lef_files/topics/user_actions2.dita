@@ -19,9 +19,8 @@
             <image href="../../power_grid_library/images/power_grid_library_user_actions_01.png"
               id="image_i11_xwg_ncc"/>
           </fig></p><p>The path might vary if the you change the SPEF generation output path in
-          Section <xref href="netlists_and_physical_views.dita#netlists_and_physical_views"
-          >2</xref>, Netlists and Physical Views. Replace the path with the appropriate
-        path.</p></li>
+            <xref href="../../netlists_and_physical_views/topics/netlists_and_physical_views.dita"
+          />, Netlists and Physical Views. Replace the path with the appropriate path.</p></li>
       <li>Open the run.tcl file, and then review the contents (<xref
           href="#user_actions2/fig_rrs_v5d_mcc"/>). <fig id="fig_rrs_v5d_mcc">
           <title>Contents of the run.tcl file</title>
@@ -188,8 +187,8 @@ ${pdk_release_path}/extraction/qrc/asic/${metal_stack}/asic.qrc.map</codeblock><
           outputs the PGV views to the specified location. This step should start the actual PGV
           view generation. <xref href="#user_actions2/fig_qkr_lwd_mcc"/> shows that the views were
           successfully generated. Any warnings that might occur during generation are explained in
-          Section <xref href="warning_explanations.dita#warning_explanations">5.4</xref>, Warning
-          Explanations. <fig id="fig_qkr_lwd_mcc">
+            <xref href="../../power_grid_library/topics/warning_explanations.dita"/>. <fig
+            id="fig_qkr_lwd_mcc">
             <title>View generation complete</title>
             <image href="../../power_grid_library/images/power_grid_library_user_actions_03.png"
               id="image_fyq_xwg_ncc"/>

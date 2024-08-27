@@ -11,12 +11,14 @@
       <li>The Design Summary window displays; select only the <b>Basic Summary</b> option, and then
         click <b>OK</b>. <fig id="fig_gdg_nc2_mcc">
           <title>Design Summary window</title>
-          <image href="media/image75.png"/>
+          <image href="../images/quality_assurance_layout_summary_report_comp_01.png"
+            id="image_pzs_r4m_ncc"/>
         </fig><p>The Summary window for the design displays and shows the Layout Objects Statistics
-            (<xref href="#layout_summary_report_comparison_optional/Ref168498252">Figure 69</xref>),
-          which shows the total shapes present in the layout. <fig id="fig_isw_qc2_mcc">
+            (<xref href="#layout_summary_report_comparison_optional/fig_isw_qc2_mcc"/>), which shows
+          the total shapes present in the layout. <fig id="fig_isw_qc2_mcc">
             <title>Design Summary</title>
-            <image href="media/image76.png"/>
+            <image href="../images/quality_assurance_layout_summary_report_comp_02.png"
+              id="image_uyw_r4m_ncc"/>
           </fig></p></li>
       <li>To save the Summary file, select <b>File &gt; Save As</b>, and then give the name
           <b>layout_extract.summary</b>.</li>
@@ -30,13 +32,17 @@
       <li>Specify names in the <i>Library</i>, <i>Top Cell</i>, and <i>View</i> regions for the GDS
         file stream-in. <fig id="fig_bk4_vc2_mcc">
           <title>XStream In form</title>
-          <image href="media/image77.png"/>
+          <image href="../images/quality_assurance_layout_summary_report_comp_03.png"
+            id="image_khc_s4m_ncc"/>
         </fig></li>
+      <li></li>
       <li>Click <b>Translate</b>.</li>
-      <li>When the stream-in completes, the following message displays (Figure 71):<fig
+      <li>When the stream-in completes, the following message displays (<xref
+          href="#layout_summary_report_comparison_optional/fig_w1g_yc2_mcc"/>):<fig
           id="fig_w1g_yc2_mcc">
           <title>Stream in translation complete notification</title>
-          <image href="media/image78.png"/>
+          <image href="../images/quality_assurance_layout_summary_report_comp_04.png"
+            id="image_ijj_s4m_ncc"/>
         </fig></li>
       <li>Click <b>No</b>, and then click <b>Cancel</b> in the XStream In form.</li>
     </ol>
@@ -45,10 +51,11 @@
       <li>Open the Lib/Cell/View: ldk_demo_lib / i0mbfn000aa1d48x5 / layout_streamin</li>
       <li>From the <i>Layout</i> menu, select <b>File &gt; Summary</b>.</li>
       <li>In the Design Summary window, select only <b>Basic Summary</b>. The Summary window
-        displays (<xref href="#layout_summary_report_comparison_optional/Ref153986827">Figure
-          72</xref>). <fig id="fig_ssx_2d2_mcc">
+        displays (<xref href="#layout_summary_report_comparison_optional/fig_ssx_2d2_mcc"/>). <fig
+          id="fig_ssx_2d2_mcc">
           <title>Summary window</title>
-          <image href="media/image79.png"/>
+          <image href="../images/quality_assurance_layout_summary_report_comp_05.png"
+            id="image_fh4_s4m_ncc"/>
         </fig></li>
       <li>
         <p>Click <b>File &gt; Save As</b> to save the Summary file. Name the file:

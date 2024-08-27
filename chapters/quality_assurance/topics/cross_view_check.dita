@@ -15,18 +15,18 @@ example, both Liberty and LEF views contain area information, so
 when comparing Liberty and LEF, include cell attribute area in the
 comparison.</p>
 
-        <p>The brute force way is to compare all possible view types
-against each other. This results in (N-1)! combinations and
-unnecessary work. The suggested methodology is to use Liberty view
-as the reference and compare all other view types against it. <xref href="#cross_view_check/Ref164150899">Table 21</xref> describes each view type
-comparison, and the type of data that is compared.</p>
+        <p>The brute force way is to compare all possible view types against each other. This
+      results in (N-1)! combinations and unnecessary work. The suggested methodology is to use
+      Liberty view as the reference and compare all other view types against it. <xref
+        href="#cross_view_check/Ref164150899"/> describes each view type comparison, and the type of
+      data that is compared.</p>
         <table colsep="1" frame="all" id="Ref164150899" rowsep="1">
           <title>View type comparison</title>
           <tgroup cols="5">
-            <colspec colname="col1" colnum="1" colwidth="0.9*"/>
-            <colspec colname="col2" colnum="2" colwidth="0.9*"/>
-            <colspec colname="col3" colnum="3" colwidth="1.2*"/>
-            <colspec colname="col4" colnum="4" colwidth="0.9*"/>
+            <colspec colname="col1" colnum="1" colwidth="1*"/>
+            <colspec colname="col2" colnum="2" colwidth="1*"/>
+            <colspec colname="col3" colnum="3" colwidth="1*"/>
+            <colspec colname="col4" colnum="4" colwidth="1*"/>
             <colspec colname="col5" colnum="5" colwidth="1.1*"/>
             <thead>
               <row>

@@ -19,16 +19,16 @@ Actions</title>
       the user and is then transferred, as needed, to that delivery directory, above.</p>
     <p>There are four main steps:</p>
     <ol>
-      <li>Getting Started (see Section <xref href="getting_started.dita#getting_started"
-          >2.7.1</xref>)</li>
+      <li>Getting Started (see <xref
+          href="../../netlists_and_physical_views/topics/getting_started.dita"/>)</li>
     </ol>
     <ol>
-      <li>Auto Lib Generation form (see Section <xref
-          href="auto_lib_view_generation_form.dita#auto_lib_view_generation_form">2.7.2</xref>)</li>
-      <li>Mode GDS/CDL generation (see Section <xref
-          href="mode_gdscdl_generation.dita#mode_gdscdl_generation">2.7.2.1</xref>)</li>
-      <li>Mode SPEF generation (see Section <xref
-          href="mode_spef_generation.dita#mode_spef_generation">2.7.2.2</xref>)</li>
+      <li>Auto Lib Generation form (see <xref
+          href="../../netlists_and_physical_views/topics/auto_lib_view_generation_form.dita"/>)</li>
+      <li>Mode GDS/CDL generation (see <xref
+          href="../../netlists_and_physical_views/topics/mode_gdscdl_generation.dita"/>)</li>
+      <li>Mode SPEF generation (see <xref
+          href="../../netlists_and_physical_views/topics/mode_spef_generation.dita"/>)</li>
     </ol>
   </body>
       
