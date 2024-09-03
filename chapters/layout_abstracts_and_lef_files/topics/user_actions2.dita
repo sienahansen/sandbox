@@ -11,10 +11,10 @@
       <li>Change to the pgv directory:
           <codeblock id="codeblock_um4_q5d_mcc">cd ./pgv</codeblock><p>Set the paths to the required
           SPEF files in the spef_file_list file. They should all point to each of the seven SPEF
-          files generated earlier in Section <xref
-            href="netlists_and_physical_views.dita#netlists_and_physical_views">2</xref>, Netlists
-          and Physical Views, delimited by new lines (<xref href="#user_actions2/fig_anb_s5d_mcc"
-          />). <fig id="fig_anb_s5d_mcc">
+          files generated earlier in <xref
+            href="../../netlists_and_physical_views/topics/netlists_and_physical_views.dita"/>
+          delimited by new lines (<xref href="#user_actions2/fig_anb_s5d_mcc"/>). <fig
+            id="fig_anb_s5d_mcc">
             <title>Paths to the SPEF files in spef_file_list</title>
             <image href="../../power_grid_library/images/power_grid_library_user_actions_01.png"
               id="image_i11_xwg_ncc"/>
